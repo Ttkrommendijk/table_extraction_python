@@ -1075,7 +1075,7 @@
               {
                 "row_index": 13,
                 "column_index": 2,
-                "content": "154,754",
+                "content": "154.754",
                 "header": false
               },
               {
@@ -1129,7 +1129,7 @@
               {
                 "row_index": 14,
                 "column_index": 5,
-                "content": "8,558",
+                "content": "8.558",
                 "header": false
               },
               {
@@ -1490,13 +1490,13 @@
               {
                 "row_index": 6,
                 "column_index": 4,
-                "content": "-13,796",
+                "content": "-13.796",
                 "header": false
               },
               {
                 "row_index": 6,
                 "column_index": 5,
-                "content": "-15,065",
+                "content": "-15.065",
                 "header": false
               },
               {
@@ -1844,7 +1844,7 @@
               {
                 "row_index": 16,
                 "column_index": 3,
-                "content": "-25,790",
+                "content": "-25.790",
                 "header": false
               },
               {

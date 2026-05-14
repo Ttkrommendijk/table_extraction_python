@@ -16,6 +16,45 @@ _ACCOUNTING_NUMBER_RE = re.compile(
 
 
 OPEN_PAREN_TOKENS = {"(", "（"}
+
+_INTEGER_THOUSANDS_DOT_RE = re.compile(r"^-?\d{1,3}(?:\.\d{3})+$")
+_DECIMAL_COMMA_RE = re.compile(r"^-?\d{1,3}(?:\.\d{3})*,\d{2}$")
+_COMMA_THOUSANDS_OCR_RE = re.compile(r"^-?\d{1,3},\d{3}$")
+
+
+def _table_prefers_thousands_dot(rows):
+    thousands_dot = 0
+    decimal_comma = 0
+
+    for row in rows:
+        for word in row.get("words", []):
+            text = _clean_text(word.get("text", ""))
+
+            if _INTEGER_THOUSANDS_DOT_RE.match(text):
+                thousands_dot += 1
+
+            if _DECIMAL_COMMA_RE.match(text):
+                decimal_comma += 1
+
+    return thousands_dot >= 3 and thousands_dot >= decimal_comma
+
+
+def _normalize_separator_ocr_errors(rows):
+    if not _table_prefers_thousands_dot(rows):
+        return rows
+
+    normalized_rows = copy.deepcopy(rows)
+
+    for row in normalized_rows:
+        for word in row.get("words", []):
+            text = _clean_text(word.get("text", ""))
+
+            if _COMMA_THOUSANDS_OCR_RE.match(text):
+                word["text"] = text.replace(",", ".")
+                word["separator_normalized"] = True
+
+    return normalized_rows
+
 CLOSE_PAREN_TOKENS = {")",
     "）",
 }
@@ -164,4 +203,5 @@ def normalize_financial_tokens_in_row(row):
 
 
 def normalize_financial_tokens_in_rows(rows):
-    return [normalize_financial_tokens_in_row(row) for row in rows]
+    normalized_rows = [normalize_financial_tokens_in_row(row) for row in rows]
+    return _normalize_separator_ocr_errors(normalized_rows)
