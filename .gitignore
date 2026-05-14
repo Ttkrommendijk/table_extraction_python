@@ -6,4 +6,4 @@ __pycache__/
 
 # Ignore test documents recursively
 test_documents/
-**/test_documents/
+**/test_documents/**
