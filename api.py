@@ -1,10 +1,13 @@
 import base64
 import binascii
+import io
 import json
 import re
 from typing import Any
 
 from fastapi import FastAPI, File, Form, HTTPException, UploadFile
+from fastapi.responses import StreamingResponse
+from pypdf import PdfReader, PdfWriter
 from pydantic import BaseModel, Field
 
 from main import build_klippa_result
@@ -33,6 +36,69 @@ app = FastAPI(
 @app.get("/")
 def healthcheck() -> dict[str, str]:
     return {"status": "running"}
+
+
+
+
+@app.post("/pdf/extract-pages")
+@app.post("/pdf/extract_pages")
+async def extract_pdf_pages(
+    inputFile: UploadFile = File(...),
+    page_range: str = Form(...),
+) -> StreamingResponse:
+    """Return a new PDF containing only the requested 1-based page range.
+
+    Example:
+      inputFile: source.pdf
+      page_range: 2-3
+
+    Result:
+      a 2-page PDF containing original pages 2 and 3.
+      In the returned PDF they are naturally pages 1 and 2.
+    """
+
+    filename = inputFile.filename or "input.pdf"
+    if not filename.lower().endswith(".pdf"):
+        raise HTTPException(
+            status_code=415,
+            detail="inputFile must be a PDF file",
+        )
+
+    raw_pdf = await inputFile.read()
+    if not raw_pdf:
+        raise HTTPException(
+            status_code=400,
+            detail="inputFile cannot be empty",
+        )
+
+    try:
+        reader = PdfReader(io.BytesIO(raw_pdf))
+    except Exception as exc:
+        raise HTTPException(
+            status_code=400,
+            detail=f"inputFile is not a valid PDF: {exc}",
+        ) from exc
+
+    total_pages = len(reader.pages)
+    page_indexes = _parse_page_range(page_range, total_pages)
+
+    writer = PdfWriter()
+    for page_index in page_indexes:
+        writer.add_page(reader.pages[page_index])
+
+    output = io.BytesIO()
+    writer.write(output)
+    output.seek(0)
+
+    output_filename = _build_extracted_pdf_filename(filename, page_range)
+
+    return StreamingResponse(
+        output,
+        media_type="application/pdf",
+        headers={
+            "Content-Disposition": f'attachment; filename="{output_filename}"',
+        },
+    )
 
 
 @app.post("/extract")
@@ -104,6 +170,88 @@ def extract_ocrparse(payload: dict[str, Any]) -> dict[str, Any]:
     """Developer helper endpoint for direct OCRParse JSON testing."""
 
     return build_klippa_result(payload)
+
+
+
+def _parse_page_range(page_range: str, total_pages: int) -> list[int]:
+    """Parse a 1-based page range into 0-based page indexes.
+
+    Supported examples:
+      2-3
+      2
+      1,3,5-7
+    """
+
+    value = page_range.strip().replace(" ", "")
+    if not value:
+        raise HTTPException(
+            status_code=400,
+            detail="page_range cannot be empty",
+        )
+
+    indexes: list[int] = []
+
+    for part in value.split(","):
+        if not part:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Invalid page_range: {page_range}",
+            )
+
+        if "-" in part:
+            start_text, end_text = part.split("-", 1)
+            if not start_text.isdigit() or not end_text.isdigit():
+                raise HTTPException(
+                    status_code=400,
+                    detail=f"Invalid page range segment: {part}",
+                )
+
+            start_page = int(start_text)
+            end_page = int(end_text)
+
+            if start_page > end_page:
+                raise HTTPException(
+                    status_code=400,
+                    detail=f"Invalid page range segment: {part}. Start page must be before end page.",
+                )
+
+            indexes.extend(range(start_page - 1, end_page))
+        else:
+            if not part.isdigit():
+                raise HTTPException(
+                    status_code=400,
+                    detail=f"Invalid page range segment: {part}",
+                )
+
+            indexes.append(int(part) - 1)
+
+    if not indexes:
+        raise HTTPException(
+            status_code=400,
+            detail="page_range did not select any pages",
+        )
+
+    invalid_pages = [index + 1 for index in indexes if index < 0 or index >= total_pages]
+    if invalid_pages:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Page range contains pages outside the PDF. PDF has {total_pages} pages. Invalid pages: {invalid_pages}",
+        )
+
+    deduplicated: list[int] = []
+    seen: set[int] = set()
+    for index in indexes:
+        if index not in seen:
+            deduplicated.append(index)
+            seen.add(index)
+
+    return deduplicated
+
+
+def _build_extracted_pdf_filename(filename: str, page_range: str) -> str:
+    safe_range = re.sub(r"[^0-9,\-]+", "_", page_range.strip()) or "pages"
+    base_name = filename.rsplit(".", 1)[0]
+    return f"{base_name}_pages_{safe_range}.pdf"
 
 
 def _format_ocr_result_for_api(generated_result: dict[str, Any]) -> dict[str, Any]:

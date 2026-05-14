@@ -100,3 +100,34 @@ This accepts the previous JSON body structure:
   ]
 }
 ```
+
+## PDF page extraction endpoint
+
+```text
+POST /pdf/extract-pages
+```
+
+Content type:
+
+```text
+multipart/form-data
+```
+
+Fields:
+
+```text
+inputFile = source.pdf
+page_range = 2-3
+```
+
+The `page_range` value is 1-based. For example, `2-3` keeps original PDF pages 2 and 3. In the returned PDF, those pages become pages 1 and 2.
+
+Supported examples:
+
+```text
+2-3
+2
+1,3,5-7
+```
+
+The endpoint returns a PDF file directly.
