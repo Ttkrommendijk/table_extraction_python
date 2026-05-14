@@ -1,0 +1,63 @@
+
+****** Result for Image/Page 1 ******
+Docusign Envelope ID: EA5ACB31-2584-43C3-A346-226969906FD2
+Cortez Engenharia Ltda.
+Balanço patrimonial em 31 de dezembro de 2024 e de 2023
+(Valores expressos em milhares de Reais)
+Nota	Nota
+Ativo	explicativa	Controladora	Consolidado	Passivo e patrimônio líquido	explicativa	Controladora	Consolidado
+2024	2023	2024	2023	2024	2023	2024	2023
+Circulante	Circulante
+Caixa e equivalentes de caixa	37.181	27.000	53.729	28.061	Fornecedores	14	31.538	38.223	12.957	24.174
+Contas a receber	3.351	25.257	3.456	25.345	Empréstimos e financiamentos	15	1.047	1.325	1.539
+Tributos a recuperar	877	970	903	1.184	Obrigações tributárias	5.188	9.932	6.497	10.930
+utras contas a receber	9 e 11	10.401	6.743	10.629	6.895	Obrigações sociais e trabalhistas	16	29.540	24.895	30.582	25.755
+lividendos a recebel	10	943	8.050	Adiantamento de clientes	3.12	7.608	26.507	7.702	26.527
+52.753	68.020	68.717	61.485	Outras contas a pagar	1.696	2.932	1.818	3.134
+Dividendos a pagar	1.463	1.487	29
+Não circulante	78.080	102.489	62.368	92.088
+Partes relacionadas	19.551	28.197	19.551	21.690
+Depósitos judiciais	478	150	859	150	Não circulante
+Investimentos	하라	48.331	22.555	12	12	Empréstimos e financiamentos	15	109	387
+Imobilizado	8.524	8.790	30.687	36.924	Outras contas a pagar	:	:	196	311
+Intangivel	1.026	577	1.380	1.019	Tributos diferidos	2.825	2.194
+77.910	60.269	52.489	59.795	Partes relacionadas	11
+Provisão para contingências	17	800	800	800	852
+800	800	3.930	3.744
+Patrimônio líquido	18
+Capital social	25.000	25.000	25.000	25.000
+Perdas por variação no capital de coligadas	(13.482)	(13.482)	(13.482)	(13.482)
+Reserva de lucros	40.265	13.482	40.265	13.482
+51.783	25.000	51.783	25.000
+Participação de não controladores	3.125	448
+Total do ativo	130.663	-	128.289	121.206	121.280	Total do passivo e patrimônio líquido	130.663	128.289	121.206	121.280
+As notas explicativas são parte integrante das demonstrações financeiras.
+6
+
+****** Result for Image/Page 2 ******
+Docusign Envelope ID: EA5ACB31-2584-43C3-A346-226969906FD2
+Cortez Engenharia Ltda.
+Demonstração dos resultados
+Exercícios findos em 31 de dezembro de 2024 e de 2023
+(Valores expressos em milhares de Reais)
+Nota
+explicativa	2024	2023	2024	2023
+Receita operacional líquida	19	572.497	450.366	579.375	455.785
+Custo dos serviços prestados	20	(458.942)	(327.807)	(436.325)	(325.072)
+(=) Lucro bruto	113.555	122.559	143.050	130.713
+(+/-) (Despesas)/receitas operacionais
+Gerais e administrativas	20	(40.116)	(41.739)	(41.618)	(42.830)
+Resultado de equivalência patrimonial	12	20.503	4.172
+Outras receitas (despesas) operacionais, líquidas	2.718	1.659	3020	1.662
+(=) Lucro operacional	96.660	86.651	104.452	89.545
+러러
+Receitas financeiras	4.051	6.575	5.359	7.263
+Despesas financeiras	(778)	(486)	(1.339)	(902)
+(=) Resultado financeiro, líquido	3.273	6.089	4.020	6.361
+(=) Resultado antes dos impostos sobre a renda	99.933	92.740	108.472	95.906
+Impostos sobre a renda - corrente	22	(25.586)	(27.126)	(31.427)	(30.578)
+(=) Lucro antes participação dos não controladores	74.347	65.614	77.045	65.328
+Lucro atribuido aos não controladores	-	2.698	(286)
+Lucro líquido do exercício	74.347	65.614	74.347	65.614
+As notas explicativas são parte integrante das demonstrações financeiras.
+7

@@ -1,0 +1,55 @@
+
+****** Result for Image/Page 1 ******
+ANG
+NG Metalúrgica S.A.
+Balanços Patrimoniais
+Em 31 de Dezembro de 2023 e 2022
+( Em milhares de reais)
+Ativo	Notas	2023	2022	Passivo	Notas	2023	2022
+Circulante	Circulante
+Disponibilidades	239.100	93.849	Fornecedores e outras contas	49.055	28.521
+Contas a receber de clientes e outros	456	102.266	100.416	Financiamentos	1,193	1.249
+Estoques	186.695	168.107	Salários e férias a pagar	12.653	11.367
+Impostos a recolher e outros	22.919	14.804
+528.061	362.372	Adiantamentos de clientes	194.793	116.014
+280.613	171.955
+Não circulante
+Não circulante	Financiamentos	9	526	1.671
+Impostos a recuperar e depositos judiciais	8.006	7.758	Conta corrente acionistas-dividendos e JCP	43.238	10.160
+Imobilizado	45.100	36.683	Impostos a recolher e outros	10.847	3.259
+53.106	44.441	54.611	15.090
+Patrimônio líquido
+Capital social	10	98.010	98.010
+Reservas de lucros	143.578	117.263
+Reserva de reavaliação	4.355	4.495
+245.943	219.768
+581.167	406.813	581.167	406.813
+=
+As notas explicativas são parte integrante das demonstrações financeiras.
+
+****** Result for Image/Page 2 ******
+ANG
+NG Metalúrgica S.A.
+Demonstrações dos Resultados
+Exercícios Findos em 31 de Dezembro de 2023 e 2022
+( Em milhares de reais)
+2023	2022
+Receita operacional bruta
+Venda de produtos e serviços	538.469	537.659
+Deduções
+Impostos incidentes sobre as vendas	(77.306)	(93.327)
+Receita operacional líquida	461.163	444.332
+Custo dos produtos e serviços vendidos	(314.200)	(314.035)
+Lucro bruto	146.963	130.297
+(Despesas) Receitas operacionais:
+Administrativas e gerais	(39.123)	(28.535)
+Vendas	(6.860)	(5.988)
+Financeiras líquidas	15.556	14.261
+Outras receitas	2.327
+(30.427)	(17.935)
+Participação dos empregados	(4.926)	(4.824)
+Lucro antes do imposto de renda e da contribuição social	111.610	107.538
+Imposto de renda e contribuição social	(33.630)	(32.087)
+Lucro do exercício	77.980	75.451
+Lucro por ações do capital final - R$	0,80	0,77
+As notas explicativas são parte integrante das demonstrações financeiras

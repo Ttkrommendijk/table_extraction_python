@@ -1,0 +1,88 @@
+
+****** Result for Image/Page 1 ******
+SIAN ENGENHARIA LTDA.
+CNPJ: 03.746.272/0001-23	2. SIAN
+ENGENHARIA
+— DESDE 1977
+BALANÇO PATRIMONIAL EM	31/07/2025	31/12/2024
+Em (reais) R$
+ATIVO
+CIRCULANTE	30.999.346,16	36.534.870,07
+Caixa e equivalente de caixa	30.004,84	1.301.186,33
+Aplicação financeira	4.475.578,91	3.044.739,93
+Contas a receber	10.572.813,40	17.839.975,62
+Adiantamentos concedidos	4.047.704,92	3.074.435,79
+Tributos a recuperar	8.936.465,44	7.676.823,87
+Estoque	2.793.703,03	3.329.269,48
+Despesas antecipadas	143.075,62	268.439,05
+NÃO CIRCULANTE	89.033.658,94	67.170.324,95
+Depósitos judiciais	1.810.307,78	1.483.303,52
+Créditos a receber de pessoas ligadas	25.132.465,67	5.490.362,13
+Tributos diferidos	15.557.502,19	15.557.502,19
+Outros créditos a Receber	38.396.999,36	33.527.332,47
+Investimentos	7.756.285,90	10.696.459,12
+Imobilizado	361.099,71	377.738,37
+Intangível	18.998,33	37.627,15
+TOTAL DO ATIVO	120.033.005,10	103.705.195,02
+PASSIVO
+CIRCULANTE	18.900.284,64	13.907.931,58
+Fornecedores	12.927.893,52	9.656.621,59
+Obrigações Fiscais	1.644.975,97	1.665.351,45
+Obrigações trabalhistas	2.445.385,56	1.536.378,32
+Outras contas a pagar	1.882.029,59	1.049.580,22
+NÃO CIRCULANTE	60.474.007,49	45.456.180,63
+Empréstimos e financiamentos Bancários	17.960.990,29	15.211.801,92
+Empréstimos de pessoas ligadas	3.783.590,69	2.080.906,45
+Empréstimos c/terceiro	6.437.765,39	880.741,81
+Adiantamento de clientes	31.876.540,87	23.726.457,32
+Obrigações Fiscais	1.003,39	583.263,12
+Outros Créditos	2.558.893,15
+Provisão para contingência	414.116,86	414.116,86
+PATRIMÔNIO LÍQUIDO	40.658.712,97	44.341.082,81
+Capital social	26.240.546,00	26.240.546,00
+Lucros (prejuízos) acumulados	14.418.166,97	18.100.536,81
+TOTAL DO PASSIVO	120.033.005,10	103.705.195,02
+FLAVIO SIMPLICIO DA RAVOSNE dital or
+ANDRE VIANA	Assinado de forma digital por	ANDRE VIANA
+PORTELA:7159590	PORTELA:71595902520
+Dados: 2025.09.30 14:48:57	SILVA:87899680506 SILVA:8789968050€
+2520	Dados: 2025.09.29 16:10:05-03:00
+André Viana Portela	lávio Simplicio da Silva
+Sócio Administrador	Contador
+CPF: 715.959.025-20	CRC/BA 21296/0-0
+
+****** Result for Image/Page 2 ******
+SIAN ENGENHARIA LTDA.	2. SIAN
+CNPJ: 03.746.272/0001-23	ENGENHARIA	- DESDE 1977
+DEMONSTRAÇÃO DO RESULTADO
+Em (reais) R$
+PERÍODO	31/07/2025	31/12/2024
+RECEITA DE SERVIÇOS	51.831.043,14	81.048.732,24
+Prestação de serviços	51.831.043,14	80.557.329,38
+Prestação de serviços -Exterior	491.402,86
+(-) DEDUÇÕES	(3.120.274,03)	(5.346.631,25)
+Serviço cancelado	(144.888,71)
+Tributos sobre as receitas	(3.120.274,03)	(5.201.742,54)
+RECEITA LÍQUIDA	48.710.769,11	75.702.100,99
+(-)Custos dos serviços	(43.455.380,82)	(58.409.008,32)
+LUCRO BRUTO	5.255.388,29	17.293.092,67
+(-/+) DESPESAS E RECEITAS OPERACIONAIS	(8.599.570,46)	(16.856.842,82)
+Despesas pessoal	(1.262.440,34)	(2.298.914,79)
+Despesas gerais e administrativas	(2.759.584,88)	(9.715.137,70)
+Depreciação	(45.253,30)	(63.949,00)
+Tributárias	(703.568,00)	(774.316,45)
+Resultado financeiro líquido	(672.990,72)	(3.214.824,10)
+Outras Receitas e Despesas Oeracionais
+Resultado de Equivalencia	(3.155.733,22)	(789.700,78)
+(3.344.182,17)	436.249,85
+PROVISÃO IMPOSTO DE RENDA	(278.843,04)
+:
+PROVISAO CSL	(109.023,49)
+LUCRO (PREJUIZO) LIQUIDO DO PERIODO	(3.344.182,17)	48.383,32
+ANDRE VIANA	Assinado de forma digital por	ANDRE VIANA
+PORTELA:7159590 PORTELA:71595902520	FLAVIO SIMPLICIO DA FLAVOS IMPUTO Diaial por
+Dados: 2025.09.30 14:48:39	SILVA:8789968050
+2520	SILVA:87899680506	Dados: 2025.09.29 16:10:56-03'01
+André Viana Portela	Flávio Simplicio da Silva
+Sócio Administrador	Contador
+CPF: 715.959.025-20	CRC/BA 21296/0-0

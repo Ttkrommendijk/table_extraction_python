@@ -1,0 +1,4106 @@
+{
+  "ParsedResults": [
+    {
+      "Overlay": {
+        "Lines": [
+          {
+            "LineText": "SIAN ENGENHARIA LTDA.",
+            "Words": [
+              {
+                "WordText": "SIAN",
+                "Left": 968,
+                "Top": 235,
+                "Height": 46,
+                "Width": 103
+              },
+              {
+                "WordText": "ENGENHARIA",
+                "Left": 1077,
+                "Top": 235,
+                "Height": 46,
+                "Width": 262
+              },
+              {
+                "WordText": "LTDA.",
+                "Left": 1345,
+                "Top": 235,
+                "Height": 46,
+                "Width": 122
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 235
+          },
+          {
+            "LineText": "CNPJ: 03.746.272/0001-23",
+            "Words": [
+              {
+                "WordText": "CNPJ:",
+                "Left": 999,
+                "Top": 281,
+                "Height": 41,
+                "Width": 117
+              },
+              {
+                "WordText": "03.746.272/0001-23",
+                "Left": 1121,
+                "Top": 281,
+                "Height": 41,
+                "Width": 316
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 281
+          },
+          {
+            "LineText": "BALANÇO PATRIMONIAL EM",
+            "Words": [
+              {
+                "WordText": "BALANÇO",
+                "Left": 219,
+                "Top": 397,
+                "Height": 47,
+                "Width": 196
+              },
+              {
+                "WordText": "PATRIMONIAL",
+                "Left": 421,
+                "Top": 397,
+                "Height": 47,
+                "Width": 284
+              },
+              {
+                "WordText": "EM",
+                "Left": 711,
+                "Top": 397,
+                "Height": 47,
+                "Width": 69
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 397
+          },
+          {
+            "LineText": "Em (reais) R$",
+            "Words": [
+              {
+                "WordText": "Em",
+                "Left": 224,
+                "Top": 474,
+                "Height": 31,
+                "Width": 50
+              },
+              {
+                "WordText": "(reais)",
+                "Left": 278,
+                "Top": 475,
+                "Height": 30,
+                "Width": 87
+              },
+              {
+                "WordText": "R$",
+                "Left": 369,
+                "Top": 474,
+                "Height": 31,
+                "Width": 48
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 474
+          },
+          {
+            "LineText": "ATIVO",
+            "Words": [
+              {
+                "WordText": "ATIVO",
+                "Left": 224,
+                "Top": 561,
+                "Height": 41,
+                "Width": 127
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 561
+          },
+          {
+            "LineText": "CIRCULANTE",
+            "Words": [
+              {
+                "WordText": "CIRCULANTE",
+                "Left": 224,
+                "Top": 622,
+                "Height": 46,
+                "Width": 260
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 622
+          },
+          {
+            "LineText": "Caixa e equivalente de caixa",
+            "Words": [
+              {
+                "WordText": "Caixa",
+                "Left": 219,
+                "Top": 693,
+                "Height": 52,
+                "Width": 92
+              },
+              {
+                "WordText": "e",
+                "Left": 318,
+                "Top": 693,
+                "Height": 52,
+                "Width": 20
+              },
+              {
+                "WordText": "equivalente",
+                "Left": 344,
+                "Top": 693,
+                "Height": 52,
+                "Width": 177
+              },
+              {
+                "WordText": "de",
+                "Left": 528,
+                "Top": 693,
+                "Height": 52,
+                "Width": 39
+              },
+              {
+                "WordText": "caixa",
+                "Left": 573,
+                "Top": 693,
+                "Height": 52,
+                "Width": 89
+              }
+            ],
+            "MaxHeight": 52,
+            "MinTop": 693
+          },
+          {
+            "LineText": "Aplicação financeira",
+            "Words": [
+              {
+                "WordText": "Aplicação",
+                "Left": 224,
+                "Top": 734,
+                "Height": 57,
+                "Width": 147
+              },
+              {
+                "WordText": "financeira",
+                "Left": 378,
+                "Top": 734,
+                "Height": 57,
+                "Width": 172
+              }
+            ],
+            "MaxHeight": 57,
+            "MinTop": 734
+          },
+          {
+            "LineText": "Contas a receber",
+            "Words": [
+              {
+                "WordText": "Contas",
+                "Left": 219,
+                "Top": 774,
+                "Height": 62,
+                "Width": 107
+              },
+              {
+                "WordText": "a",
+                "Left": 333,
+                "Top": 775,
+                "Height": 61,
+                "Width": 16
+              },
+              {
+                "WordText": "receber",
+                "Left": 356,
+                "Top": 775,
+                "Height": 62,
+                "Width": 139
+              }
+            ],
+            "MaxHeight": 63,
+            "MinTop": 774
+          },
+          {
+            "LineText": "Adiantamentos concedidos",
+            "Words": [
+              {
+                "WordText": "Adiantamentos",
+                "Left": 224,
+                "Top": 826,
+                "Height": 56,
+                "Width": 231
+              },
+              {
+                "WordText": "concedidos",
+                "Left": 462,
+                "Top": 826,
+                "Height": 56,
+                "Width": 185
+              }
+            ],
+            "MaxHeight": 56,
+            "MinTop": 826
+          },
+          {
+            "LineText": "Tributos a recuperar",
+            "Words": [
+              {
+                "WordText": "Tributos",
+                "Left": 214,
+                "Top": 882,
+                "Height": 51,
+                "Width": 140
+              },
+              {
+                "WordText": "a",
+                "Left": 360,
+                "Top": 882,
+                "Height": 51,
+                "Width": 19
+              },
+              {
+                "WordText": "recuperar",
+                "Left": 386,
+                "Top": 882,
+                "Height": 51,
+                "Width": 154
+              }
+            ],
+            "MaxHeight": 51,
+            "MinTop": 882
+          },
+          {
+            "LineText": "Estoque",
+            "Words": [
+              {
+                "WordText": "Estoque",
+                "Left": 219,
+                "Top": 928,
+                "Height": 56,
+                "Width": 148
+              }
+            ],
+            "MaxHeight": 56,
+            "MinTop": 928
+          },
+          {
+            "LineText": "Despesas antecipadas",
+            "Words": [
+              {
+                "WordText": "Despesas",
+                "Left": 219,
+                "Top": 974,
+                "Height": 57,
+                "Width": 144
+              },
+              {
+                "WordText": "antecipadas",
+                "Left": 371,
+                "Top": 974,
+                "Height": 57,
+                "Width": 190
+              }
+            ],
+            "MaxHeight": 57,
+            "MinTop": 974
+          },
+          {
+            "LineText": "NÃO CIRCULANTE",
+            "Words": [
+              {
+                "WordText": "NÃO",
+                "Left": 219,
+                "Top": 1051,
+                "Height": 56,
+                "Width": 91
+              },
+              {
+                "WordText": "CIRCULANTE",
+                "Left": 317,
+                "Top": 1051,
+                "Height": 56,
+                "Width": 263
+              }
+            ],
+            "MaxHeight": 56,
+            "MinTop": 1051
+          },
+          {
+            "LineText": "Depósitos judiciais",
+            "Words": [
+              {
+                "WordText": "Depósitos",
+                "Left": 219,
+                "Top": 1127,
+                "Height": 57,
+                "Width": 154
+              },
+              {
+                "WordText": "judiciais",
+                "Left": 379,
+                "Top": 1126,
+                "Height": 57,
+                "Width": 141
+              }
+            ],
+            "MaxHeight": 58,
+            "MinTop": 1126
+          },
+          {
+            "LineText": "Créditos a receber de pessoas ligadas",
+            "Words": [
+              {
+                "WordText": "Créditos",
+                "Left": 219,
+                "Top": 1178,
+                "Height": 46,
+                "Width": 132
+              },
+              {
+                "WordText": "a",
+                "Left": 357,
+                "Top": 1178,
+                "Height": 46,
+                "Width": 23
+              },
+              {
+                "WordText": "receber",
+                "Left": 385,
+                "Top": 1178,
+                "Height": 46,
+                "Width": 120
+              },
+              {
+                "WordText": "de",
+                "Left": 511,
+                "Top": 1178,
+                "Height": 46,
+                "Width": 34
+              },
+              {
+                "WordText": "pessoas",
+                "Left": 551,
+                "Top": 1178,
+                "Height": 46,
+                "Width": 120
+              },
+              {
+                "WordText": "ligadas",
+                "Left": 676,
+                "Top": 1178,
+                "Height": 46,
+                "Width": 119
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 1178
+          },
+          {
+            "LineText": "Tributos diferidos",
+            "Words": [
+              {
+                "WordText": "Tributos",
+                "Left": 224,
+                "Top": 1229,
+                "Height": 36,
+                "Width": 134
+              },
+              {
+                "WordText": "diferidos",
+                "Left": 362,
+                "Top": 1229,
+                "Height": 36,
+                "Width": 142
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1229
+          },
+          {
+            "LineText": "Outros créditos a Receber",
+            "Words": [
+              {
+                "WordText": "Outros",
+                "Left": 229,
+                "Top": 1280,
+                "Height": 31,
+                "Width": 103
+              },
+              {
+                "WordText": "créditos",
+                "Left": 336,
+                "Top": 1280,
+                "Height": 30,
+                "Width": 125
+              },
+              {
+                "WordText": "a",
+                "Left": 466,
+                "Top": 1280,
+                "Height": 30,
+                "Width": 23
+              },
+              {
+                "WordText": "Receber",
+                "Left": 492,
+                "Top": 1280,
+                "Height": 31,
+                "Width": 134
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1280
+          },
+          {
+            "LineText": "Investimentos",
+            "Words": [
+              {
+                "WordText": "Investimentos",
+                "Left": 224,
+                "Top": 1326,
+                "Height": 36,
+                "Width": 219
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1326
+          },
+          {
+            "LineText": "Imobilizado",
+            "Words": [
+              {
+                "WordText": "Imobilizado",
+                "Left": 224,
+                "Top": 1377,
+                "Height": 31,
+                "Width": 188
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1377
+          },
+          {
+            "LineText": "Intangível",
+            "Words": [
+              {
+                "WordText": "Intangível",
+                "Left": 224,
+                "Top": 1423,
+                "Height": 41,
+                "Width": 163
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1423
+          },
+          {
+            "LineText": "TOTAL DO ATIVO",
+            "Words": [
+              {
+                "WordText": "TOTAL",
+                "Left": 224,
+                "Top": 1504,
+                "Height": 31,
+                "Width": 138
+              },
+              {
+                "WordText": "DO",
+                "Left": 365,
+                "Top": 1504,
+                "Height": 30,
+                "Width": 65
+              },
+              {
+                "WordText": "ATIVO",
+                "Left": 434,
+                "Top": 1504,
+                "Height": 31,
+                "Width": 126
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1504
+          },
+          {
+            "LineText": "PASSIVO",
+            "Words": [
+              {
+                "WordText": "PASSIVO",
+                "Left": 224,
+                "Top": 1605,
+                "Height": 40,
+                "Width": 169
+              }
+            ],
+            "MaxHeight": 40,
+            "MinTop": 1605
+          },
+          {
+            "LineText": "CIRCULANTE",
+            "Words": [
+              {
+                "WordText": "CIRCULANTE",
+                "Left": 224,
+                "Top": 1678,
+                "Height": 31,
+                "Width": 260
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1678
+          },
+          {
+            "LineText": "Fornecedores",
+            "Words": [
+              {
+                "WordText": "Fornecedores",
+                "Left": 224,
+                "Top": 1749,
+                "Height": 31,
+                "Width": 209
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1749
+          },
+          {
+            "LineText": "Obrigações Fiscais",
+            "Words": [
+              {
+                "WordText": "Obrigações",
+                "Left": 224,
+                "Top": 1795,
+                "Height": 36,
+                "Width": 178
+              },
+              {
+                "WordText": "Fiscais",
+                "Left": 407,
+                "Top": 1795,
+                "Height": 36,
+                "Width": 113
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1795
+          },
+          {
+            "LineText": "Obrigações trabalhistas",
+            "Words": [
+              {
+                "WordText": "Obrigações",
+                "Left": 224,
+                "Top": 1841,
+                "Height": 41,
+                "Width": 173
+              },
+              {
+                "WordText": "trabalhistas",
+                "Left": 402,
+                "Top": 1841,
+                "Height": 41,
+                "Width": 184
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1841
+          },
+          {
+            "LineText": "Outras contas a pagar",
+            "Words": [
+              {
+                "WordText": "Outras",
+                "Left": 224,
+                "Top": 1891,
+                "Height": 37,
+                "Width": 103
+              },
+              {
+                "WordText": "contas",
+                "Left": 332,
+                "Top": 1891,
+                "Height": 37,
+                "Width": 102
+              },
+              {
+                "WordText": "a",
+                "Left": 439,
+                "Top": 1891,
+                "Height": 37,
+                "Width": 23
+              },
+              {
+                "WordText": "pagar",
+                "Left": 466,
+                "Top": 1891,
+                "Height": 37,
+                "Width": 94
+              }
+            ],
+            "MaxHeight": 37,
+            "MinTop": 1891
+          },
+          {
+            "LineText": "NÃO CIRCULANTE",
+            "Words": [
+              {
+                "WordText": "NÃO",
+                "Left": 224,
+                "Top": 1984,
+                "Height": 36,
+                "Width": 89
+              },
+              {
+                "WordText": "CIRCULANTE",
+                "Left": 318,
+                "Top": 1984,
+                "Height": 36,
+                "Width": 258
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1984
+          },
+          {
+            "LineText": "Empréstimos e financiamentos Bancários",
+            "Words": [
+              {
+                "WordText": "Empréstimos",
+                "Left": 224,
+                "Top": 2081,
+                "Height": 41,
+                "Width": 203
+              },
+              {
+                "WordText": "e",
+                "Left": 433,
+                "Top": 2081,
+                "Height": 41,
+                "Width": 15
+              },
+              {
+                "WordText": "financiamentos",
+                "Left": 453,
+                "Top": 2081,
+                "Height": 41,
+                "Width": 243
+              },
+              {
+                "WordText": "Bancários",
+                "Left": 701,
+                "Top": 2081,
+                "Height": 41,
+                "Width": 160
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 2081
+          },
+          {
+            "LineText": "Empréstimos de pessoas ligadas",
+            "Words": [
+              {
+                "WordText": "Empréstimos",
+                "Left": 224,
+                "Top": 2131,
+                "Height": 36,
+                "Width": 205
+              },
+              {
+                "WordText": "de",
+                "Left": 433,
+                "Top": 2131,
+                "Height": 35,
+                "Width": 40
+              },
+              {
+                "WordText": "pessoas",
+                "Left": 478,
+                "Top": 2131,
+                "Height": 35,
+                "Width": 120
+              },
+              {
+                "WordText": "ligadas",
+                "Left": 602,
+                "Top": 2131,
+                "Height": 36,
+                "Width": 116
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 2131
+          },
+          {
+            "LineText": "Empréstimos c/terceiro",
+            "Words": [
+              {
+                "WordText": "Empréstimos",
+                "Left": 224,
+                "Top": 2177,
+                "Height": 42,
+                "Width": 201
+              },
+              {
+                "WordText": "c/terceiro",
+                "Left": 431,
+                "Top": 2177,
+                "Height": 42,
+                "Width": 150
+              }
+            ],
+            "MaxHeight": 42,
+            "MinTop": 2177
+          },
+          {
+            "LineText": "Adiantamento de clientes",
+            "Words": [
+              {
+                "WordText": "Adiantamento",
+                "Left": 229,
+                "Top": 2229,
+                "Height": 31,
+                "Width": 214
+              },
+              {
+                "WordText": "de",
+                "Left": 447,
+                "Top": 2229,
+                "Height": 30,
+                "Width": 42
+              },
+              {
+                "WordText": "clientes",
+                "Left": 492,
+                "Top": 2229,
+                "Height": 31,
+                "Width": 124
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 2229
+          },
+          {
+            "LineText": "Obrigações Fiscais",
+            "Words": [
+              {
+                "WordText": "Obrigações",
+                "Left": 219,
+                "Top": 2275,
+                "Height": 46,
+                "Width": 183
+              },
+              {
+                "WordText": "Fiscais",
+                "Left": 408,
+                "Top": 2275,
+                "Height": 46,
+                "Width": 112
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 2275
+          },
+          {
+            "LineText": "Outros Créditos",
+            "Words": [
+              {
+                "WordText": "Outros",
+                "Left": 224,
+                "Top": 2326,
+                "Height": 31,
+                "Width": 111
+              },
+              {
+                "WordText": "Créditos",
+                "Left": 339,
+                "Top": 2326,
+                "Height": 31,
+                "Width": 135
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 2326
+          },
+          {
+            "LineText": "Provisão para contingência",
+            "Words": [
+              {
+                "WordText": "Provisão",
+                "Left": 224,
+                "Top": 2371,
+                "Height": 41,
+                "Width": 132
+              },
+              {
+                "WordText": "para",
+                "Left": 362,
+                "Top": 2371,
+                "Height": 41,
+                "Width": 71
+              },
+              {
+                "WordText": "contingência",
+                "Left": 438,
+                "Top": 2371,
+                "Height": 41,
+                "Width": 204
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 2371
+          },
+          {
+            "LineText": "PATRIMÔNIO LÍQUIDO",
+            "Words": [
+              {
+                "WordText": "PATRIMÔNIO",
+                "Left": 224,
+                "Top": 2442,
+                "Height": 52,
+                "Width": 256
+              },
+              {
+                "WordText": "LÍQUIDO",
+                "Left": 487,
+                "Top": 2442,
+                "Height": 52,
+                "Width": 176
+              }
+            ],
+            "MaxHeight": 52,
+            "MinTop": 2442
+          },
+          {
+            "LineText": "Capital social",
+            "Words": [
+              {
+                "WordText": "Capital",
+                "Left": 224,
+                "Top": 2530,
+                "Height": 42,
+                "Width": 112
+              },
+              {
+                "WordText": "social",
+                "Left": 340,
+                "Top": 2528,
+                "Height": 42,
+                "Width": 98
+              }
+            ],
+            "MaxHeight": 44,
+            "MinTop": 2528
+          },
+          {
+            "LineText": "Lucros (prejuízos) acumulados",
+            "Words": [
+              {
+                "WordText": "Lucros",
+                "Left": 224,
+                "Top": 2581,
+                "Height": 36,
+                "Width": 107
+              },
+              {
+                "WordText": "(prejuízos)",
+                "Left": 336,
+                "Top": 2581,
+                "Height": 35,
+                "Width": 169
+              },
+              {
+                "WordText": "acumulados",
+                "Left": 509,
+                "Top": 2581,
+                "Height": 36,
+                "Width": 189
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 2581
+          },
+          {
+            "LineText": "TOTAL DO PASSIVO",
+            "Words": [
+              {
+                "WordText": "TOTAL",
+                "Left": 224,
+                "Top": 2652,
+                "Height": 36,
+                "Width": 138
+              },
+              {
+                "WordText": "DO",
+                "Left": 367,
+                "Top": 2652,
+                "Height": 35,
+                "Width": 62
+              },
+              {
+                "WordText": "PASSIVO",
+                "Left": 433,
+                "Top": 2652,
+                "Height": 36,
+                "Width": 168
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 2652
+          },
+          {
+            "LineText": "ANDRE VIANA",
+            "Words": [
+              {
+                "WordText": "ANDRE",
+                "Left": 336,
+                "Top": 2723,
+                "Height": 41,
+                "Width": 137
+              },
+              {
+                "WordText": "VIANA",
+                "Left": 478,
+                "Top": 2723,
+                "Height": 41,
+                "Width": 128
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 2723
+          },
+          {
+            "LineText": "Assinado de forma digital por",
+            "Words": [
+              {
+                "WordText": "Assinado",
+                "Left": 698,
+                "Top": 2718,
+                "Height": 31,
+                "Width": 107
+              },
+              {
+                "WordText": "de",
+                "Left": 808,
+                "Top": 2718,
+                "Height": 30,
+                "Width": 27
+              },
+              {
+                "WordText": "forma",
+                "Left": 839,
+                "Top": 2718,
+                "Height": 30,
+                "Width": 68
+              },
+              {
+                "WordText": "digital",
+                "Left": 911,
+                "Top": 2718,
+                "Height": 30,
+                "Width": 68
+              },
+              {
+                "WordText": "por",
+                "Left": 983,
+                "Top": 2718,
+                "Height": 31,
+                "Width": 46
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 2718
+          },
+          {
+            "LineText": "PORTELA:7159590",
+            "Words": [
+              {
+                "WordText": "PORTELA:7159590",
+                "Left": 336,
+                "Top": 2775,
+                "Height": 41,
+                "Width": 346
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 2775
+          },
+          {
+            "LineText": "ANDRE VIANA",
+            "Words": [
+              {
+                "WordText": "ANDRE",
+                "Left": 703,
+                "Top": 2748,
+                "Height": 26,
+                "Width": 82
+              },
+              {
+                "WordText": "VIANA",
+                "Left": 789,
+                "Top": 2748,
+                "Height": 26,
+                "Width": 72
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 2748
+          },
+          {
+            "LineText": "PORTELA:71595902520",
+            "Words": [
+              {
+                "WordText": "PORTELA:71595902520",
+                "Left": 693,
+                "Top": 2780,
+                "Height": 26,
+                "Width": 270
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 2780
+          },
+          {
+            "LineText": "Dados: 2025.09.30 14:48:57",
+            "Words": [
+              {
+                "WordText": "Dados:",
+                "Left": 703,
+                "Top": 2810,
+                "Height": 31,
+                "Width": 80
+              },
+              {
+                "WordText": "2025.09.30",
+                "Left": 787,
+                "Top": 2811,
+                "Height": 30,
+                "Width": 118
+              },
+              {
+                "WordText": "14:48:57",
+                "Left": 908,
+                "Top": 2810,
+                "Height": 31,
+                "Width": 95
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 2810
+          },
+          {
+            "LineText": "2520",
+            "Words": [
+              {
+                "WordText": "2520",
+                "Left": 336,
+                "Top": 2831,
+                "Height": 41,
+                "Width": 102
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 2831
+          },
+          {
+            "LineText": "André Viana Portela",
+            "Words": [
+              {
+                "WordText": "André",
+                "Left": 484,
+                "Top": 2907,
+                "Height": 36,
+                "Width": 106
+              },
+              {
+                "WordText": "Viana",
+                "Left": 594,
+                "Top": 2907,
+                "Height": 35,
+                "Width": 98
+              },
+              {
+                "WordText": "Portela",
+                "Left": 696,
+                "Top": 2907,
+                "Height": 36,
+                "Width": 129
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 2907
+          },
+          {
+            "LineText": "Sócio Administrador",
+            "Words": [
+              {
+                "WordText": "Sócio",
+                "Left": 479,
+                "Top": 2948,
+                "Height": 36,
+                "Width": 93
+              },
+              {
+                "WordText": "Administrador",
+                "Left": 576,
+                "Top": 2948,
+                "Height": 36,
+                "Width": 249
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 2948
+          },
+          {
+            "LineText": "CPF: 715.959.025-20",
+            "Words": [
+              {
+                "WordText": "CPF:",
+                "Left": 484,
+                "Top": 2993,
+                "Height": 36,
+                "Width": 88
+              },
+              {
+                "WordText": "715.959.025-20",
+                "Left": 577,
+                "Top": 2993,
+                "Height": 36,
+                "Width": 249
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 2993
+          },
+          {
+            "LineText": "31/07/2025",
+            "Words": [
+              {
+                "WordText": "31/07/2025",
+                "Left": 1564,
+                "Top": 418,
+                "Height": 41,
+                "Width": 184
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 418
+          },
+          {
+            "LineText": "2. SIAN",
+            "Words": [
+              {
+                "WordText": "2.",
+                "Left": 1921,
+                "Top": 250,
+                "Height": 112,
+                "Width": 83
+              },
+              {
+                "WordText": "SIAN",
+                "Left": 2018,
+                "Top": 250,
+                "Height": 112,
+                "Width": 229
+              }
+            ],
+            "MaxHeight": 112,
+            "MinTop": 250
+          },
+          {
+            "LineText": "ENGENHARIA",
+            "Words": [
+              {
+                "WordText": "ENGENHARIA",
+                "Left": 2022,
+                "Top": 332,
+                "Height": 31,
+                "Width": 224
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 332
+          },
+          {
+            "LineText": "— DESDE 1977",
+            "Words": [
+              {
+                "WordText": "—",
+                "Left": 2114,
+                "Top": 372,
+                "Height": 11,
+                "Width": 30
+              },
+              {
+                "WordText": "DESDE",
+                "Left": 2146,
+                "Top": 372,
+                "Height": 10,
+                "Width": 60
+              },
+              {
+                "WordText": "1977",
+                "Left": 2207,
+                "Top": 372,
+                "Height": 11,
+                "Width": 35
+              }
+            ],
+            "MaxHeight": 11,
+            "MinTop": 372
+          },
+          {
+            "LineText": "31/12/2024",
+            "Words": [
+              {
+                "WordText": "31/12/2024",
+                "Left": 1961,
+                "Top": 423,
+                "Height": 31,
+                "Width": 178
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 423
+          },
+          {
+            "LineText": "30.999.346,16",
+            "Words": [
+              {
+                "WordText": "30.999.346,16",
+                "Left": 1605,
+                "Top": 627,
+                "Height": 36,
+                "Width": 224
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 627
+          },
+          {
+            "LineText": "30.004,84",
+            "Words": [
+              {
+                "WordText": "30.004,84",
+                "Left": 1666,
+                "Top": 693,
+                "Height": 42,
+                "Width": 163
+              }
+            ],
+            "MaxHeight": 42,
+            "MinTop": 693
+          },
+          {
+            "LineText": "4.475.578,91",
+            "Words": [
+              {
+                "WordText": "4.475.578,91",
+                "Left": 1620,
+                "Top": 739,
+                "Height": 46,
+                "Width": 209
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 739
+          },
+          {
+            "LineText": "10.572.813,40",
+            "Words": [
+              {
+                "WordText": "10.572.813,40",
+                "Left": 1600,
+                "Top": 791,
+                "Height": 41,
+                "Width": 229
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 791
+          },
+          {
+            "LineText": "4.047.704,92",
+            "Words": [
+              {
+                "WordText": "4.047.704,92",
+                "Left": 1620,
+                "Top": 836,
+                "Height": 47,
+                "Width": 209
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 836
+          },
+          {
+            "LineText": "8.936.465,44",
+            "Words": [
+              {
+                "WordText": "8.936.465,44",
+                "Left": 1620,
+                "Top": 886,
+                "Height": 44,
+                "Width": 215
+              }
+            ],
+            "MaxHeight": 44,
+            "MinTop": 886
+          },
+          {
+            "LineText": "2.793.703,03",
+            "Words": [
+              {
+                "WordText": "2.793.703,03",
+                "Left": 1620,
+                "Top": 933,
+                "Height": 41,
+                "Width": 209
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 933
+          },
+          {
+            "LineText": "143.075,62",
+            "Words": [
+              {
+                "WordText": "143.075,62",
+                "Left": 1656,
+                "Top": 984,
+                "Height": 36,
+                "Width": 173
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 984
+          },
+          {
+            "LineText": "89.033.658,94",
+            "Words": [
+              {
+                "WordText": "89.033.658,94",
+                "Left": 1600,
+                "Top": 1066,
+                "Height": 41,
+                "Width": 229
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1066
+          },
+          {
+            "LineText": "1.810.307,78",
+            "Words": [
+              {
+                "WordText": "1.810.307,78",
+                "Left": 1620,
+                "Top": 1130,
+                "Height": 50,
+                "Width": 215
+              }
+            ],
+            "MaxHeight": 50,
+            "MinTop": 1130
+          },
+          {
+            "LineText": "25.132.465,67",
+            "Words": [
+              {
+                "WordText": "25.132.465,67",
+                "Left": 1600,
+                "Top": 1183,
+                "Height": 41,
+                "Width": 229
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1183
+          },
+          {
+            "LineText": "15.557.502,19",
+            "Words": [
+              {
+                "WordText": "15.557.502,19",
+                "Left": 1600,
+                "Top": 1229,
+                "Height": 41,
+                "Width": 234
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1229
+          },
+          {
+            "LineText": "38.396.999,36",
+            "Words": [
+              {
+                "WordText": "38.396.999,36",
+                "Left": 1600,
+                "Top": 1274,
+                "Height": 47,
+                "Width": 235
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 1274
+          },
+          {
+            "LineText": "7.756.285,90",
+            "Words": [
+              {
+                "WordText": "7.756.285,90",
+                "Left": 1620,
+                "Top": 1325,
+                "Height": 42,
+                "Width": 214
+              }
+            ],
+            "MaxHeight": 42,
+            "MinTop": 1325
+          },
+          {
+            "LineText": "361.099,71",
+            "Words": [
+              {
+                "WordText": "361.099,71",
+                "Left": 1645,
+                "Top": 1372,
+                "Height": 46,
+                "Width": 183
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 1372
+          },
+          {
+            "LineText": "18.998,33",
+            "Words": [
+              {
+                "WordText": "18.998,33",
+                "Left": 1666,
+                "Top": 1408,
+                "Height": 62,
+                "Width": 168
+              }
+            ],
+            "MaxHeight": 62,
+            "MinTop": 1408
+          },
+          {
+            "LineText": "120.033.005,10",
+            "Words": [
+              {
+                "WordText": "120.033.005,10",
+                "Left": 1579,
+                "Top": 1486,
+                "Height": 62,
+                "Width": 266
+              }
+            ],
+            "MaxHeight": 62,
+            "MinTop": 1486
+          },
+          {
+            "LineText": "36.534.870,07",
+            "Words": [
+              {
+                "WordText": "36.534.870,07",
+                "Left": 1972,
+                "Top": 627,
+                "Height": 36,
+                "Width": 229
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 627
+          },
+          {
+            "LineText": "1.301.186,33",
+            "Words": [
+              {
+                "WordText": "1.301.186,33",
+                "Left": 1987,
+                "Top": 694,
+                "Height": 41,
+                "Width": 214
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 694
+          },
+          {
+            "LineText": "3.044.739,93",
+            "Words": [
+              {
+                "WordText": "3.044.739,93",
+                "Left": 1987,
+                "Top": 744,
+                "Height": 42,
+                "Width": 214
+              }
+            ],
+            "MaxHeight": 42,
+            "MinTop": 744
+          },
+          {
+            "LineText": "17.839.975,62",
+            "Words": [
+              {
+                "WordText": "17.839.975,62",
+                "Left": 1972,
+                "Top": 791,
+                "Height": 41,
+                "Width": 229
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 791
+          },
+          {
+            "LineText": "3.074.435,79",
+            "Words": [
+              {
+                "WordText": "3.074.435,79",
+                "Left": 1987,
+                "Top": 836,
+                "Height": 48,
+                "Width": 214
+              }
+            ],
+            "MaxHeight": 48,
+            "MinTop": 836
+          },
+          {
+            "LineText": "7.676.823,87",
+            "Words": [
+              {
+                "WordText": "7.676.823,87",
+                "Left": 1987,
+                "Top": 887,
+                "Height": 36,
+                "Width": 214
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 887
+          },
+          {
+            "LineText": "3.329.269,48",
+            "Words": [
+              {
+                "WordText": "3.329.269,48",
+                "Left": 1987,
+                "Top": 932,
+                "Height": 43,
+                "Width": 209
+              }
+            ],
+            "MaxHeight": 43,
+            "MinTop": 932
+          },
+          {
+            "LineText": "268.439,05",
+            "Words": [
+              {
+                "WordText": "268.439,05",
+                "Left": 2022,
+                "Top": 979,
+                "Height": 41,
+                "Width": 178
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 979
+          },
+          {
+            "LineText": "67.170.324,95",
+            "Words": [
+              {
+                "WordText": "67.170.324,95",
+                "Left": 1966,
+                "Top": 1066,
+                "Height": 41,
+                "Width": 234
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1066
+          },
+          {
+            "LineText": "1.483.303,52",
+            "Words": [
+              {
+                "WordText": "1.483.303,52",
+                "Left": 1987,
+                "Top": 1132,
+                "Height": 47,
+                "Width": 214
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 1132
+          },
+          {
+            "LineText": "5.490.362,13",
+            "Words": [
+              {
+                "WordText": "5.490.362,13",
+                "Left": 1987,
+                "Top": 1183,
+                "Height": 41,
+                "Width": 209
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1183
+          },
+          {
+            "LineText": "15.557.502,19",
+            "Words": [
+              {
+                "WordText": "15.557.502,19",
+                "Left": 1972,
+                "Top": 1224,
+                "Height": 41,
+                "Width": 224
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1224
+          },
+          {
+            "LineText": "33.527.332,47",
+            "Words": [
+              {
+                "WordText": "33.527.332,47",
+                "Left": 1966,
+                "Top": 1274,
+                "Height": 48,
+                "Width": 235
+              }
+            ],
+            "MaxHeight": 48,
+            "MinTop": 1274
+          },
+          {
+            "LineText": "10.696.459,12",
+            "Words": [
+              {
+                "WordText": "10.696.459,12",
+                "Left": 1971,
+                "Top": 1320,
+                "Height": 49,
+                "Width": 230
+              }
+            ],
+            "MaxHeight": 49,
+            "MinTop": 1320
+          },
+          {
+            "LineText": "377.738,37",
+            "Words": [
+              {
+                "WordText": "377.738,37",
+                "Left": 2017,
+                "Top": 1372,
+                "Height": 46,
+                "Width": 184
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 1372
+          },
+          {
+            "LineText": "37.627,15",
+            "Words": [
+              {
+                "WordText": "37.627,15",
+                "Left": 2032,
+                "Top": 1412,
+                "Height": 58,
+                "Width": 174
+              }
+            ],
+            "MaxHeight": 58,
+            "MinTop": 1412
+          },
+          {
+            "LineText": "103.705.195,02",
+            "Words": [
+              {
+                "WordText": "103.705.195,02",
+                "Left": 1946,
+                "Top": 1488,
+                "Height": 58,
+                "Width": 265
+              }
+            ],
+            "MaxHeight": 58,
+            "MinTop": 1488
+          },
+          {
+            "LineText": "18.900.284,64",
+            "Words": [
+              {
+                "WordText": "18.900.284,64",
+                "Left": 1599,
+                "Top": 1672,
+                "Height": 48,
+                "Width": 235
+              }
+            ],
+            "MaxHeight": 48,
+            "MinTop": 1672
+          },
+          {
+            "LineText": "12.927.893,52",
+            "Words": [
+              {
+                "WordText": "12.927.893,52",
+                "Left": 1605,
+                "Top": 1744,
+                "Height": 47,
+                "Width": 224
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 1744
+          },
+          {
+            "LineText": "1.644.975,97",
+            "Words": [
+              {
+                "WordText": "1.644.975,97",
+                "Left": 1620,
+                "Top": 1789,
+                "Height": 49,
+                "Width": 210
+              }
+            ],
+            "MaxHeight": 49,
+            "MinTop": 1789
+          },
+          {
+            "LineText": "2.445.385,56",
+            "Words": [
+              {
+                "WordText": "2.445.385,56",
+                "Left": 1620,
+                "Top": 1841,
+                "Height": 41,
+                "Width": 214
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1841
+          },
+          {
+            "LineText": "1.882.029,59",
+            "Words": [
+              {
+                "WordText": "1.882.029,59",
+                "Left": 1625,
+                "Top": 1892,
+                "Height": 41,
+                "Width": 209
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1892
+          },
+          {
+            "LineText": "60.474.007,49",
+            "Words": [
+              {
+                "WordText": "60.474.007,49",
+                "Left": 1600,
+                "Top": 1983,
+                "Height": 47,
+                "Width": 229
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 1983
+          },
+          {
+            "LineText": "13.907.931,58",
+            "Words": [
+              {
+                "WordText": "13.907.931,58",
+                "Left": 1971,
+                "Top": 1670,
+                "Height": 52,
+                "Width": 230
+              }
+            ],
+            "MaxHeight": 52,
+            "MinTop": 1670
+          },
+          {
+            "LineText": "9.656.621,59",
+            "Words": [
+              {
+                "WordText": "9.656.621,59",
+                "Left": 1986,
+                "Top": 1743,
+                "Height": 49,
+                "Width": 215
+              }
+            ],
+            "MaxHeight": 49,
+            "MinTop": 1743
+          },
+          {
+            "LineText": "1.665.351,45",
+            "Words": [
+              {
+                "WordText": "1.665.351,45",
+                "Left": 1987,
+                "Top": 1790,
+                "Height": 46,
+                "Width": 214
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 1790
+          },
+          {
+            "LineText": "1.536.378,32",
+            "Words": [
+              {
+                "WordText": "1.536.378,32",
+                "Left": 1987,
+                "Top": 1841,
+                "Height": 46,
+                "Width": 214
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 1841
+          },
+          {
+            "LineText": "1.049.580,22",
+            "Words": [
+              {
+                "WordText": "1.049.580,22",
+                "Left": 1992,
+                "Top": 1886,
+                "Height": 49,
+                "Width": 210
+              }
+            ],
+            "MaxHeight": 49,
+            "MinTop": 1886
+          },
+          {
+            "LineText": "45.456.180,63",
+            "Words": [
+              {
+                "WordText": "45.456.180,63",
+                "Left": 1972,
+                "Top": 1984,
+                "Height": 46,
+                "Width": 229
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 1984
+          },
+          {
+            "LineText": "17.960.990,29",
+            "Words": [
+              {
+                "WordText": "17.960.990,29",
+                "Left": 1605,
+                "Top": 2081,
+                "Height": 41,
+                "Width": 229
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 2081
+          },
+          {
+            "LineText": "15.211.801,92",
+            "Words": [
+              {
+                "WordText": "15.211.801,92",
+                "Left": 1972,
+                "Top": 2081,
+                "Height": 41,
+                "Width": 229
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 2081
+          },
+          {
+            "LineText": "3.783.590,69",
+            "Words": [
+              {
+                "WordText": "3.783.590,69",
+                "Left": 1620,
+                "Top": 2131,
+                "Height": 43,
+                "Width": 214
+              }
+            ],
+            "MaxHeight": 43,
+            "MinTop": 2131
+          },
+          {
+            "LineText": "2.080.906,45",
+            "Words": [
+              {
+                "WordText": "2.080.906,45",
+                "Left": 1987,
+                "Top": 2127,
+                "Height": 46,
+                "Width": 214
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 2127
+          },
+          {
+            "LineText": "6.437.765,39",
+            "Words": [
+              {
+                "WordText": "6.437.765,39",
+                "Left": 1620,
+                "Top": 2177,
+                "Height": 47,
+                "Width": 209
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 2177
+          },
+          {
+            "LineText": "880.741,81",
+            "Words": [
+              {
+                "WordText": "880.741,81",
+                "Left": 2017,
+                "Top": 2176,
+                "Height": 49,
+                "Width": 184
+              }
+            ],
+            "MaxHeight": 49,
+            "MinTop": 2176
+          },
+          {
+            "LineText": "31.876.540,87",
+            "Words": [
+              {
+                "WordText": "31.876.540,87",
+                "Left": 1600,
+                "Top": 2224,
+                "Height": 41,
+                "Width": 234
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 2224
+          },
+          {
+            "LineText": "23.726.457,32",
+            "Words": [
+              {
+                "WordText": "23.726.457,32",
+                "Left": 1966,
+                "Top": 2221,
+                "Height": 52,
+                "Width": 235
+              }
+            ],
+            "MaxHeight": 52,
+            "MinTop": 2221
+          },
+          {
+            "LineText": "1.003,39",
+            "Words": [
+              {
+                "WordText": "1.003,39",
+                "Left": 1686,
+                "Top": 2270,
+                "Height": 46,
+                "Width": 143
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 2270
+          },
+          {
+            "LineText": "583.263,12",
+            "Words": [
+              {
+                "WordText": "583.263,12",
+                "Left": 2017,
+                "Top": 2273,
+                "Height": 44,
+                "Width": 184
+              }
+            ],
+            "MaxHeight": 44,
+            "MinTop": 2273
+          },
+          {
+            "LineText": "2.558.893,15",
+            "Words": [
+              {
+                "WordText": "2.558.893,15",
+                "Left": 1992,
+                "Top": 2320,
+                "Height": 42,
+                "Width": 209
+              }
+            ],
+            "MaxHeight": 42,
+            "MinTop": 2320
+          },
+          {
+            "LineText": "414.116,86",
+            "Words": [
+              {
+                "WordText": "414.116,86",
+                "Left": 1650,
+                "Top": 2350,
+                "Height": 63,
+                "Width": 184
+              }
+            ],
+            "MaxHeight": 63,
+            "MinTop": 2350
+          },
+          {
+            "LineText": "414.116,86",
+            "Words": [
+              {
+                "WordText": "414.116,86",
+                "Left": 2022,
+                "Top": 2371,
+                "Height": 36,
+                "Width": 178
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 2371
+          },
+          {
+            "LineText": "40.658.712,97",
+            "Words": [
+              {
+                "WordText": "40.658.712,97",
+                "Left": 1600,
+                "Top": 2448,
+                "Height": 41,
+                "Width": 229
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 2448
+          },
+          {
+            "LineText": "44.341.082,81",
+            "Words": [
+              {
+                "WordText": "44.341.082,81",
+                "Left": 1972,
+                "Top": 2448,
+                "Height": 41,
+                "Width": 229
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 2448
+          },
+          {
+            "LineText": "26.240.546,00",
+            "Words": [
+              {
+                "WordText": "26.240.546,00",
+                "Left": 1600,
+                "Top": 2524,
+                "Height": 47,
+                "Width": 235
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 2524
+          },
+          {
+            "LineText": "26.240.546,00",
+            "Words": [
+              {
+                "WordText": "26.240.546,00",
+                "Left": 1972,
+                "Top": 2530,
+                "Height": 41,
+                "Width": 229
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 2530
+          },
+          {
+            "LineText": "14.418.166,97",
+            "Words": [
+              {
+                "WordText": "14.418.166,97",
+                "Left": 1600,
+                "Top": 2575,
+                "Height": 46,
+                "Width": 234
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 2575
+          },
+          {
+            "LineText": "18.100.536,81",
+            "Words": [
+              {
+                "WordText": "18.100.536,81",
+                "Left": 1966,
+                "Top": 2575,
+                "Height": 47,
+                "Width": 235
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 2575
+          },
+          {
+            "LineText": "120.033.005,10",
+            "Words": [
+              {
+                "WordText": "120.033.005,10",
+                "Left": 1578,
+                "Top": 2633,
+                "Height": 84,
+                "Width": 277
+              }
+            ],
+            "MaxHeight": 84,
+            "MinTop": 2633
+          },
+          {
+            "LineText": "103.705.195,02",
+            "Words": [
+              {
+                "WordText": "103.705.195,02",
+                "Left": 1915,
+                "Top": 2630,
+                "Height": 70,
+                "Width": 301
+              }
+            ],
+            "MaxHeight": 70,
+            "MinTop": 2630
+          },
+          {
+            "LineText": "FLAVIO SIMPLICIO DA RAVOSNE dital or",
+            "Words": [
+              {
+                "WordText": "FLAVIO",
+                "Left": 1289,
+                "Top": 2713,
+                "Height": 103,
+                "Width": 142
+              },
+              {
+                "WordText": "SIMPLICIO",
+                "Left": 1444,
+                "Top": 2713,
+                "Height": 103,
+                "Width": 219
+              },
+              {
+                "WordText": "DA",
+                "Left": 1676,
+                "Top": 2713,
+                "Height": 103,
+                "Width": 39
+              },
+              {
+                "WordText": "RAVOSNE",
+                "Left": 1728,
+                "Top": 2713,
+                "Height": 103,
+                "Width": 232
+              },
+              {
+                "WordText": "dital",
+                "Left": 1973,
+                "Top": 2713,
+                "Height": 103,
+                "Width": 90
+              },
+              {
+                "WordText": "or",
+                "Left": 2076,
+                "Top": 2713,
+                "Height": 103,
+                "Width": 95
+              }
+            ],
+            "MaxHeight": 103,
+            "MinTop": 2713
+          },
+          {
+            "LineText": "SILVA:87899680506 SILVA:8789968050€",
+            "Words": [
+              {
+                "WordText": "SILVA:87899680506",
+                "Left": 1304,
+                "Top": 2800,
+                "Height": 51,
+                "Width": 425
+              },
+              {
+                "WordText": "SILVA:8789968050€",
+                "Left": 1736,
+                "Top": 2800,
+                "Height": 51,
+                "Width": 246
+              }
+            ],
+            "MaxHeight": 51,
+            "MinTop": 2800
+          },
+          {
+            "LineText": "Dados: 2025.09.29 16:10:05-03:00",
+            "Words": [
+              {
+                "WordText": "Dados:",
+                "Left": 1742,
+                "Top": 2826,
+                "Height": 51,
+                "Width": 89
+              },
+              {
+                "WordText": "2025.09.29",
+                "Left": 1838,
+                "Top": 2826,
+                "Height": 51,
+                "Width": 133
+              },
+              {
+                "WordText": "16:10:05-03:00",
+                "Left": 1977,
+                "Top": 2826,
+                "Height": 51,
+                "Width": 178
+              }
+            ],
+            "MaxHeight": 51,
+            "MinTop": 2826
+          },
+          {
+            "LineText": "lávio Simplicio da Silva",
+            "Words": [
+              {
+                "WordText": "lávio",
+                "Left": 1503,
+                "Top": 2887,
+                "Height": 46,
+                "Width": 85
+              },
+              {
+                "WordText": "Simplicio",
+                "Left": 1594,
+                "Top": 2887,
+                "Height": 46,
+                "Width": 160
+              },
+              {
+                "WordText": "da",
+                "Left": 1759,
+                "Top": 2887,
+                "Height": 46,
+                "Width": 40
+              },
+              {
+                "WordText": "Silva",
+                "Left": 1805,
+                "Top": 2887,
+                "Height": 46,
+                "Width": 80
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 2887
+          },
+          {
+            "LineText": "Contador",
+            "Words": [
+              {
+                "WordText": "Contador",
+                "Left": 1620,
+                "Top": 2926,
+                "Height": 48,
+                "Width": 143
+              }
+            ],
+            "MaxHeight": 48,
+            "MinTop": 2926
+          },
+          {
+            "LineText": "CRC/BA 21296/0-0",
+            "Words": [
+              {
+                "WordText": "CRC/BA",
+                "Left": 1523,
+                "Top": 2974,
+                "Height": 47,
+                "Width": 149
+              },
+              {
+                "WordText": "21296/0-0",
+                "Left": 1677,
+                "Top": 2972,
+                "Height": 47,
+                "Width": 183
+              }
+            ],
+            "MaxHeight": 49,
+            "MinTop": 2972
+          }
+        ],
+        "HasOverlay": true
+      },
+      "FileParseExitCode": 1,
+      "TextOrientation": "0",
+      "ParsedText": "SIAN ENGENHARIA LTDA.\t\r\nCNPJ: 03.746.272/0001-23\t2. SIAN\t\r\nENGENHARIA\t\r\n— DESDE 1977\t\r\nBALANÇO PATRIMONIAL EM\t31/07/2025\t31/12/2024\t\r\nEm (reais) R$\t\r\nATIVO\t\r\nCIRCULANTE\t30.999.346,16\t36.534.870,07\t\r\nCaixa e equivalente de caixa\t30.004,84\t1.301.186,33\t\r\nAplicação financeira\t4.475.578,91\t3.044.739,93\t\r\nContas a receber\t10.572.813,40\t17.839.975,62\t\r\nAdiantamentos concedidos\t4.047.704,92\t3.074.435,79\t\r\nTributos a recuperar\t8.936.465,44\t7.676.823,87\t\r\nEstoque\t2.793.703,03\t3.329.269,48\t\r\nDespesas antecipadas\t143.075,62\t268.439,05\t\r\nNÃO CIRCULANTE\t89.033.658,94\t67.170.324,95\t\r\nDepósitos judiciais\t1.810.307,78\t1.483.303,52\t\r\nCréditos a receber de pessoas ligadas\t25.132.465,67\t5.490.362,13\t\r\nTributos diferidos\t15.557.502,19\t15.557.502,19\t\r\nOutros créditos a Receber\t38.396.999,36\t33.527.332,47\t\r\nInvestimentos\t7.756.285,90\t10.696.459,12\t\r\nImobilizado\t361.099,71\t377.738,37\t\r\nIntangível\t18.998,33\t37.627,15\t\r\nTOTAL DO ATIVO\t120.033.005,10\t103.705.195,02\t\r\nPASSIVO\t\r\nCIRCULANTE\t18.900.284,64\t13.907.931,58\t\r\nFornecedores\t12.927.893,52\t9.656.621,59\t\r\nObrigações Fiscais\t1.644.975,97\t1.665.351,45\t\r\nObrigações trabalhistas\t2.445.385,56\t1.536.378,32\t\r\nOutras contas a pagar\t1.882.029,59\t1.049.580,22\t\r\nNÃO CIRCULANTE\t60.474.007,49\t45.456.180,63\t\r\nEmpréstimos e financiamentos Bancários\t17.960.990,29\t15.211.801,92\t\r\nEmpréstimos de pessoas ligadas\t3.783.590,69\t2.080.906,45\t\r\nEmpréstimos c/terceiro\t6.437.765,39\t880.741,81\t\r\nAdiantamento de clientes\t31.876.540,87\t23.726.457,32\t\r\nObrigações Fiscais\t1.003,39\t583.263,12\t\r\nOutros Créditos\t2.558.893,15\t\r\nProvisão para contingência\t414.116,86\t414.116,86\t\r\nPATRIMÔNIO LÍQUIDO\t40.658.712,97\t44.341.082,81\t\r\nCapital social\t26.240.546,00\t26.240.546,00\t\r\nLucros (prejuízos) acumulados\t14.418.166,97\t18.100.536,81\t\r\nTOTAL DO PASSIVO\t120.033.005,10\t103.705.195,02\t\r\nFLAVIO SIMPLICIO DA RAVOSNE dital or\t\r\nANDRE VIANA\tAssinado de forma digital por\tANDRE VIANA\t\r\nPORTELA:7159590\tPORTELA:71595902520\t\r\nDados: 2025.09.30 14:48:57\tSILVA:87899680506 SILVA:8789968050€\t\r\n2520\tDados: 2025.09.29 16:10:05-03:00\t\r\nAndré Viana Portela\tlávio Simplicio da Silva\t\r\nSócio Administrador\tContador\t\r\nCPF: 715.959.025-20\tCRC/BA 21296/0-0\t\r\n",
+      "ErrorMessage": "",
+      "ErrorDetails": ""
+    },
+    {
+      "Overlay": {
+        "Lines": [
+          {
+            "LineText": "SIAN ENGENHARIA LTDA.",
+            "Words": [
+              {
+                "WordText": "SIAN",
+                "Left": 1044,
+                "Top": 286,
+                "Height": 56,
+                "Width": 105
+              },
+              {
+                "WordText": "ENGENHARIA",
+                "Left": 1156,
+                "Top": 286,
+                "Height": 56,
+                "Width": 272
+              },
+              {
+                "WordText": "LTDA.",
+                "Left": 1435,
+                "Top": 286,
+                "Height": 56,
+                "Width": 119
+              }
+            ],
+            "MaxHeight": 56,
+            "MinTop": 286
+          },
+          {
+            "LineText": "CNPJ: 03.746.272/0001-23",
+            "Words": [
+              {
+                "WordText": "CNPJ:",
+                "Left": 1075,
+                "Top": 341,
+                "Height": 46,
+                "Width": 125
+              },
+              {
+                "WordText": "03.746.272/0001-23",
+                "Left": 1206,
+                "Top": 341,
+                "Height": 46,
+                "Width": 322
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 341
+          },
+          {
+            "LineText": "DEMONSTRAÇÃO DO RESULTADO",
+            "Words": [
+              {
+                "WordText": "DEMONSTRAÇÃO",
+                "Left": 973,
+                "Top": 439,
+                "Height": 52,
+                "Width": 343
+              },
+              {
+                "WordText": "DO",
+                "Left": 1322,
+                "Top": 439,
+                "Height": 51,
+                "Width": 63
+              },
+              {
+                "WordText": "RESULTADO",
+                "Left": 1392,
+                "Top": 439,
+                "Height": 52,
+                "Width": 244
+              }
+            ],
+            "MaxHeight": 52,
+            "MinTop": 439
+          },
+          {
+            "LineText": "Em (reais) R$",
+            "Words": [
+              {
+                "WordText": "Em",
+                "Left": 1207,
+                "Top": 500,
+                "Height": 31,
+                "Width": 56
+              },
+              {
+                "WordText": "(reais)",
+                "Left": 1268,
+                "Top": 500,
+                "Height": 30,
+                "Width": 91
+              },
+              {
+                "WordText": "R$",
+                "Left": 1363,
+                "Top": 500,
+                "Height": 31,
+                "Width": 43
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 500
+          },
+          {
+            "LineText": "2. SIAN",
+            "Words": [
+              {
+                "WordText": "2.",
+                "Left": 1905,
+                "Top": 250,
+                "Height": 112,
+                "Width": 83
+              },
+              {
+                "WordText": "SIAN",
+                "Left": 2002,
+                "Top": 250,
+                "Height": 112,
+                "Width": 229
+              }
+            ],
+            "MaxHeight": 112,
+            "MinTop": 250
+          },
+          {
+            "LineText": "ENGENHARIA",
+            "Words": [
+              {
+                "WordText": "ENGENHARIA",
+                "Left": 1992,
+                "Top": 337,
+                "Height": 26,
+                "Width": 245
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 337
+          },
+          {
+            "LineText": "- DESDE 1977",
+            "Words": [
+              {
+                "WordText": "-",
+                "Left": 2114,
+                "Top": 366,
+                "Height": 26,
+                "Width": 13
+              },
+              {
+                "WordText": "DESDE",
+                "Left": 2130,
+                "Top": 366,
+                "Height": 27,
+                "Width": 58
+              },
+              {
+                "WordText": "1977",
+                "Left": 2190,
+                "Top": 368,
+                "Height": 27,
+                "Width": 47
+              }
+            ],
+            "MaxHeight": 28,
+            "MinTop": 366
+          },
+          {
+            "LineText": "PERÍODO",
+            "Words": [
+              {
+                "WordText": "PERÍODO",
+                "Left": 397,
+                "Top": 632,
+                "Height": 47,
+                "Width": 189
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 632
+          },
+          {
+            "LineText": "31/07/2025",
+            "Words": [
+              {
+                "WordText": "31/07/2025",
+                "Left": 1559,
+                "Top": 612,
+                "Height": 41,
+                "Width": 188
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 612
+          },
+          {
+            "LineText": "31/12/2024",
+            "Words": [
+              {
+                "WordText": "31/12/2024",
+                "Left": 1946,
+                "Top": 612,
+                "Height": 41,
+                "Width": 189
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 612
+          },
+          {
+            "LineText": "RECEITA DE SERVIÇOS",
+            "Words": [
+              {
+                "WordText": "RECEITA",
+                "Left": 392,
+                "Top": 775,
+                "Height": 56,
+                "Width": 188
+              },
+              {
+                "WordText": "DE",
+                "Left": 587,
+                "Top": 776,
+                "Height": 56,
+                "Width": 56
+              },
+              {
+                "WordText": "SERVIÇOS",
+                "Left": 650,
+                "Top": 775,
+                "Height": 56,
+                "Width": 211
+              }
+            ],
+            "MaxHeight": 56,
+            "MinTop": 775
+          },
+          {
+            "LineText": "51.831.043,14",
+            "Words": [
+              {
+                "WordText": "51.831.043,14",
+                "Left": 1584,
+                "Top": 785,
+                "Height": 52,
+                "Width": 240
+              }
+            ],
+            "MaxHeight": 52,
+            "MinTop": 785
+          },
+          {
+            "LineText": "81.048.732,24",
+            "Words": [
+              {
+                "WordText": "81.048.732,24",
+                "Left": 1956,
+                "Top": 785,
+                "Height": 53,
+                "Width": 240
+              }
+            ],
+            "MaxHeight": 53,
+            "MinTop": 785
+          },
+          {
+            "LineText": "Prestação de serviços",
+            "Words": [
+              {
+                "WordText": "Prestação",
+                "Left": 413,
+                "Top": 836,
+                "Height": 51,
+                "Width": 139
+              },
+              {
+                "WordText": "de",
+                "Left": 558,
+                "Top": 837,
+                "Height": 51,
+                "Width": 38
+              },
+              {
+                "WordText": "serviços",
+                "Left": 603,
+                "Top": 836,
+                "Height": 51,
+                "Width": 131
+              }
+            ],
+            "MaxHeight": 51,
+            "MinTop": 836
+          },
+          {
+            "LineText": "51.831.043,14",
+            "Words": [
+              {
+                "WordText": "51.831.043,14",
+                "Left": 1584,
+                "Top": 836,
+                "Height": 47,
+                "Width": 240
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 836
+          },
+          {
+            "LineText": "80.557.329,38",
+            "Words": [
+              {
+                "WordText": "80.557.329,38",
+                "Left": 1956,
+                "Top": 836,
+                "Height": 46,
+                "Width": 240
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 836
+          },
+          {
+            "LineText": "Prestação de serviços -Exterior",
+            "Words": [
+              {
+                "WordText": "Prestação",
+                "Left": 408,
+                "Top": 867,
+                "Height": 61,
+                "Width": 144
+              },
+              {
+                "WordText": "de",
+                "Left": 559,
+                "Top": 867,
+                "Height": 61,
+                "Width": 38
+              },
+              {
+                "WordText": "serviços",
+                "Left": 605,
+                "Top": 867,
+                "Height": 61,
+                "Width": 129
+              },
+              {
+                "WordText": "-Exterior",
+                "Left": 742,
+                "Top": 867,
+                "Height": 61,
+                "Width": 145
+              }
+            ],
+            "MaxHeight": 61,
+            "MinTop": 867
+          },
+          {
+            "LineText": "491.402,86",
+            "Words": [
+              {
+                "WordText": "491.402,86",
+                "Left": 2007,
+                "Top": 882,
+                "Height": 46,
+                "Width": 188
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 882
+          },
+          {
+            "LineText": "(-) DEDUÇÕES",
+            "Words": [
+              {
+                "WordText": "(-)",
+                "Left": 392,
+                "Top": 954,
+                "Height": 67,
+                "Width": 50
+              },
+              {
+                "WordText": "DEDUÇÕES",
+                "Left": 450,
+                "Top": 953,
+                "Height": 68,
+                "Width": 228
+              }
+            ],
+            "MaxHeight": 69,
+            "MinTop": 953
+          },
+          {
+            "LineText": "(3.120.274,03)",
+            "Words": [
+              {
+                "WordText": "(",
+                "Left": 1589,
+                "Top": 969,
+                "Height": 46,
+                "Width": 26
+              },
+              {
+                "WordText": "3.120.274,03",
+                "Left": 1615,
+                "Top": 969,
+                "Height": 47,
+                "Width": 206
+              },
+              {
+                "WordText": ")",
+                "Left": 1820,
+                "Top": 969,
+                "Height": 46,
+                "Width": 14
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 969
+          },
+          {
+            "LineText": "(5.346.631,25)",
+            "Words": [
+              {
+                "WordText": "(5.346.631,25)",
+                "Left": 1961,
+                "Top": 969,
+                "Height": 46,
+                "Width": 250
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 969
+          },
+          {
+            "LineText": "Serviço cancelado",
+            "Words": [
+              {
+                "WordText": "Serviço",
+                "Left": 397,
+                "Top": 1014,
+                "Height": 47,
+                "Width": 124
+              },
+              {
+                "WordText": "cancelado",
+                "Left": 527,
+                "Top": 1014,
+                "Height": 47,
+                "Width": 171
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 1014
+          },
+          {
+            "LineText": "(144.888,71)",
+            "Words": [
+              {
+                "WordText": "(144.888,71)",
+                "Left": 1992,
+                "Top": 1020,
+                "Height": 47,
+                "Width": 219
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 1020
+          },
+          {
+            "LineText": "Tributos sobre as receitas",
+            "Words": [
+              {
+                "WordText": "Tributos",
+                "Left": 397,
+                "Top": 1061,
+                "Height": 46,
+                "Width": 137
+              },
+              {
+                "WordText": "sobre",
+                "Left": 540,
+                "Top": 1061,
+                "Height": 46,
+                "Width": 86
+              },
+              {
+                "WordText": "as",
+                "Left": 631,
+                "Top": 1061,
+                "Height": 46,
+                "Width": 40
+              },
+              {
+                "WordText": "receitas",
+                "Left": 677,
+                "Top": 1061,
+                "Height": 46,
+                "Width": 128
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 1061
+          },
+          {
+            "LineText": "(3.120.274,03)",
+            "Words": [
+              {
+                "WordText": "(3.120.274,03)",
+                "Left": 1589,
+                "Top": 1050,
+                "Height": 68,
+                "Width": 250
+              }
+            ],
+            "MaxHeight": 68,
+            "MinTop": 1050
+          },
+          {
+            "LineText": "(5.201.742,54)",
+            "Words": [
+              {
+                "WordText": "(5.201.742,54)",
+                "Left": 1961,
+                "Top": 1066,
+                "Height": 46,
+                "Width": 250
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 1066
+          },
+          {
+            "LineText": "RECEITA LÍQUIDA",
+            "Words": [
+              {
+                "WordText": "RECEITA",
+                "Left": 397,
+                "Top": 1137,
+                "Height": 67,
+                "Width": 182
+              },
+              {
+                "WordText": "LÍQUIDA",
+                "Left": 587,
+                "Top": 1136,
+                "Height": 67,
+                "Width": 183
+              }
+            ],
+            "MaxHeight": 69,
+            "MinTop": 1136
+          },
+          {
+            "LineText": "48.710.769,11",
+            "Words": [
+              {
+                "WordText": "48.710.769,11",
+                "Left": 1584,
+                "Top": 1152,
+                "Height": 52,
+                "Width": 240
+              }
+            ],
+            "MaxHeight": 52,
+            "MinTop": 1152
+          },
+          {
+            "LineText": "75.702.100,99",
+            "Words": [
+              {
+                "WordText": "75.702.100,99",
+                "Left": 1956,
+                "Top": 1152,
+                "Height": 52,
+                "Width": 240
+              }
+            ],
+            "MaxHeight": 52,
+            "MinTop": 1152
+          },
+          {
+            "LineText": "(-)Custos dos serviços",
+            "Words": [
+              {
+                "WordText": "(-)Custos",
+                "Left": 402,
+                "Top": 1239,
+                "Height": 41,
+                "Width": 147
+              },
+              {
+                "WordText": "dos",
+                "Left": 554,
+                "Top": 1239,
+                "Height": 41,
+                "Width": 56
+              },
+              {
+                "WordText": "serviços",
+                "Left": 615,
+                "Top": 1239,
+                "Height": 41,
+                "Width": 139
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1239
+          },
+          {
+            "LineText": "(43.455.380,82)",
+            "Words": [
+              {
+                "WordText": "(43.455.380,82)",
+                "Left": 1569,
+                "Top": 1239,
+                "Height": 46,
+                "Width": 270
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 1239
+          },
+          {
+            "LineText": "(58.409.008,32)",
+            "Words": [
+              {
+                "WordText": "(58.409.008,32)",
+                "Left": 1946,
+                "Top": 1239,
+                "Height": 41,
+                "Width": 265
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1239
+          },
+          {
+            "LineText": "LUCRO BRUTO",
+            "Words": [
+              {
+                "WordText": "LUCRO",
+                "Left": 402,
+                "Top": 1326,
+                "Height": 31,
+                "Width": 144
+              },
+              {
+                "WordText": "BRUTO",
+                "Left": 551,
+                "Top": 1326,
+                "Height": 31,
+                "Width": 142
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1326
+          },
+          {
+            "LineText": "5.255.388,29",
+            "Words": [
+              {
+                "WordText": "5.255.388,29",
+                "Left": 1605,
+                "Top": 1321,
+                "Height": 47,
+                "Width": 219
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 1321
+          },
+          {
+            "LineText": "17.293.092,67",
+            "Words": [
+              {
+                "WordText": "17.293.092,67",
+                "Left": 1961,
+                "Top": 1321,
+                "Height": 47,
+                "Width": 235
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 1321
+          },
+          {
+            "LineText": "(-/+) DESPESAS E RECEITAS OPERACIONAIS",
+            "Words": [
+              {
+                "WordText": "(-/+)",
+                "Left": 402,
+                "Top": 1403,
+                "Height": 41,
+                "Width": 81
+              },
+              {
+                "WordText": "DESPESAS",
+                "Left": 488,
+                "Top": 1403,
+                "Height": 41,
+                "Width": 203
+              },
+              {
+                "WordText": "E",
+                "Left": 696,
+                "Top": 1403,
+                "Height": 41,
+                "Width": 30
+              },
+              {
+                "WordText": "RECEITAS",
+                "Left": 732,
+                "Top": 1403,
+                "Height": 41,
+                "Width": 208
+              },
+              {
+                "WordText": "OPERACIONAIS",
+                "Left": 945,
+                "Top": 1403,
+                "Height": 41,
+                "Width": 303
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1403
+          },
+          {
+            "LineText": "(8.599.570,46)",
+            "Words": [
+              {
+                "WordText": "(8.599.570,46)",
+                "Left": 1589,
+                "Top": 1402,
+                "Height": 47,
+                "Width": 250
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 1402
+          },
+          {
+            "LineText": "(16.856.842,82)",
+            "Words": [
+              {
+                "WordText": "(16.856.842,82)",
+                "Left": 1946,
+                "Top": 1403,
+                "Height": 46,
+                "Width": 265
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 1403
+          },
+          {
+            "LineText": "Despesas pessoal",
+            "Words": [
+              {
+                "WordText": "Despesas",
+                "Left": 402,
+                "Top": 1459,
+                "Height": 36,
+                "Width": 151
+              },
+              {
+                "WordText": "pessoal",
+                "Left": 558,
+                "Top": 1459,
+                "Height": 36,
+                "Width": 120
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1459
+          },
+          {
+            "LineText": "(1.262.440,34)",
+            "Words": [
+              {
+                "WordText": "(1.262.440,34)",
+                "Left": 1589,
+                "Top": 1453,
+                "Height": 47,
+                "Width": 245
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 1453
+          },
+          {
+            "LineText": "(2.298.914,79)",
+            "Words": [
+              {
+                "WordText": "(2.298.914,79)",
+                "Left": 1966,
+                "Top": 1452,
+                "Height": 50,
+                "Width": 245
+              }
+            ],
+            "MaxHeight": 50,
+            "MinTop": 1452
+          },
+          {
+            "LineText": "Despesas gerais e administrativas",
+            "Words": [
+              {
+                "WordText": "Despesas",
+                "Left": 402,
+                "Top": 1504,
+                "Height": 41,
+                "Width": 147
+              },
+              {
+                "WordText": "gerais",
+                "Left": 554,
+                "Top": 1504,
+                "Height": 41,
+                "Width": 101
+              },
+              {
+                "WordText": "e",
+                "Left": 661,
+                "Top": 1504,
+                "Height": 41,
+                "Width": 15
+              },
+              {
+                "WordText": "administrativas",
+                "Left": 681,
+                "Top": 1504,
+                "Height": 41,
+                "Width": 251
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1504
+          },
+          {
+            "LineText": "(2.759.584,88)",
+            "Words": [
+              {
+                "WordText": "(2.759.584,88)",
+                "Left": 1589,
+                "Top": 1505,
+                "Height": 46,
+                "Width": 250
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 1505
+          },
+          {
+            "LineText": "(9.715.137,70)",
+            "Words": [
+              {
+                "WordText": "(9.715.137,70)",
+                "Left": 1966,
+                "Top": 1503,
+                "Height": 50,
+                "Width": 245
+              }
+            ],
+            "MaxHeight": 50,
+            "MinTop": 1503
+          },
+          {
+            "LineText": "Depreciação",
+            "Words": [
+              {
+                "WordText": "Depreciação",
+                "Left": 407,
+                "Top": 1560,
+                "Height": 38,
+                "Width": 199
+              }
+            ],
+            "MaxHeight": 38,
+            "MinTop": 1560
+          },
+          {
+            "LineText": "(45.253,30)",
+            "Words": [
+              {
+                "WordText": "(45.253,30)",
+                "Left": 1640,
+                "Top": 1555,
+                "Height": 48,
+                "Width": 199
+              }
+            ],
+            "MaxHeight": 48,
+            "MinTop": 1555
+          },
+          {
+            "LineText": "(63.949,00)",
+            "Words": [
+              {
+                "WordText": "(63.949,00)",
+                "Left": 2012,
+                "Top": 1555,
+                "Height": 46,
+                "Width": 199
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 1555
+          },
+          {
+            "LineText": "Tributárias",
+            "Words": [
+              {
+                "WordText": "Tributárias",
+                "Left": 402,
+                "Top": 1606,
+                "Height": 36,
+                "Width": 178
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1606
+          },
+          {
+            "LineText": "(703.568,00)",
+            "Words": [
+              {
+                "WordText": "(703.568,00)",
+                "Left": 1625,
+                "Top": 1605,
+                "Height": 50,
+                "Width": 215
+              }
+            ],
+            "MaxHeight": 50,
+            "MinTop": 1605
+          },
+          {
+            "LineText": "(774.316,45)",
+            "Words": [
+              {
+                "WordText": "(774.316,45)",
+                "Left": 1992,
+                "Top": 1606,
+                "Height": 47,
+                "Width": 219
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 1606
+          },
+          {
+            "LineText": "Resultado financeiro líquido",
+            "Words": [
+              {
+                "WordText": "Resultado",
+                "Left": 402,
+                "Top": 1658,
+                "Height": 36,
+                "Width": 159
+              },
+              {
+                "WordText": "financeiro",
+                "Left": 566,
+                "Top": 1658,
+                "Height": 35,
+                "Width": 160
+              },
+              {
+                "WordText": "líquido",
+                "Left": 731,
+                "Top": 1658,
+                "Height": 36,
+                "Width": 120
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1658
+          },
+          {
+            "LineText": "(672.990,72)",
+            "Words": [
+              {
+                "WordText": "(672.990,72)",
+                "Left": 1620,
+                "Top": 1652,
+                "Height": 47,
+                "Width": 219
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 1652
+          },
+          {
+            "LineText": "(3.214.824,10)",
+            "Words": [
+              {
+                "WordText": "(3.214.824,10)",
+                "Left": 1966,
+                "Top": 1652,
+                "Height": 46,
+                "Width": 245
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 1652
+          },
+          {
+            "LineText": "Outras Receitas e Despesas Oeracionais",
+            "Words": [
+              {
+                "WordText": "Outras",
+                "Left": 402,
+                "Top": 1703,
+                "Height": 41,
+                "Width": 106
+              },
+              {
+                "WordText": "Receitas",
+                "Left": 514,
+                "Top": 1704,
+                "Height": 41,
+                "Width": 137
+              },
+              {
+                "WordText": "e",
+                "Left": 656,
+                "Top": 1704,
+                "Height": 41,
+                "Width": 25
+              },
+              {
+                "WordText": "Despesas",
+                "Left": 686,
+                "Top": 1704,
+                "Height": 41,
+                "Width": 147
+              },
+              {
+                "WordText": "Oeracionais",
+                "Left": 838,
+                "Top": 1703,
+                "Height": 41,
+                "Width": 196
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1703
+          },
+          {
+            "LineText": "Resultado de Equivalencia",
+            "Words": [
+              {
+                "WordText": "Resultado",
+                "Left": 402,
+                "Top": 1760,
+                "Height": 36,
+                "Width": 159
+              },
+              {
+                "WordText": "de",
+                "Left": 566,
+                "Top": 1760,
+                "Height": 35,
+                "Width": 40
+              },
+              {
+                "WordText": "Equivalencia",
+                "Left": 611,
+                "Top": 1760,
+                "Height": 36,
+                "Width": 215
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1760
+          },
+          {
+            "LineText": "(3.155.733,22)",
+            "Words": [
+              {
+                "WordText": "(3.155.733,22)",
+                "Left": 1589,
+                "Top": 1748,
+                "Height": 53,
+                "Width": 250
+              }
+            ],
+            "MaxHeight": 53,
+            "MinTop": 1748
+          },
+          {
+            "LineText": "(789.700,78)",
+            "Words": [
+              {
+                "WordText": "(789.700,78)",
+                "Left": 1997,
+                "Top": 1749,
+                "Height": 51,
+                "Width": 214
+              }
+            ],
+            "MaxHeight": 51,
+            "MinTop": 1749
+          },
+          {
+            "LineText": "(3.344.182,17)",
+            "Words": [
+              {
+                "WordText": "(3.344.182,17)",
+                "Left": 1589,
+                "Top": 1841,
+                "Height": 47,
+                "Width": 245
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 1841
+          },
+          {
+            "LineText": "436.249,85",
+            "Words": [
+              {
+                "WordText": "436.249,85",
+                "Left": 2007,
+                "Top": 1840,
+                "Height": 48,
+                "Width": 189
+              }
+            ],
+            "MaxHeight": 48,
+            "MinTop": 1840
+          },
+          {
+            "LineText": "PROVISÃO IMPOSTO DE RENDA",
+            "Words": [
+              {
+                "WordText": "PROVISÃO",
+                "Left": 402,
+                "Top": 1938,
+                "Height": 41,
+                "Width": 208
+              },
+              {
+                "WordText": "IMPOSTO",
+                "Left": 615,
+                "Top": 1939,
+                "Height": 41,
+                "Width": 188
+              },
+              {
+                "WordText": "DE",
+                "Left": 808,
+                "Top": 1939,
+                "Height": 41,
+                "Width": 61
+              },
+              {
+                "WordText": "RENDA",
+                "Left": 874,
+                "Top": 1938,
+                "Height": 41,
+                "Width": 140
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1938
+          },
+          {
+            "LineText": "(278.843,04)",
+            "Words": [
+              {
+                "WordText": "(278.843,04)",
+                "Left": 1992,
+                "Top": 1943,
+                "Height": 47,
+                "Width": 219
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 1943
+          },
+          {
+            "LineText": "PROVISAO CSL",
+            "Words": [
+              {
+                "WordText": "PROVISAO",
+                "Left": 402,
+                "Top": 1999,
+                "Height": 36,
+                "Width": 208
+              },
+              {
+                "WordText": "CSL",
+                "Left": 615,
+                "Top": 1999,
+                "Height": 36,
+                "Width": 83
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1999
+          },
+          {
+            "LineText": ":",
+            "Words": [
+              {
+                "WordText": ":",
+                "Left": 1752,
+                "Top": 1953,
+                "Height": 87,
+                "Width": 36
+              }
+            ],
+            "MaxHeight": 87,
+            "MinTop": 1953
+          },
+          {
+            "LineText": "(109.023,49)",
+            "Words": [
+              {
+                "WordText": "(109.023,49)",
+                "Left": 1992,
+                "Top": 1993,
+                "Height": 48,
+                "Width": 219
+              }
+            ],
+            "MaxHeight": 48,
+            "MinTop": 1993
+          },
+          {
+            "LineText": "LUCRO (PREJUIZO) LIQUIDO DO PERIODO",
+            "Words": [
+              {
+                "WordText": "LUCRO",
+                "Left": 397,
+                "Top": 2076,
+                "Height": 51,
+                "Width": 146
+              },
+              {
+                "WordText": "(PREJUIZO)",
+                "Left": 549,
+                "Top": 2076,
+                "Height": 51,
+                "Width": 222
+              },
+              {
+                "WordText": "LIQUIDO",
+                "Left": 777,
+                "Top": 2076,
+                "Height": 51,
+                "Width": 177
+              },
+              {
+                "WordText": "DO",
+                "Left": 961,
+                "Top": 2076,
+                "Height": 51,
+                "Width": 63
+              },
+              {
+                "WordText": "PERIODO",
+                "Left": 1031,
+                "Top": 2076,
+                "Height": 51,
+                "Width": 197
+              }
+            ],
+            "MaxHeight": 51,
+            "MinTop": 2076
+          },
+          {
+            "LineText": "(3.344.182,17)",
+            "Words": [
+              {
+                "WordText": "(3.344.182,17)",
+                "Left": 1589,
+                "Top": 2075,
+                "Height": 52,
+                "Width": 250
+              }
+            ],
+            "MaxHeight": 52,
+            "MinTop": 2075
+          },
+          {
+            "LineText": "48.383,32",
+            "Words": [
+              {
+                "WordText": "48.383,32",
+                "Left": 2028,
+                "Top": 2081,
+                "Height": 46,
+                "Width": 173
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 2081
+          },
+          {
+            "LineText": "ANDRE VIANA",
+            "Words": [
+              {
+                "WordText": "ANDRE",
+                "Left": 540,
+                "Top": 2152,
+                "Height": 47,
+                "Width": 131
+              },
+              {
+                "WordText": "VIANA",
+                "Left": 677,
+                "Top": 2152,
+                "Height": 47,
+                "Width": 128
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 2152
+          },
+          {
+            "LineText": "Assinado de forma digital por",
+            "Words": [
+              {
+                "WordText": "Assinado",
+                "Left": 881,
+                "Top": 2147,
+                "Height": 31,
+                "Width": 106
+              },
+              {
+                "WordText": "de",
+                "Left": 991,
+                "Top": 2147,
+                "Height": 30,
+                "Width": 27
+              },
+              {
+                "WordText": "forma",
+                "Left": 1021,
+                "Top": 2147,
+                "Height": 30,
+                "Width": 65
+              },
+              {
+                "WordText": "digital",
+                "Left": 1090,
+                "Top": 2147,
+                "Height": 30,
+                "Width": 72
+              },
+              {
+                "WordText": "por",
+                "Left": 1166,
+                "Top": 2147,
+                "Height": 31,
+                "Width": 42
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 2147
+          },
+          {
+            "LineText": "ANDRE VIANA",
+            "Words": [
+              {
+                "WordText": "ANDRE",
+                "Left": 881,
+                "Top": 2182,
+                "Height": 27,
+                "Width": 84
+              },
+              {
+                "WordText": "VIANA",
+                "Left": 968,
+                "Top": 2182,
+                "Height": 27,
+                "Width": 76
+              }
+            ],
+            "MaxHeight": 27,
+            "MinTop": 2182
+          },
+          {
+            "LineText": "PORTELA:7159590 PORTELA:71595902520",
+            "Words": [
+              {
+                "WordText": "PORTELA:7159590",
+                "Left": 540,
+                "Top": 2198,
+                "Height": 46,
+                "Width": 337
+              },
+              {
+                "WordText": "PORTELA:71595902520",
+                "Left": 883,
+                "Top": 2198,
+                "Height": 46,
+                "Width": 258
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 2198
+          },
+          {
+            "LineText": "Dados: 2025.09.30 14:48:39",
+            "Words": [
+              {
+                "WordText": "Dados:",
+                "Left": 876,
+                "Top": 2244,
+                "Height": 26,
+                "Width": 85
+              },
+              {
+                "WordText": "2025.09.30",
+                "Left": 964,
+                "Top": 2245,
+                "Height": 25,
+                "Width": 120
+              },
+              {
+                "WordText": "14:48:39",
+                "Left": 1088,
+                "Top": 2244,
+                "Height": 26,
+                "Width": 94
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 2244
+          },
+          {
+            "LineText": "2520",
+            "Words": [
+              {
+                "WordText": "2520",
+                "Left": 535,
+                "Top": 2259,
+                "Height": 46,
+                "Width": 102
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 2259
+          },
+          {
+            "LineText": "André Viana Portela",
+            "Words": [
+              {
+                "WordText": "André",
+                "Left": 662,
+                "Top": 2331,
+                "Height": 41,
+                "Width": 112
+              },
+              {
+                "WordText": "Viana",
+                "Left": 779,
+                "Top": 2331,
+                "Height": 41,
+                "Width": 101
+              },
+              {
+                "WordText": "Portela",
+                "Left": 886,
+                "Top": 2331,
+                "Height": 41,
+                "Width": 133
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 2331
+          },
+          {
+            "LineText": "Sócio Administrador",
+            "Words": [
+              {
+                "WordText": "Sócio",
+                "Left": 662,
+                "Top": 2377,
+                "Height": 36,
+                "Width": 98
+              },
+              {
+                "WordText": "Administrador",
+                "Left": 765,
+                "Top": 2377,
+                "Height": 36,
+                "Width": 254
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 2377
+          },
+          {
+            "LineText": "CPF: 715.959.025-20",
+            "Words": [
+              {
+                "WordText": "CPF:",
+                "Left": 667,
+                "Top": 2422,
+                "Height": 36,
+                "Width": 89
+              },
+              {
+                "WordText": "715.959.025-20",
+                "Left": 761,
+                "Top": 2422,
+                "Height": 36,
+                "Width": 253
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 2422
+          },
+          {
+            "LineText": "FLAVIO SIMPLICIO DA FLAVOS IMPUTO Diaial por",
+            "Words": [
+              {
+                "WordText": "FLAVIO",
+                "Left": 1401,
+                "Top": 2172,
+                "Height": 83,
+                "Width": 135
+              },
+              {
+                "WordText": "SIMPLICIO",
+                "Left": 1546,
+                "Top": 2172,
+                "Height": 83,
+                "Width": 186
+              },
+              {
+                "WordText": "DA",
+                "Left": 1743,
+                "Top": 2172,
+                "Height": 83,
+                "Width": 52
+              },
+              {
+                "WordText": "FLAVOS",
+                "Left": 1805,
+                "Top": 2172,
+                "Height": 83,
+                "Width": 114
+              },
+              {
+                "WordText": "IMPUTO",
+                "Left": 1929,
+                "Top": 2172,
+                "Height": 83,
+                "Width": 93
+              },
+              {
+                "WordText": "Diaial",
+                "Left": 2033,
+                "Top": 2172,
+                "Height": 83,
+                "Width": 83
+              },
+              {
+                "WordText": "por",
+                "Left": 2126,
+                "Top": 2172,
+                "Height": 83,
+                "Width": 50
+              }
+            ],
+            "MaxHeight": 83,
+            "MinTop": 2172
+          },
+          {
+            "LineText": "SILVA:87899680506",
+            "Words": [
+              {
+                "WordText": "SILVA:87899680506",
+                "Left": 1401,
+                "Top": 2254,
+                "Height": 51,
+                "Width": 387
+              }
+            ],
+            "MaxHeight": 51,
+            "MinTop": 2254
+          },
+          {
+            "LineText": "SILVA:8789968050",
+            "Words": [
+              {
+                "WordText": "SILVA:8789968050",
+                "Left": 1809,
+                "Top": 2254,
+                "Height": 31,
+                "Width": 229
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 2254
+          },
+          {
+            "LineText": "Dados: 2025.09.29 16:10:56-03'01",
+            "Words": [
+              {
+                "WordText": "Dados:",
+                "Left": 1819,
+                "Top": 2280,
+                "Height": 41,
+                "Width": 86
+              },
+              {
+                "WordText": "2025.09.29",
+                "Left": 1910,
+                "Top": 2280,
+                "Height": 41,
+                "Width": 122
+              },
+              {
+                "WordText": "16:10:56-03'01",
+                "Left": 2037,
+                "Top": 2280,
+                "Height": 41,
+                "Width": 164
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 2280
+          },
+          {
+            "LineText": "Flávio Simplicio da Silva",
+            "Words": [
+              {
+                "WordText": "Flávio",
+                "Left": 1661,
+                "Top": 2341,
+                "Height": 41,
+                "Width": 112
+              },
+              {
+                "WordText": "Simplicio",
+                "Left": 1778,
+                "Top": 2341,
+                "Height": 41,
+                "Width": 157
+              },
+              {
+                "WordText": "da",
+                "Left": 1940,
+                "Top": 2341,
+                "Height": 41,
+                "Width": 51
+              },
+              {
+                "WordText": "Silva",
+                "Left": 1996,
+                "Top": 2341,
+                "Height": 41,
+                "Width": 88
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 2341
+          },
+          {
+            "LineText": "Contador",
+            "Words": [
+              {
+                "WordText": "Contador",
+                "Left": 1783,
+                "Top": 2381,
+                "Height": 52,
+                "Width": 174
+              }
+            ],
+            "MaxHeight": 52,
+            "MinTop": 2381
+          },
+          {
+            "LineText": "CRC/BA 21296/0-0",
+            "Words": [
+              {
+                "WordText": "CRC/BA",
+                "Left": 1707,
+                "Top": 2432,
+                "Height": 36,
+                "Width": 151
+              },
+              {
+                "WordText": "21296/0-0",
+                "Left": 1862,
+                "Top": 2432,
+                "Height": 36,
+                "Width": 181
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 2432
+          }
+        ],
+        "HasOverlay": true
+      },
+      "FileParseExitCode": 1,
+      "TextOrientation": "0",
+      "ParsedText": "SIAN ENGENHARIA LTDA.\t2. SIAN\t\r\nCNPJ: 03.746.272/0001-23\tENGENHARIA\t- DESDE 1977\t\r\nDEMONSTRAÇÃO DO RESULTADO\t\r\nEm (reais) R$\t\r\nPERÍODO\t31/07/2025\t31/12/2024\t\r\nRECEITA DE SERVIÇOS\t51.831.043,14\t81.048.732,24\t\r\nPrestação de serviços\t51.831.043,14\t80.557.329,38\t\r\nPrestação de serviços -Exterior\t491.402,86\t\r\n(-) DEDUÇÕES\t(3.120.274,03)\t(5.346.631,25)\t\r\nServiço cancelado\t(144.888,71)\t\r\nTributos sobre as receitas\t(3.120.274,03)\t(5.201.742,54)\t\r\nRECEITA LÍQUIDA\t48.710.769,11\t75.702.100,99\t\r\n(-)Custos dos serviços\t(43.455.380,82)\t(58.409.008,32)\t\r\nLUCRO BRUTO\t5.255.388,29\t17.293.092,67\t\r\n(-/+) DESPESAS E RECEITAS OPERACIONAIS\t(8.599.570,46)\t(16.856.842,82)\t\r\nDespesas pessoal\t(1.262.440,34)\t(2.298.914,79)\t\r\nDespesas gerais e administrativas\t(2.759.584,88)\t(9.715.137,70)\t\r\nDepreciação\t(45.253,30)\t(63.949,00)\t\r\nTributárias\t(703.568,00)\t(774.316,45)\t\r\nResultado financeiro líquido\t(672.990,72)\t(3.214.824,10)\t\r\nOutras Receitas e Despesas Oeracionais\t\r\nResultado de Equivalencia\t(3.155.733,22)\t(789.700,78)\t\r\n(3.344.182,17)\t436.249,85\t\r\nPROVISÃO IMPOSTO DE RENDA\t(278.843,04)\t\r\n:\t\r\nPROVISAO CSL\t(109.023,49)\t\r\nLUCRO (PREJUIZO) LIQUIDO DO PERIODO\t(3.344.182,17)\t48.383,32\t\r\nANDRE VIANA\tAssinado de forma digital por\tANDRE VIANA\t\r\nPORTELA:7159590 PORTELA:71595902520\tFLAVIO SIMPLICIO DA FLAVOS IMPUTO Diaial por\t\r\nDados: 2025.09.30 14:48:39\tSILVA:8789968050\t\r\n2520\tSILVA:87899680506\tDados: 2025.09.29 16:10:56-03'01\t\r\nAndré Viana Portela\tFlávio Simplicio da Silva\t\r\nSócio Administrador\tContador\t\r\nCPF: 715.959.025-20\tCRC/BA 21296/0-0\t\r\n",
+      "ErrorMessage": "",
+      "ErrorDetails": ""
+    }
+  ],
+  "OCRExitCode": 1,
+  "IsErroredOnProcessing": false,
+  "ProcessingTimeInMilliseconds": 2.836,
+  "SearchablePDFURL": "Searchable PDF not generated as it was not requested."
+}

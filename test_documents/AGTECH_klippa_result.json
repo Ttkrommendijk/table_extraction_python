@@ -1,0 +1,397 @@
+{
+  "ocr_result_klippa": {
+    "version": "1",
+    "components": {
+      "tables": {
+        "tables": [
+          {
+            "document": 0,
+            "row_count": 15,
+            "column_count": 2,
+            "cells": [
+              {
+                "row_index": 0,
+                "column_index": 0,
+                "content": "ATIVO",
+                "header": true
+              },
+              {
+                "row_index": 0,
+                "column_index": 1,
+                "content": "R$",
+                "header": true
+              },
+              {
+                "row_index": 1,
+                "column_index": 0,
+                "content": "CIRCULANTE",
+                "header": false
+              },
+              {
+                "row_index": 1,
+                "column_index": 1,
+                "content": "11.587.540,95",
+                "header": false
+              },
+              {
+                "row_index": 2,
+                "column_index": 0,
+                "content": "DISPONIVEL",
+                "header": false
+              },
+              {
+                "row_index": 2,
+                "column_index": 1,
+                "content": "788.669,50",
+                "header": false
+              },
+              {
+                "row_index": 3,
+                "column_index": 0,
+                "content": "BENS NUMERARIOS",
+                "header": false
+              },
+              {
+                "row_index": 3,
+                "column_index": 1,
+                "content": "5.000,00",
+                "header": false
+              },
+              {
+                "row_index": 4,
+                "column_index": 0,
+                "content": "DEPOSITOS BANCARIOS",
+                "header": false
+              },
+              {
+                "row_index": 4,
+                "column_index": 1,
+                "content": "77.447,19",
+                "header": false
+              },
+              {
+                "row_index": 5,
+                "column_index": 0,
+                "content": "APLICACÕES FINANCEIRAS",
+                "header": false
+              },
+              {
+                "row_index": 5,
+                "column_index": 1,
+                "content": "706.222,31",
+                "header": false
+              },
+              {
+                "row_index": 6,
+                "column_index": 0,
+                "content": "VALORES A RECEBER",
+                "header": false
+              },
+              {
+                "row_index": 6,
+                "column_index": 1,
+                "content": "8.750.631,59",
+                "header": false
+              },
+              {
+                "row_index": 7,
+                "column_index": 0,
+                "content": "CLIENTES",
+                "header": false
+              },
+              {
+                "row_index": 7,
+                "column_index": 1,
+                "content": "8.750.631,59",
+                "header": false
+              },
+              {
+                "row_index": 8,
+                "column_index": 0,
+                "content": "ESTOQUES",
+                "header": false
+              },
+              {
+                "row_index": 8,
+                "column_index": 1,
+                "content": "1.609.768,06",
+                "header": false
+              },
+              {
+                "row_index": 9,
+                "column_index": 0,
+                "content": "MERCADORIAS",
+                "header": false
+              },
+              {
+                "row_index": 9,
+                "column_index": 1,
+                "content": "1.609.768,06",
+                "header": false
+              },
+              {
+                "row_index": 10,
+                "column_index": 0,
+                "content": "TRIBUTOS A RECUPERAR",
+                "header": false
+              },
+              {
+                "row_index": 10,
+                "column_index": 1,
+                "content": "438.471,80",
+                "header": false
+              },
+              {
+                "row_index": 11,
+                "column_index": 0,
+                "content": "ATIVO NÃO CIRCULANTE",
+                "header": false
+              },
+              {
+                "row_index": 11,
+                "column_index": 1,
+                "content": "1.793.598,49",
+                "header": false
+              },
+              {
+                "row_index": 12,
+                "column_index": 0,
+                "content": "IMOBILIZADO",
+                "header": false
+              },
+              {
+                "row_index": 12,
+                "column_index": 1,
+                "content": "1.793.598,49",
+                "header": false
+              },
+              {
+                "row_index": 13,
+                "column_index": 0,
+                "content": "BENS",
+                "header": false
+              },
+              {
+                "row_index": 13,
+                "column_index": 1,
+                "content": "1.793.598,49",
+                "header": false
+              },
+              {
+                "row_index": 14,
+                "column_index": 0,
+                "content": "TOTAL ATIVO",
+                "header": false
+              },
+              {
+                "row_index": 14,
+                "column_index": 1,
+                "content": "13.381.139,44",
+                "header": false
+              }
+            ]
+          },
+          {
+            "document": 0,
+            "row_count": 16,
+            "column_count": 2,
+            "cells": [
+              {
+                "row_index": 0,
+                "column_index": 0,
+                "content": "PASSIVO",
+                "header": true
+              },
+              {
+                "row_index": 0,
+                "column_index": 1,
+                "content": "R$",
+                "header": true
+              },
+              {
+                "row_index": 1,
+                "column_index": 0,
+                "content": "CIRCULANTE",
+                "header": false
+              },
+              {
+                "row_index": 1,
+                "column_index": 1,
+                "content": "1.562.096,72",
+                "header": false
+              },
+              {
+                "row_index": 2,
+                "column_index": 0,
+                "content": "OBRIGAÇÕES A CURTO PRAZO",
+                "header": false
+              },
+              {
+                "row_index": 2,
+                "column_index": 1,
+                "content": "1.562.096,72",
+                "header": false
+              },
+              {
+                "row_index": 3,
+                "column_index": 0,
+                "content": "FORNECEDORES",
+                "header": false
+              },
+              {
+                "row_index": 3,
+                "column_index": 1,
+                "content": "954.918,27",
+                "header": false
+              },
+              {
+                "row_index": 4,
+                "column_index": 0,
+                "content": "OBRIGAÇÕES TRIBUTÁRIAS",
+                "header": false
+              },
+              {
+                "row_index": 4,
+                "column_index": 1,
+                "content": "408.296,65",
+                "header": false
+              },
+              {
+                "row_index": 5,
+                "column_index": 0,
+                "content": "OBRIGAÇÕES TRABALHISTAS",
+                "header": false
+              },
+              {
+                "row_index": 5,
+                "column_index": 1,
+                "content": "13.539,27",
+                "header": false
+              },
+              {
+                "row_index": 6,
+                "column_index": 0,
+                "content": "CONTA CORRENTE ENTRE EMPRESAS",
+                "header": false
+              },
+              {
+                "row_index": 6,
+                "column_index": 1,
+                "content": "44.505,00",
+                "header": false
+              },
+              {
+                "row_index": 7,
+                "column_index": 0,
+                "content": "EMPRESTIMOS E FINANCIAMENTOS",
+                "header": false
+              },
+              {
+                "row_index": 7,
+                "column_index": 1,
+                "content": "140.837,53",
+                "header": false
+              },
+              {
+                "row_index": 8,
+                "column_index": 0,
+                "content": "NÃO CIRCULANTE",
+                "header": false
+              },
+              {
+                "row_index": 8,
+                "column_index": 1,
+                "content": "489.113,15",
+                "header": false
+              },
+              {
+                "row_index": 9,
+                "column_index": 0,
+                "content": "OBRIGAÇÕES TRIBUTÁRIAS",
+                "header": false
+              },
+              {
+                "row_index": 9,
+                "column_index": 1,
+                "content": "489.113,15",
+                "header": false
+              },
+              {
+                "row_index": 10,
+                "column_index": 0,
+                "content": "PATRIMONIO LIQUIDO",
+                "header": false
+              },
+              {
+                "row_index": 10,
+                "column_index": 1,
+                "content": "11.329.929,57",
+                "header": false
+              },
+              {
+                "row_index": 11,
+                "column_index": 0,
+                "content": "CAPITAL SOCIAL",
+                "header": false
+              },
+              {
+                "row_index": 11,
+                "column_index": 1,
+                "content": "1.000.000,00",
+                "header": false
+              },
+              {
+                "row_index": 12,
+                "column_index": 0,
+                "content": "RESERVA DE LUCROS",
+                "header": false
+              },
+              {
+                "row_index": 12,
+                "column_index": 1,
+                "content": "200.000,00",
+                "header": false
+              },
+              {
+                "row_index": 13,
+                "column_index": 0,
+                "content": "LUCROS ACUMULADOS",
+                "header": false
+              },
+              {
+                "row_index": 13,
+                "column_index": 1,
+                "content": "7.007.590,66",
+                "header": false
+              },
+              {
+                "row_index": 14,
+                "column_index": 0,
+                "content": "RESULTADO DO EXERCÍCIO",
+                "header": false
+              },
+              {
+                "row_index": 14,
+                "column_index": 1,
+                "content": "3.122.338,91",
+                "header": false
+              },
+              {
+                "row_index": 15,
+                "column_index": 0,
+                "content": "TOTAL PASSIVO E PATRIMONIO",
+                "header": false
+              },
+              {
+                "row_index": 15,
+                "column_index": 1,
+                "content": "13.381.139,44",
+                "header": false
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

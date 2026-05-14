@@ -1,0 +1,5016 @@
+{
+  "ParsedResults": [
+    {
+      "Overlay": {
+        "Lines": [
+          {
+            "LineText": "Itahum Export Comércio de Cereais S/A",
+            "Words": [
+              {
+                "WordText": "Itahum",
+                "Left": 230,
+                "Top": 250,
+                "Height": 66,
+                "Width": 206
+              },
+              {
+                "WordText": "Export",
+                "Left": 444,
+                "Top": 250,
+                "Height": 66,
+                "Width": 190
+              },
+              {
+                "WordText": "Comércio",
+                "Left": 642,
+                "Top": 250,
+                "Height": 66,
+                "Width": 272
+              },
+              {
+                "WordText": "de",
+                "Left": 922,
+                "Top": 250,
+                "Height": 66,
+                "Width": 82
+              },
+              {
+                "WordText": "Cereais",
+                "Left": 1013,
+                "Top": 250,
+                "Height": 66,
+                "Width": 206
+              },
+              {
+                "WordText": "S/A",
+                "Left": 1227,
+                "Top": 250,
+                "Height": 66,
+                "Width": 104
+              }
+            ],
+            "MaxHeight": 66,
+            "MinTop": 250
+          },
+          {
+            "LineText": "Balanço patrimonial em 31 de dezembro, em milhares de Reais",
+            "Words": [
+              {
+                "WordText": "Balanço",
+                "Left": 235,
+                "Top": 332,
+                "Height": 72,
+                "Width": 222
+              },
+              {
+                "WordText": "patrimonial",
+                "Left": 466,
+                "Top": 332,
+                "Height": 71,
+                "Width": 328
+              },
+              {
+                "WordText": "em",
+                "Left": 803,
+                "Top": 332,
+                "Height": 71,
+                "Width": 98
+              },
+              {
+                "WordText": "31",
+                "Left": 909,
+                "Top": 332,
+                "Height": 71,
+                "Width": 71
+              },
+              {
+                "WordText": "de",
+                "Left": 989,
+                "Top": 332,
+                "Height": 71,
+                "Width": 80
+              },
+              {
+                "WordText": "dezembro,",
+                "Left": 1078,
+                "Top": 332,
+                "Height": 71,
+                "Width": 302
+              },
+              {
+                "WordText": "em",
+                "Left": 1389,
+                "Top": 332,
+                "Height": 71,
+                "Width": 89
+              },
+              {
+                "WordText": "milhares",
+                "Left": 1486,
+                "Top": 332,
+                "Height": 71,
+                "Width": 248
+              },
+              {
+                "WordText": "de",
+                "Left": 1744,
+                "Top": 332,
+                "Height": 71,
+                "Width": 80
+              },
+              {
+                "WordText": "Reais",
+                "Left": 1832,
+                "Top": 332,
+                "Height": 72,
+                "Width": 152
+              }
+            ],
+            "MaxHeight": 72,
+            "MinTop": 332
+          },
+          {
+            "LineText": "Individual",
+            "Words": [
+              {
+                "WordText": "Individual",
+                "Left": 1066,
+                "Top": 408,
+                "Height": 31,
+                "Width": 128
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 408
+          },
+          {
+            "LineText": "Consolidado",
+            "Words": [
+              {
+                "WordText": "Consolidado",
+                "Left": 1453,
+                "Top": 407,
+                "Height": 33,
+                "Width": 158
+              }
+            ],
+            "MaxHeight": 33,
+            "MinTop": 407
+          },
+          {
+            "LineText": "Contas",
+            "Words": [
+              {
+                "WordText": "Contas",
+                "Left": 485,
+                "Top": 434,
+                "Height": 26,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 434
+          },
+          {
+            "LineText": "Ativo",
+            "Words": [
+              {
+                "WordText": "Ativo",
+                "Left": 245,
+                "Top": 551,
+                "Height": 31,
+                "Width": 71
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 551
+          },
+          {
+            "LineText": "Circulante",
+            "Words": [
+              {
+                "WordText": "Circulante",
+                "Left": 245,
+                "Top": 648,
+                "Height": 26,
+                "Width": 133
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 648
+          },
+          {
+            "LineText": "Caixa e equivalentes de caixa",
+            "Words": [
+              {
+                "WordText": "Caixa",
+                "Left": 245,
+                "Top": 694,
+                "Height": 26,
+                "Width": 70
+              },
+              {
+                "WordText": "e",
+                "Left": 318,
+                "Top": 694,
+                "Height": 25,
+                "Width": 16
+              },
+              {
+                "WordText": "equivalentes",
+                "Left": 337,
+                "Top": 694,
+                "Height": 25,
+                "Width": 158
+              },
+              {
+                "WordText": "de",
+                "Left": 499,
+                "Top": 694,
+                "Height": 25,
+                "Width": 35
+              },
+              {
+                "WordText": "caixa",
+                "Left": 537,
+                "Top": 694,
+                "Height": 26,
+                "Width": 65
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 694
+          },
+          {
+            "LineText": "Contas a receber",
+            "Words": [
+              {
+                "WordText": "Contas",
+                "Left": 245,
+                "Top": 739,
+                "Height": 26,
+                "Width": 86
+              },
+              {
+                "WordText": "a",
+                "Left": 334,
+                "Top": 739,
+                "Height": 25,
+                "Width": 19
+              },
+              {
+                "WordText": "receber",
+                "Left": 356,
+                "Top": 739,
+                "Height": 26,
+                "Width": 103
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 739
+          },
+          {
+            "LineText": "Estoques",
+            "Words": [
+              {
+                "WordText": "Estoques",
+                "Left": 245,
+                "Top": 786,
+                "Height": 31,
+                "Width": 117
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 786
+          },
+          {
+            "LineText": "Impostos a recuperar",
+            "Words": [
+              {
+                "WordText": "Impostos",
+                "Left": 245,
+                "Top": 837,
+                "Height": 26,
+                "Width": 114
+              },
+              {
+                "WordText": "a",
+                "Left": 362,
+                "Top": 837,
+                "Height": 25,
+                "Width": 19
+              },
+              {
+                "WordText": "recuperar",
+                "Left": 385,
+                "Top": 837,
+                "Height": 26,
+                "Width": 131
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 837
+          },
+          {
+            "LineText": "Instrumentos financeiros",
+            "Words": [
+              {
+                "WordText": "Instrumentos",
+                "Left": 245,
+                "Top": 878,
+                "Height": 31,
+                "Width": 164
+              },
+              {
+                "WordText": "financeiros",
+                "Left": 412,
+                "Top": 878,
+                "Height": 31,
+                "Width": 138
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 878
+          },
+          {
+            "LineText": "Outros créditos",
+            "Words": [
+              {
+                "WordText": "Outros",
+                "Left": 245,
+                "Top": 924,
+                "Height": 31,
+                "Width": 88
+              },
+              {
+                "WordText": "créditos",
+                "Left": 336,
+                "Top": 924,
+                "Height": 31,
+                "Width": 102
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 924
+          },
+          {
+            "LineText": "Não circulante",
+            "Words": [
+              {
+                "WordText": "Não",
+                "Left": 245,
+                "Top": 1020,
+                "Height": 26,
+                "Width": 57
+              },
+              {
+                "WordText": "circulante",
+                "Left": 305,
+                "Top": 1020,
+                "Height": 26,
+                "Width": 128
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1020
+          },
+          {
+            "LineText": "Outros créditos",
+            "Words": [
+              {
+                "WordText": "Outros",
+                "Left": 245,
+                "Top": 1066,
+                "Height": 27,
+                "Width": 85
+              },
+              {
+                "WordText": "créditos",
+                "Left": 333,
+                "Top": 1066,
+                "Height": 27,
+                "Width": 106
+              }
+            ],
+            "MaxHeight": 27,
+            "MinTop": 1066
+          },
+          {
+            "LineText": "Impostos diferidos",
+            "Words": [
+              {
+                "WordText": "Impostos",
+                "Left": 245,
+                "Top": 1112,
+                "Height": 26,
+                "Width": 114
+              },
+              {
+                "WordText": "diferidos",
+                "Left": 362,
+                "Top": 1112,
+                "Height": 26,
+                "Width": 112
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1112
+          },
+          {
+            "LineText": "Investimentos",
+            "Words": [
+              {
+                "WordText": "Investimentos",
+                "Left": 245,
+                "Top": 1158,
+                "Height": 26,
+                "Width": 179
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1158
+          },
+          {
+            "LineText": "Imobilizado",
+            "Words": [
+              {
+                "WordText": "Imobilizado",
+                "Left": 240,
+                "Top": 1204,
+                "Height": 26,
+                "Width": 153
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1204
+          },
+          {
+            "LineText": "Intangível",
+            "Words": [
+              {
+                "WordText": "Intangível",
+                "Left": 245,
+                "Top": 1250,
+                "Height": 31,
+                "Width": 123
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1250
+          },
+          {
+            "LineText": "Nota",
+            "Words": [
+              {
+                "WordText": "Nota",
+                "Left": 836,
+                "Top": 434,
+                "Height": 26,
+                "Width": 71
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 434
+          },
+          {
+            "LineText": "24 (c1)",
+            "Words": [
+              {
+                "WordText": "24",
+                "Left": 821,
+                "Top": 878,
+                "Height": 31,
+                "Width": 38
+              },
+              {
+                "WordText": "(c1)",
+                "Left": 863,
+                "Top": 878,
+                "Height": 31,
+                "Width": 55
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 878
+          },
+          {
+            "LineText": "8",
+            "Words": [
+              {
+                "WordText": "8",
+                "Left": 857,
+                "Top": 924,
+                "Height": 31,
+                "Width": 26
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 924
+          },
+          {
+            "LineText": "21",
+            "Words": [
+              {
+                "WordText": "21",
+                "Left": 847,
+                "Top": 1112,
+                "Height": 26,
+                "Width": 41
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1112
+          },
+          {
+            "LineText": "10",
+            "Words": [
+              {
+                "WordText": "10",
+                "Left": 842,
+                "Top": 1199,
+                "Height": 36,
+                "Width": 51
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1199
+          },
+          {
+            "LineText": "2024",
+            "Words": [
+              {
+                "WordText": "2024",
+                "Left": 989,
+                "Top": 454,
+                "Height": 31,
+                "Width": 71
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 454
+          },
+          {
+            "LineText": "2023",
+            "Words": [
+              {
+                "WordText": "2023",
+                "Left": 1188,
+                "Top": 454,
+                "Height": 31,
+                "Width": 71
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 454
+          },
+          {
+            "LineText": "366.673",
+            "Words": [
+              {
+                "WordText": "366.673",
+                "Left": 1005,
+                "Top": 551,
+                "Height": 31,
+                "Width": 112
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 551
+          },
+          {
+            "LineText": "206.904",
+            "Words": [
+              {
+                "WordText": "206.904",
+                "Left": 1005,
+                "Top": 648,
+                "Height": 26,
+                "Width": 112
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 648
+          },
+          {
+            "LineText": "55.555",
+            "Words": [
+              {
+                "WordText": "55.555",
+                "Left": 1030,
+                "Top": 689,
+                "Height": 31,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 689
+          },
+          {
+            "LineText": "43.509",
+            "Words": [
+              {
+                "WordText": "43.509",
+                "Left": 1030,
+                "Top": 740,
+                "Height": 26,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 740
+          },
+          {
+            "LineText": "33.384",
+            "Words": [
+              {
+                "WordText": "33.384",
+                "Left": 1030,
+                "Top": 786,
+                "Height": 26,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 786
+          },
+          {
+            "LineText": "36.577",
+            "Words": [
+              {
+                "WordText": "36.577",
+                "Left": 1030,
+                "Top": 832,
+                "Height": 26,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 832
+          },
+          {
+            "LineText": "3.862",
+            "Words": [
+              {
+                "WordText": "3.862",
+                "Left": 1046,
+                "Top": 878,
+                "Height": 31,
+                "Width": 77
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 878
+          },
+          {
+            "LineText": "34.017",
+            "Words": [
+              {
+                "WordText": "34.017",
+                "Left": 1030,
+                "Top": 924,
+                "Height": 26,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 924
+          },
+          {
+            "LineText": "159.769",
+            "Words": [
+              {
+                "WordText": "159.769",
+                "Left": 1005,
+                "Top": 1015,
+                "Height": 31,
+                "Width": 112
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1015
+          },
+          {
+            "LineText": "86",
+            "Words": [
+              {
+                "WordText": "86",
+                "Left": 1081,
+                "Top": 1067,
+                "Height": 26,
+                "Width": 41
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1067
+          },
+          {
+            "LineText": "14.105",
+            "Words": [
+              {
+                "WordText": "14.105",
+                "Left": 1030,
+                "Top": 1112,
+                "Height": 26,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1112
+          },
+          {
+            "LineText": "5.755",
+            "Words": [
+              {
+                "WordText": "5.755",
+                "Left": 1046,
+                "Top": 1158,
+                "Height": 26,
+                "Width": 77
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1158
+          },
+          {
+            "LineText": "139.816",
+            "Words": [
+              {
+                "WordText": "139.816",
+                "Left": 1015,
+                "Top": 1204,
+                "Height": 26,
+                "Width": 107
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1204
+          },
+          {
+            "LineText": "7",
+            "Words": [
+              {
+                "WordText": "7",
+                "Left": 1102,
+                "Top": 1245,
+                "Height": 31,
+                "Width": 15
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1245
+          },
+          {
+            "LineText": "2024",
+            "Words": [
+              {
+                "WordText": "2024",
+                "Left": 1392,
+                "Top": 454,
+                "Height": 31,
+                "Width": 71
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 454
+          },
+          {
+            "LineText": "492.001",
+            "Words": [
+              {
+                "WordText": "492.001",
+                "Left": 1203,
+                "Top": 550,
+                "Height": 33,
+                "Width": 113
+              }
+            ],
+            "MaxHeight": 33,
+            "MinTop": 550
+          },
+          {
+            "LineText": "326.230",
+            "Words": [
+              {
+                "WordText": "326.230",
+                "Left": 1209,
+                "Top": 643,
+                "Height": 31,
+                "Width": 107
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 643
+          },
+          {
+            "LineText": "54.413",
+            "Words": [
+              {
+                "WordText": "54.413",
+                "Left": 1234,
+                "Top": 694,
+                "Height": 26,
+                "Width": 87
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 694
+          },
+          {
+            "LineText": "156.045",
+            "Words": [
+              {
+                "WordText": "156.045",
+                "Left": 1214,
+                "Top": 740,
+                "Height": 26,
+                "Width": 112
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 740
+          },
+          {
+            "LineText": "63.192",
+            "Words": [
+              {
+                "WordText": "63.192",
+                "Left": 1234,
+                "Top": 786,
+                "Height": 26,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 786
+          },
+          {
+            "LineText": "18.974",
+            "Words": [
+              {
+                "WordText": "18.974",
+                "Left": 1229,
+                "Top": 832,
+                "Height": 26,
+                "Width": 97
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 832
+          },
+          {
+            "LineText": "4.155",
+            "Words": [
+              {
+                "WordText": "4.155",
+                "Left": 1250,
+                "Top": 878,
+                "Height": 31,
+                "Width": 77
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 878
+          },
+          {
+            "LineText": "29.451",
+            "Words": [
+              {
+                "WordText": "29.451",
+                "Left": 1229,
+                "Top": 924,
+                "Height": 31,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 924
+          },
+          {
+            "LineText": "165.771",
+            "Words": [
+              {
+                "WordText": "165.771",
+                "Left": 1209,
+                "Top": 1020,
+                "Height": 26,
+                "Width": 107
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1020
+          },
+          {
+            "LineText": "1.271",
+            "Words": [
+              {
+                "WordText": "1.271",
+                "Left": 1244,
+                "Top": 1067,
+                "Height": 26,
+                "Width": 77
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1067
+          },
+          {
+            "LineText": "3.819",
+            "Words": [
+              {
+                "WordText": "3.819",
+                "Left": 1250,
+                "Top": 1112,
+                "Height": 26,
+                "Width": 77
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1112
+          },
+          {
+            "LineText": "13.496",
+            "Words": [
+              {
+                "WordText": "13.496",
+                "Left": 1229,
+                "Top": 1158,
+                "Height": 31,
+                "Width": 97
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1158
+          },
+          {
+            "LineText": "147.185",
+            "Words": [
+              {
+                "WordText": "147.185",
+                "Left": 1209,
+                "Top": 1199,
+                "Height": 36,
+                "Width": 117
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1199
+          },
+          {
+            "LineText": "2023",
+            "Words": [
+              {
+                "WordText": "2023",
+                "Left": 1596,
+                "Top": 454,
+                "Height": 31,
+                "Width": 71
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 454
+          },
+          {
+            "LineText": "410.652",
+            "Words": [
+              {
+                "WordText": "410.652",
+                "Left": 1407,
+                "Top": 550,
+                "Height": 33,
+                "Width": 113
+              }
+            ],
+            "MaxHeight": 33,
+            "MinTop": 550
+          },
+          {
+            "LineText": "187.184",
+            "Words": [
+              {
+                "WordText": "187.184",
+                "Left": 1408,
+                "Top": 643,
+                "Height": 31,
+                "Width": 112
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 643
+          },
+          {
+            "LineText": "55.572",
+            "Words": [
+              {
+                "WordText": "55.572",
+                "Left": 1433,
+                "Top": 694,
+                "Height": 26,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 694
+          },
+          {
+            "LineText": "43.509",
+            "Words": [
+              {
+                "WordText": "43.509",
+                "Left": 1433,
+                "Top": 740,
+                "Height": 26,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 740
+          },
+          {
+            "LineText": "33.384",
+            "Words": [
+              {
+                "WordText": "33.384",
+                "Left": 1433,
+                "Top": 785,
+                "Height": 27,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 27,
+            "MinTop": 785
+          },
+          {
+            "LineText": "36.659",
+            "Words": [
+              {
+                "WordText": "36.659",
+                "Left": 1433,
+                "Top": 832,
+                "Height": 26,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 832
+          },
+          {
+            "LineText": "3.862",
+            "Words": [
+              {
+                "WordText": "3.862",
+                "Left": 1448,
+                "Top": 878,
+                "Height": 31,
+                "Width": 77
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 878
+          },
+          {
+            "LineText": "14.198",
+            "Words": [
+              {
+                "WordText": "14.198",
+                "Left": 1433,
+                "Top": 923,
+                "Height": 31,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 923
+          },
+          {
+            "LineText": "223.468",
+            "Words": [
+              {
+                "WordText": "223.468",
+                "Left": 1408,
+                "Top": 1021,
+                "Height": 26,
+                "Width": 112
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1021
+          },
+          {
+            "LineText": "86",
+            "Words": [
+              {
+                "WordText": "86",
+                "Left": 1484,
+                "Top": 1067,
+                "Height": 26,
+                "Width": 41
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1067
+          },
+          {
+            "LineText": "22.108",
+            "Words": [
+              {
+                "WordText": "22.108",
+                "Left": 1433,
+                "Top": 1112,
+                "Height": 26,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1112
+          },
+          {
+            "LineText": "3.339",
+            "Words": [
+              {
+                "WordText": "3.339",
+                "Left": 1443,
+                "Top": 1158,
+                "Height": 31,
+                "Width": 82
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1158
+          },
+          {
+            "LineText": "197.828",
+            "Words": [
+              {
+                "WordText": "197.828",
+                "Left": 1413,
+                "Top": 1199,
+                "Height": 41,
+                "Width": 112
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1199
+          },
+          {
+            "LineText": "107",
+            "Words": [
+              {
+                "WordText": "107",
+                "Left": 1469,
+                "Top": 1250,
+                "Height": 31,
+                "Width": 61
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1250
+          },
+          {
+            "LineText": "535.377",
+            "Words": [
+              {
+                "WordText": "535.377",
+                "Left": 1612,
+                "Top": 551,
+                "Height": 31,
+                "Width": 112
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 551
+          },
+          {
+            "LineText": "323.249",
+            "Words": [
+              {
+                "WordText": "323.249",
+                "Left": 1612,
+                "Top": 643,
+                "Height": 31,
+                "Width": 107
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 643
+          },
+          {
+            "LineText": "54.416",
+            "Words": [
+              {
+                "WordText": "54.416",
+                "Left": 1637,
+                "Top": 694,
+                "Height": 26,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 694
+          },
+          {
+            "LineText": "156.045",
+            "Words": [
+              {
+                "WordText": "156.045",
+                "Left": 1617,
+                "Top": 740,
+                "Height": 26,
+                "Width": 112
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 740
+          },
+          {
+            "LineText": "63.192",
+            "Words": [
+              {
+                "WordText": "63.192",
+                "Left": 1637,
+                "Top": 786,
+                "Height": 26,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 786
+          },
+          {
+            "LineText": "19.017",
+            "Words": [
+              {
+                "WordText": "19.017",
+                "Left": 1637,
+                "Top": 832,
+                "Height": 26,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 832
+          },
+          {
+            "LineText": "4.155",
+            "Words": [
+              {
+                "WordText": "4.155",
+                "Left": 1647,
+                "Top": 878,
+                "Height": 31,
+                "Width": 82
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 878
+          },
+          {
+            "LineText": "26.424",
+            "Words": [
+              {
+                "WordText": "26.424",
+                "Left": 1637,
+                "Top": 924,
+                "Height": 31,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 924
+          },
+          {
+            "LineText": "212.128",
+            "Words": [
+              {
+                "WordText": "212.128",
+                "Left": 1612,
+                "Top": 1020,
+                "Height": 26,
+                "Width": 107
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1020
+          },
+          {
+            "LineText": "1.271",
+            "Words": [
+              {
+                "WordText": "1.271",
+                "Left": 1652,
+                "Top": 1061,
+                "Height": 31,
+                "Width": 71
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1061
+          },
+          {
+            "LineText": "2.221",
+            "Words": [
+              {
+                "WordText": "2.221",
+                "Left": 1647,
+                "Top": 1112,
+                "Height": 26,
+                "Width": 82
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1112
+          },
+          {
+            "LineText": "83",
+            "Words": [
+              {
+                "WordText": "83",
+                "Left": 1688,
+                "Top": 1158,
+                "Height": 31,
+                "Width": 41
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1158
+          },
+          {
+            "LineText": "208.497",
+            "Words": [
+              {
+                "WordText": "208.497",
+                "Left": 1611,
+                "Top": 1198,
+                "Height": 38,
+                "Width": 118
+              }
+            ],
+            "MaxHeight": 38,
+            "MinTop": 1198
+          },
+          {
+            "LineText": "56",
+            "Words": [
+              {
+                "WordText": "56",
+                "Left": 1683,
+                "Top": 1250,
+                "Height": 36,
+                "Width": 46
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1250
+          },
+          {
+            "LineText": "Contas",
+            "Words": [
+              {
+                "WordText": "Contas",
+                "Left": 2025,
+                "Top": 434,
+                "Height": 26,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 434
+          },
+          {
+            "LineText": "Passivo e patrimônio líquido",
+            "Words": [
+              {
+                "WordText": "Passivo",
+                "Left": 1785,
+                "Top": 551,
+                "Height": 31,
+                "Width": 95
+              },
+              {
+                "WordText": "e",
+                "Left": 1884,
+                "Top": 551,
+                "Height": 30,
+                "Width": 19
+              },
+              {
+                "WordText": "patrimônio",
+                "Left": 1907,
+                "Top": 551,
+                "Height": 30,
+                "Width": 137
+              },
+              {
+                "WordText": "líquido",
+                "Left": 2047,
+                "Top": 551,
+                "Height": 31,
+                "Width": 90
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 551
+          },
+          {
+            "LineText": "Circulante",
+            "Words": [
+              {
+                "WordText": "Circulante",
+                "Left": 1785,
+                "Top": 648,
+                "Height": 26,
+                "Width": 133
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 648
+          },
+          {
+            "LineText": "Obrigações trabalhistas",
+            "Words": [
+              {
+                "WordText": "Obrigações",
+                "Left": 1785,
+                "Top": 689,
+                "Height": 31,
+                "Width": 141
+              },
+              {
+                "WordText": "trabalhistas",
+                "Left": 1929,
+                "Top": 689,
+                "Height": 31,
+                "Width": 157
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 689
+          },
+          {
+            "LineText": "Obrigações fiscais",
+            "Words": [
+              {
+                "WordText": "Obrigações",
+                "Left": 1785,
+                "Top": 734,
+                "Height": 31,
+                "Width": 141
+              },
+              {
+                "WordText": "fiscais",
+                "Left": 1929,
+                "Top": 734,
+                "Height": 31,
+                "Width": 85
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 734
+          },
+          {
+            "LineText": "Fornecedores",
+            "Words": [
+              {
+                "WordText": "Fornecedores",
+                "Left": 1785,
+                "Top": 781,
+                "Height": 31,
+                "Width": 179
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 781
+          },
+          {
+            "LineText": "Empréstimos e financiamentos",
+            "Words": [
+              {
+                "WordText": "Empréstimos",
+                "Left": 1785,
+                "Top": 827,
+                "Height": 31,
+                "Width": 163
+              },
+              {
+                "WordText": "e",
+                "Left": 1952,
+                "Top": 827,
+                "Height": 30,
+                "Width": 15
+              },
+              {
+                "WordText": "financiamentos",
+                "Left": 1971,
+                "Top": 827,
+                "Height": 31,
+                "Width": 201
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 827
+          },
+          {
+            "LineText": "Adiantamentos de clientes",
+            "Words": [
+              {
+                "WordText": "Adiantamentos",
+                "Left": 1785,
+                "Top": 878,
+                "Height": 26,
+                "Width": 193
+              },
+              {
+                "WordText": "de",
+                "Left": 1981,
+                "Top": 878,
+                "Height": 25,
+                "Width": 35
+              },
+              {
+                "WordText": "clientes",
+                "Left": 2019,
+                "Top": 878,
+                "Height": 26,
+                "Width": 102
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 878
+          },
+          {
+            "LineText": "Outras obrigações",
+            "Words": [
+              {
+                "WordText": "Outras",
+                "Left": 1785,
+                "Top": 924,
+                "Height": 31,
+                "Width": 87
+              },
+              {
+                "WordText": "obrigações",
+                "Left": 1876,
+                "Top": 924,
+                "Height": 31,
+                "Width": 138
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 924
+          },
+          {
+            "LineText": "Não circulante",
+            "Words": [
+              {
+                "WordText": "Não",
+                "Left": 1785,
+                "Top": 1020,
+                "Height": 26,
+                "Width": 57
+              },
+              {
+                "WordText": "circulante",
+                "Left": 1845,
+                "Top": 1020,
+                "Height": 26,
+                "Width": 129
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1020
+          },
+          {
+            "LineText": "Empréstimos e financiamentos",
+            "Words": [
+              {
+                "WordText": "Empréstimos",
+                "Left": 1785,
+                "Top": 1061,
+                "Height": 32,
+                "Width": 164
+              },
+              {
+                "WordText": "e",
+                "Left": 1954,
+                "Top": 1061,
+                "Height": 32,
+                "Width": 16
+              },
+              {
+                "WordText": "financiamentos",
+                "Left": 1974,
+                "Top": 1061,
+                "Height": 32,
+                "Width": 199
+              }
+            ],
+            "MaxHeight": 32,
+            "MinTop": 1061
+          },
+          {
+            "LineText": "Outras obrigações",
+            "Words": [
+              {
+                "WordText": "Outras",
+                "Left": 1785,
+                "Top": 1107,
+                "Height": 31,
+                "Width": 87
+              },
+              {
+                "WordText": "obrigações",
+                "Left": 1876,
+                "Top": 1107,
+                "Height": 31,
+                "Width": 144
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1107
+          },
+          {
+            "LineText": "Patrimônio líquido",
+            "Words": [
+              {
+                "WordText": "Patrimônio",
+                "Left": 1780,
+                "Top": 1199,
+                "Height": 36,
+                "Width": 142
+              },
+              {
+                "WordText": "líquido",
+                "Left": 1926,
+                "Top": 1199,
+                "Height": 36,
+                "Width": 93
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1199
+          },
+          {
+            "LineText": "Capital social",
+            "Words": [
+              {
+                "WordText": "Capital",
+                "Left": 1785,
+                "Top": 1245,
+                "Height": 36,
+                "Width": 84
+              },
+              {
+                "WordText": "social",
+                "Left": 1874,
+                "Top": 1245,
+                "Height": 36,
+                "Width": 80
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1245
+          },
+          {
+            "LineText": "Reservas de lucros",
+            "Words": [
+              {
+                "WordText": "Reservas",
+                "Left": 1785,
+                "Top": 1296,
+                "Height": 26,
+                "Width": 114
+              },
+              {
+                "WordText": "de",
+                "Left": 1902,
+                "Top": 1296,
+                "Height": 25,
+                "Width": 32
+              },
+              {
+                "WordText": "lucros",
+                "Left": 1937,
+                "Top": 1296,
+                "Height": 26,
+                "Width": 78
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1296
+          },
+          {
+            "LineText": "Participação de não controladores",
+            "Words": [
+              {
+                "WordText": "Participação",
+                "Left": 1785,
+                "Top": 1387,
+                "Height": 37,
+                "Width": 153
+              },
+              {
+                "WordText": "de",
+                "Left": 1943,
+                "Top": 1387,
+                "Height": 37,
+                "Width": 33
+              },
+              {
+                "WordText": "não",
+                "Left": 1980,
+                "Top": 1387,
+                "Height": 37,
+                "Width": 51
+              },
+              {
+                "WordText": "controladores",
+                "Left": 2036,
+                "Top": 1387,
+                "Height": 37,
+                "Width": 183
+              }
+            ],
+            "MaxHeight": 37,
+            "MinTop": 1387
+          },
+          {
+            "LineText": "Total do patrimônio líquido",
+            "Words": [
+              {
+                "WordText": "Total",
+                "Left": 1785,
+                "Top": 1480,
+                "Height": 36,
+                "Width": 66
+              },
+              {
+                "WordText": "do",
+                "Left": 1856,
+                "Top": 1480,
+                "Height": 36,
+                "Width": 27
+              },
+              {
+                "WordText": "patrimônio",
+                "Left": 1887,
+                "Top": 1480,
+                "Height": 36,
+                "Width": 142
+              },
+              {
+                "WordText": "líquido",
+                "Left": 2033,
+                "Top": 1480,
+                "Height": 36,
+                "Width": 93
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1480
+          },
+          {
+            "LineText": "Nota",
+            "Words": [
+              {
+                "WordText": "Nota",
+                "Left": 2377,
+                "Top": 429,
+                "Height": 31,
+                "Width": 71
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 429
+          },
+          {
+            "LineText": "11",
+            "Words": [
+              {
+                "WordText": "11",
+                "Left": 2382,
+                "Top": 730,
+                "Height": 46,
+                "Width": 51
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 730
+          },
+          {
+            "LineText": "12",
+            "Words": [
+              {
+                "WordText": "12",
+                "Left": 2382,
+                "Top": 781,
+                "Height": 41,
+                "Width": 51
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 781
+          },
+          {
+            "LineText": "13",
+            "Words": [
+              {
+                "WordText": "13",
+                "Left": 2382,
+                "Top": 827,
+                "Height": 41,
+                "Width": 51
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 827
+          },
+          {
+            "LineText": "14",
+            "Words": [
+              {
+                "WordText": "14",
+                "Left": 2382,
+                "Top": 873,
+                "Height": 41,
+                "Width": 51
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 873
+          },
+          {
+            "LineText": "15",
+            "Words": [
+              {
+                "WordText": "15",
+                "Left": 2387,
+                "Top": 924,
+                "Height": 36,
+                "Width": 46
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 924
+          },
+          {
+            "LineText": "13",
+            "Words": [
+              {
+                "WordText": "13",
+                "Left": 2392,
+                "Top": 1061,
+                "Height": 31,
+                "Width": 41
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1061
+          },
+          {
+            "LineText": "15",
+            "Words": [
+              {
+                "WordText": "15",
+                "Left": 2392,
+                "Top": 1107,
+                "Height": 31,
+                "Width": 41
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1107
+          },
+          {
+            "LineText": "As notas explicativas são parte integrante destas demonstrações financeiras individuais e consolidadas",
+            "Words": [
+              {
+                "WordText": "As",
+                "Left": 1066,
+                "Top": 2285,
+                "Height": 31,
+                "Width": 39
+              },
+              {
+                "WordText": "notas",
+                "Left": 1108,
+                "Top": 2285,
+                "Height": 30,
+                "Width": 80
+              },
+              {
+                "WordText": "explicativas",
+                "Left": 1192,
+                "Top": 2285,
+                "Height": 30,
+                "Width": 152
+              },
+              {
+                "WordText": "são",
+                "Left": 1348,
+                "Top": 2285,
+                "Height": 30,
+                "Width": 49
+              },
+              {
+                "WordText": "parte",
+                "Left": 1401,
+                "Top": 2285,
+                "Height": 30,
+                "Width": 76
+              },
+              {
+                "WordText": "integrante",
+                "Left": 1481,
+                "Top": 2285,
+                "Height": 30,
+                "Width": 145
+              },
+              {
+                "WordText": "destas",
+                "Left": 1629,
+                "Top": 2285,
+                "Height": 30,
+                "Width": 87
+              },
+              {
+                "WordText": "demonstrações",
+                "Left": 1721,
+                "Top": 2285,
+                "Height": 30,
+                "Width": 209
+              },
+              {
+                "WordText": "financeiras",
+                "Left": 1934,
+                "Top": 2285,
+                "Height": 30,
+                "Width": 148
+              },
+              {
+                "WordText": "individuais",
+                "Left": 2086,
+                "Top": 2285,
+                "Height": 30,
+                "Width": 148
+              },
+              {
+                "WordText": "e",
+                "Left": 2238,
+                "Top": 2285,
+                "Height": 30,
+                "Width": 15
+              },
+              {
+                "WordText": "consolidadas",
+                "Left": 2257,
+                "Top": 2285,
+                "Height": 31,
+                "Width": 181
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 2285
+          },
+          {
+            "LineText": "GRUPO",
+            "Words": [
+              {
+                "WordText": "GRUPO",
+                "Left": 3126,
+                "Top": 81,
+                "Height": 43,
+                "Width": 148
+              }
+            ],
+            "MaxHeight": 43,
+            "MinTop": 81
+          },
+          {
+            "LineText": "COFV",
+            "Words": [
+              {
+                "WordText": "COFV",
+                "Left": 2984,
+                "Top": 117,
+                "Height": 92,
+                "Width": 286
+              }
+            ],
+            "MaxHeight": 92,
+            "MinTop": 117
+          },
+          {
+            "LineText": "Individual",
+            "Words": [
+              {
+                "WordText": "Individual",
+                "Left": 2601,
+                "Top": 408,
+                "Height": 26,
+                "Width": 133
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 408
+          },
+          {
+            "LineText": "Consolidado",
+            "Words": [
+              {
+                "WordText": "Consolidado",
+                "Left": 2994,
+                "Top": 407,
+                "Height": 33,
+                "Width": 158
+              }
+            ],
+            "MaxHeight": 33,
+            "MinTop": 407
+          },
+          {
+            "LineText": "2024",
+            "Words": [
+              {
+                "WordText": "2024",
+                "Left": 2530,
+                "Top": 454,
+                "Height": 31,
+                "Width": 71
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 454
+          },
+          {
+            "LineText": "366.673",
+            "Words": [
+              {
+                "WordText": "366.673",
+                "Left": 2535,
+                "Top": 551,
+                "Height": 36,
+                "Width": 122
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 551
+          },
+          {
+            "LineText": "92.435",
+            "Words": [
+              {
+                "WordText": "92.435",
+                "Left": 2560,
+                "Top": 643,
+                "Height": 31,
+                "Width": 97
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 643
+          },
+          {
+            "LineText": "1.373",
+            "Words": [
+              {
+                "WordText": "1.373",
+                "Left": 2576,
+                "Top": 689,
+                "Height": 31,
+                "Width": 82
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 689
+          },
+          {
+            "LineText": "12.029",
+            "Words": [
+              {
+                "WordText": "12.029",
+                "Left": 2560,
+                "Top": 735,
+                "Height": 31,
+                "Width": 97
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 735
+          },
+          {
+            "LineText": "49.369",
+            "Words": [
+              {
+                "WordText": "49.369",
+                "Left": 2555,
+                "Top": 786,
+                "Height": 36,
+                "Width": 102
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 786
+          },
+          {
+            "LineText": "23.995",
+            "Words": [
+              {
+                "WordText": "23.995",
+                "Left": 2560,
+                "Top": 832,
+                "Height": 31,
+                "Width": 97
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 832
+          },
+          {
+            "LineText": "2.593",
+            "Words": [
+              {
+                "WordText": "2.593",
+                "Left": 2571,
+                "Top": 878,
+                "Height": 36,
+                "Width": 87
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 878
+          },
+          {
+            "LineText": "3.076",
+            "Words": [
+              {
+                "WordText": "3.076",
+                "Left": 2576,
+                "Top": 924,
+                "Height": 31,
+                "Width": 82
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 924
+          },
+          {
+            "LineText": "119.484",
+            "Words": [
+              {
+                "WordText": "119.484",
+                "Left": 2545,
+                "Top": 1015,
+                "Height": 31,
+                "Width": 112
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1015
+          },
+          {
+            "LineText": "115.656",
+            "Words": [
+              {
+                "WordText": "115.656",
+                "Left": 2540,
+                "Top": 1061,
+                "Height": 37,
+                "Width": 118
+              }
+            ],
+            "MaxHeight": 37,
+            "MinTop": 1061
+          },
+          {
+            "LineText": "3.828",
+            "Words": [
+              {
+                "WordText": "3.828",
+                "Left": 2576,
+                "Top": 1107,
+                "Height": 31,
+                "Width": 82
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1107
+          },
+          {
+            "LineText": "2023",
+            "Words": [
+              {
+                "WordText": "2023",
+                "Left": 2729,
+                "Top": 454,
+                "Height": 31,
+                "Width": 77
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 454
+          },
+          {
+            "LineText": "154,754",
+            "Words": [
+              {
+                "WordText": "154,754",
+                "Left": 2545,
+                "Top": 1199,
+                "Height": 32,
+                "Width": 138
+              }
+            ],
+            "MaxHeight": 32,
+            "MinTop": 1199
+          },
+          {
+            "LineText": "8.558",
+            "Words": [
+              {
+                "WordText": "8.558",
+                "Left": 2576,
+                "Top": 1250,
+                "Height": 31,
+                "Width": 82
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1250
+          },
+          {
+            "LineText": "146.196",
+            "Words": [
+              {
+                "WordText": "146.196",
+                "Left": 2545,
+                "Top": 1295,
+                "Height": 33,
+                "Width": 113
+              }
+            ],
+            "MaxHeight": 33,
+            "MinTop": 1295
+          },
+          {
+            "LineText": "492.001",
+            "Words": [
+              {
+                "WordText": "492.001",
+                "Left": 2744,
+                "Top": 551,
+                "Height": 31,
+                "Width": 112
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 551
+          },
+          {
+            "LineText": "244.824",
+            "Words": [
+              {
+                "WordText": "244.824",
+                "Left": 2744,
+                "Top": 643,
+                "Height": 31,
+                "Width": 117
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 643
+          },
+          {
+            "LineText": "1.663",
+            "Words": [
+              {
+                "WordText": "1.663",
+                "Left": 2790,
+                "Top": 689,
+                "Height": 31,
+                "Width": 77
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 689
+          },
+          {
+            "LineText": "14.812",
+            "Words": [
+              {
+                "WordText": "14.812",
+                "Left": 2769,
+                "Top": 740,
+                "Height": 26,
+                "Width": 97
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 740
+          },
+          {
+            "LineText": "177.395",
+            "Words": [
+              {
+                "WordText": "177.395",
+                "Left": 2754,
+                "Top": 781,
+                "Height": 36,
+                "Width": 112
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 781
+          },
+          {
+            "LineText": "13.312",
+            "Words": [
+              {
+                "WordText": "13.312",
+                "Left": 2769,
+                "Top": 832,
+                "Height": 31,
+                "Width": 97
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 832
+          },
+          {
+            "LineText": "30.056",
+            "Words": [
+              {
+                "WordText": "30.056",
+                "Left": 2769,
+                "Top": 878,
+                "Height": 31,
+                "Width": 97
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 878
+          },
+          {
+            "LineText": "7.586",
+            "Words": [
+              {
+                "WordText": "7.586",
+                "Left": 2790,
+                "Top": 924,
+                "Height": 31,
+                "Width": 77
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 924
+          },
+          {
+            "LineText": "61.126",
+            "Words": [
+              {
+                "WordText": "61.126",
+                "Left": 2764,
+                "Top": 1015,
+                "Height": 31,
+                "Width": 97
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1015
+          },
+          {
+            "LineText": "50.394",
+            "Words": [
+              {
+                "WordText": "50.394",
+                "Left": 2769,
+                "Top": 1061,
+                "Height": 36,
+                "Width": 97
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1061
+          },
+          {
+            "LineText": "10.732",
+            "Words": [
+              {
+                "WordText": "10.732",
+                "Left": 2769,
+                "Top": 1107,
+                "Height": 31,
+                "Width": 97
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1107
+          },
+          {
+            "LineText": "2024",
+            "Words": [
+              {
+                "WordText": "2024",
+                "Left": 2933,
+                "Top": 454,
+                "Height": 31,
+                "Width": 71
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 454
+          },
+          {
+            "LineText": "410.652",
+            "Words": [
+              {
+                "WordText": "410.652",
+                "Left": 2943,
+                "Top": 551,
+                "Height": 36,
+                "Width": 117
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 551
+          },
+          {
+            "LineText": "107.234",
+            "Words": [
+              {
+                "WordText": "107.234",
+                "Left": 2948,
+                "Top": 643,
+                "Height": 31,
+                "Width": 117
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 643
+          },
+          {
+            "LineText": "1.559",
+            "Words": [
+              {
+                "WordText": "1.559",
+                "Left": 2984,
+                "Top": 689,
+                "Height": 36,
+                "Width": 87
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 689
+          },
+          {
+            "LineText": "12.037",
+            "Words": [
+              {
+                "WordText": "12.037",
+                "Left": 2968,
+                "Top": 735,
+                "Height": 41,
+                "Width": 102
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 735
+          },
+          {
+            "LineText": "49.383",
+            "Words": [
+              {
+                "WordText": "49.383",
+                "Left": 2968,
+                "Top": 781,
+                "Height": 41,
+                "Width": 102
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 781
+          },
+          {
+            "LineText": "38.586",
+            "Words": [
+              {
+                "WordText": "38.586",
+                "Left": 2968,
+                "Top": 832,
+                "Height": 36,
+                "Width": 102
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 832
+          },
+          {
+            "LineText": "2.593",
+            "Words": [
+              {
+                "WordText": "2.593",
+                "Left": 2989,
+                "Top": 878,
+                "Height": 31,
+                "Width": 77
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 878
+          },
+          {
+            "LineText": "3.076",
+            "Words": [
+              {
+                "WordText": "3.076",
+                "Left": 2989,
+                "Top": 924,
+                "Height": 31,
+                "Width": 82
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 924
+          },
+          {
+            "LineText": "148.662",
+            "Words": [
+              {
+                "WordText": "148.662",
+                "Left": 2948,
+                "Top": 1014,
+                "Height": 34,
+                "Width": 113
+              }
+            ],
+            "MaxHeight": 34,
+            "MinTop": 1014
+          },
+          {
+            "LineText": "144.834",
+            "Words": [
+              {
+                "WordText": "144.834",
+                "Left": 2953,
+                "Top": 1060,
+                "Height": 39,
+                "Width": 118
+              }
+            ],
+            "MaxHeight": 39,
+            "MinTop": 1060
+          },
+          {
+            "LineText": "3.828",
+            "Words": [
+              {
+                "WordText": "3.828",
+                "Left": 2989,
+                "Top": 1112,
+                "Height": 26,
+                "Width": 82
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1112
+          },
+          {
+            "LineText": "2023",
+            "Words": [
+              {
+                "WordText": "2023",
+                "Left": 3132,
+                "Top": 454,
+                "Height": 31,
+                "Width": 77
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 454
+          },
+          {
+            "LineText": "186.051 154.754",
+            "Words": [
+              {
+                "WordText": "186.051",
+                "Left": 2744,
+                "Top": 1199,
+                "Height": 36,
+                "Width": 199
+              },
+              {
+                "WordText": "154.754",
+                "Left": 2947,
+                "Top": 1199,
+                "Height": 36,
+                "Width": 148
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1199
+          },
+          {
+            "LineText": "8.558",
+            "Words": [
+              {
+                "WordText": "8.558",
+                "Left": 2790,
+                "Top": 1250,
+                "Height": 31,
+                "Width": 77
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1250
+          },
+          {
+            "LineText": "8.558",
+            "Words": [
+              {
+                "WordText": "8.558",
+                "Left": 2989,
+                "Top": 1250,
+                "Height": 32,
+                "Width": 77
+              }
+            ],
+            "MaxHeight": 32,
+            "MinTop": 1250
+          },
+          {
+            "LineText": "177.493",
+            "Words": [
+              {
+                "WordText": "177.493",
+                "Left": 2754,
+                "Top": 1295,
+                "Height": 32,
+                "Width": 128
+              }
+            ],
+            "MaxHeight": 32,
+            "MinTop": 1295
+          },
+          {
+            "LineText": "146.196",
+            "Words": [
+              {
+                "WordText": "146.196",
+                "Left": 2958,
+                "Top": 1296,
+                "Height": 31,
+                "Width": 107
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1296
+          },
+          {
+            "LineText": "535.377",
+            "Words": [
+              {
+                "WordText": "535.377",
+                "Left": 3147,
+                "Top": 550,
+                "Height": 37,
+                "Width": 118
+              }
+            ],
+            "MaxHeight": 37,
+            "MinTop": 550
+          },
+          {
+            "LineText": "255.459",
+            "Words": [
+              {
+                "WordText": "255.459",
+                "Left": 3152,
+                "Top": 643,
+                "Height": 31,
+                "Width": 112
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 643
+          },
+          {
+            "LineText": "1.992",
+            "Words": [
+              {
+                "WordText": "1.992",
+                "Left": 3193,
+                "Top": 688,
+                "Height": 32,
+                "Width": 77
+              }
+            ],
+            "MaxHeight": 32,
+            "MinTop": 688
+          },
+          {
+            "LineText": "14.832",
+            "Words": [
+              {
+                "WordText": "14.832",
+                "Left": 3177,
+                "Top": 739,
+                "Height": 27,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 27,
+            "MinTop": 739
+          },
+          {
+            "LineText": "177.395",
+            "Words": [
+              {
+                "WordText": "177.395",
+                "Left": 3157,
+                "Top": 781,
+                "Height": 36,
+                "Width": 112
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 781
+          },
+          {
+            "LineText": "23.598",
+            "Words": [
+              {
+                "WordText": "23.598",
+                "Left": 3177,
+                "Top": 830,
+                "Height": 34,
+                "Width": 93
+              }
+            ],
+            "MaxHeight": 34,
+            "MinTop": 830
+          },
+          {
+            "LineText": "30.056",
+            "Words": [
+              {
+                "WordText": "30.056",
+                "Left": 3177,
+                "Top": 878,
+                "Height": 31,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 878
+          },
+          {
+            "LineText": "7.586",
+            "Words": [
+              {
+                "WordText": "7.586",
+                "Left": 3193,
+                "Top": 924,
+                "Height": 31,
+                "Width": 77
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 924
+          },
+          {
+            "LineText": "93.861",
+            "Words": [
+              {
+                "WordText": "93.861",
+                "Left": 3167,
+                "Top": 1015,
+                "Height": 31,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1015
+          },
+          {
+            "LineText": "83.129",
+            "Words": [
+              {
+                "WordText": "83.129",
+                "Left": 3177,
+                "Top": 1061,
+                "Height": 31,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1061
+          },
+          {
+            "LineText": "10.732",
+            "Words": [
+              {
+                "WordText": "10.732",
+                "Left": 3177,
+                "Top": 1106,
+                "Height": 32,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 32,
+            "MinTop": 1106
+          },
+          {
+            "LineText": "186.051",
+            "Words": [
+              {
+                "WordText": "186.051",
+                "Left": 3152,
+                "Top": 1199,
+                "Height": 32,
+                "Width": 113
+              }
+            ],
+            "MaxHeight": 32,
+            "MinTop": 1199
+          },
+          {
+            "LineText": "8,558",
+            "Words": [
+              {
+                "WordText": "8,558",
+                "Left": 3193,
+                "Top": 1250,
+                "Height": 26,
+                "Width": 77
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1250
+          },
+          {
+            "LineText": "177.493",
+            "Words": [
+              {
+                "WordText": "177.493",
+                "Left": 3162,
+                "Top": 1295,
+                "Height": 33,
+                "Width": 108
+              }
+            ],
+            "MaxHeight": 33,
+            "MinTop": 1295
+          },
+          {
+            "LineText": "154.754 186.051",
+            "Words": [
+              {
+                "WordText": "154.754",
+                "Left": 2514,
+                "Top": 1480,
+                "Height": 31,
+                "Width": 229
+              },
+              {
+                "WordText": "186.051",
+                "Left": 2747,
+                "Top": 1480,
+                "Height": 31,
+                "Width": 196
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1480
+          },
+          {
+            "LineText": "154.756",
+            "Words": [
+              {
+                "WordText": "154.756",
+                "Left": 2943,
+                "Top": 1485,
+                "Height": 26,
+                "Width": 204
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1485
+          },
+          {
+            "LineText": "186.057",
+            "Words": [
+              {
+                "WordText": "186.057",
+                "Left": 3147,
+                "Top": 1485,
+                "Height": 26,
+                "Width": 117
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1485
+          },
+          {
+            "LineText": "Página 5 de 26",
+            "Words": [
+              {
+                "WordText": "Página",
+                "Left": 3075,
+                "Top": 2327,
+                "Height": 31,
+                "Width": 88
+              },
+              {
+                "WordText": "5",
+                "Left": 3168,
+                "Top": 2328,
+                "Height": 30,
+                "Width": 23
+              },
+              {
+                "WordText": "de",
+                "Left": 3194,
+                "Top": 2328,
+                "Height": 30,
+                "Width": 38
+              },
+              {
+                "WordText": "26",
+                "Left": 3236,
+                "Top": 2327,
+                "Height": 31,
+                "Width": 38
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 2327
+          }
+        ],
+        "HasOverlay": true
+      },
+      "FileParseExitCode": 1,
+      "TextOrientation": "0",
+      "ParsedText": "GRUPO\t\r\nCOFV\t\r\nItahum Export Comércio de Cereais S/A\t\r\nBalanço patrimonial em 31 de dezembro, em milhares de Reais\t\r\nIndividual\tConsolidado\tIndividual\tConsolidado\t\r\nContas\tNota\tContas\tNota\t\r\n2024\t2023\t2024\t2023\t2024\t2023\t2024\t2023\t\r\nAtivo\t366.673\t492.001\t410.652\t535.377\tPassivo e patrimônio líquido\t366.673\t492.001\t410.652\t535.377\t\r\nCirculante\t206.904\t326.230\t187.184\t323.249\tCirculante\t92.435\t244.824\t107.234\t255.459\t\r\nCaixa e equivalentes de caixa\t55.555\t54.413\t55.572\t54.416\tObrigações trabalhistas\t1.373\t1.663\t1.559\t1.992\t\r\nContas a receber\t43.509\t156.045\t43.509\t156.045\tObrigações fiscais\t11\t12.029\t14.812\t12.037\t14.832\t\r\nEstoques\t33.384\t63.192\t33.384\t63.192\tFornecedores\t12\t49.369\t177.395\t49.383\t177.395\t\r\nImpostos a recuperar\t36.577\t18.974\t36.659\t19.017\tEmpréstimos e financiamentos\t13\t23.995\t13.312\t38.586\t23.598\t\r\nInstrumentos financeiros\t24 (c1)\t3.862\t4.155\t3.862\t4.155\tAdiantamentos de clientes\t14\t2.593\t30.056\t2.593\t30.056\t\r\nOutros créditos\t8\t34.017\t29.451\t14.198\t26.424\tOutras obrigações\t15\t3.076\t7.586\t3.076\t7.586\t\r\nNão circulante\t159.769\t165.771\t223.468\t212.128\tNão circulante\t119.484\t61.126\t148.662\t93.861\t\r\nOutros créditos\t86\t1.271\t86\t1.271\tEmpréstimos e financiamentos\t13\t115.656\t50.394\t144.834\t83.129\t\r\nImpostos diferidos\t21\t14.105\t3.819\t22.108\t2.221\tOutras obrigações\t15\t3.828\t10.732\t3.828\t10.732\t\r\nInvestimentos\t5.755\t13.496\t3.339\t83\t\r\nImobilizado\t10\t139.816\t147.185\t197.828\t208.497\tPatrimônio líquido\t154,754\t186.051 154.754\t186.051\t\r\nIntangível\t7\t107\t56\tCapital social\t8.558\t8.558\t8.558\t8,558\t\r\nReservas de lucros\t146.196\t177.493\t146.196\t177.493\t\r\nParticipação de não controladores\t\r\nTotal do patrimônio líquido\t154.754 186.051\t154.756\t186.057\t\r\nAs notas explicativas são parte integrante destas demonstrações financeiras individuais e consolidadas\t\r\nPágina 5 de 26\t\r\n",
+      "ErrorMessage": "",
+      "ErrorDetails": ""
+    },
+    {
+      "Overlay": {
+        "Lines": [
+          {
+            "LineText": "GRUPO",
+            "Words": [
+              {
+                "WordText": "GRUPO",
+                "Left": 2087,
+                "Top": 76,
+                "Height": 41,
+                "Width": 148
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 76
+          },
+          {
+            "LineText": "FV",
+            "Words": [
+              {
+                "WordText": "FV",
+                "Left": 2082,
+                "Top": 117,
+                "Height": 87,
+                "Width": 148
+              }
+            ],
+            "MaxHeight": 87,
+            "MinTop": 117
+          },
+          {
+            "LineText": "Itahum Export Comércio de Cereais S/A",
+            "Words": [
+              {
+                "WordText": "Itahum",
+                "Left": 230,
+                "Top": 255,
+                "Height": 61,
+                "Width": 206
+              },
+              {
+                "WordText": "Export",
+                "Left": 443,
+                "Top": 255,
+                "Height": 61,
+                "Width": 190
+              },
+              {
+                "WordText": "Comércio",
+                "Left": 641,
+                "Top": 255,
+                "Height": 61,
+                "Width": 274
+              },
+              {
+                "WordText": "de",
+                "Left": 923,
+                "Top": 255,
+                "Height": 61,
+                "Width": 76
+              },
+              {
+                "WordText": "Cereais",
+                "Left": 1007,
+                "Top": 255,
+                "Height": 61,
+                "Width": 213
+              },
+              {
+                "WordText": "S/A",
+                "Left": 1227,
+                "Top": 255,
+                "Height": 61,
+                "Width": 99
+              }
+            ],
+            "MaxHeight": 61,
+            "MinTop": 255
+          },
+          {
+            "LineText": "Demonstração do resultado, em milhares de Reais",
+            "Words": [
+              {
+                "WordText": "Demonstração",
+                "Left": 235,
+                "Top": 336,
+                "Height": 72,
+                "Width": 409
+              },
+              {
+                "WordText": "do",
+                "Left": 653,
+                "Top": 336,
+                "Height": 71,
+                "Width": 71
+              },
+              {
+                "WordText": "resultado,",
+                "Left": 732,
+                "Top": 336,
+                "Height": 71,
+                "Width": 293
+              },
+              {
+                "WordText": "em",
+                "Left": 1034,
+                "Top": 336,
+                "Height": 71,
+                "Width": 89
+              },
+              {
+                "WordText": "milhares",
+                "Left": 1132,
+                "Top": 336,
+                "Height": 71,
+                "Width": 249
+              },
+              {
+                "WordText": "de",
+                "Left": 1390,
+                "Top": 336,
+                "Height": 71,
+                "Width": 71
+              },
+              {
+                "WordText": "Reais",
+                "Left": 1470,
+                "Top": 336,
+                "Height": 72,
+                "Width": 158
+              }
+            ],
+            "MaxHeight": 72,
+            "MinTop": 336
+          },
+          {
+            "LineText": "Períodos entre 1º de janeiro e 31 de dezembro",
+            "Words": [
+              {
+                "WordText": "Períodos",
+                "Left": 235,
+                "Top": 412,
+                "Height": 68,
+                "Width": 246
+              },
+              {
+                "WordText": "entre",
+                "Left": 489,
+                "Top": 412,
+                "Height": 68,
+                "Width": 152
+              },
+              {
+                "WordText": "1º",
+                "Left": 650,
+                "Top": 412,
+                "Height": 68,
+                "Width": 68
+              },
+              {
+                "WordText": "de",
+                "Left": 726,
+                "Top": 412,
+                "Height": 68,
+                "Width": 76
+              },
+              {
+                "WordText": "janeiro",
+                "Left": 810,
+                "Top": 412,
+                "Height": 68,
+                "Width": 203
+              },
+              {
+                "WordText": "e",
+                "Left": 1022,
+                "Top": 412,
+                "Height": 68,
+                "Width": 42
+              },
+              {
+                "WordText": "31",
+                "Left": 1073,
+                "Top": 412,
+                "Height": 68,
+                "Width": 76
+              },
+              {
+                "WordText": "de",
+                "Left": 1157,
+                "Top": 412,
+                "Height": 68,
+                "Width": 76
+              },
+              {
+                "WordText": "dezembro",
+                "Left": 1242,
+                "Top": 412,
+                "Height": 68,
+                "Width": 284
+              }
+            ],
+            "MaxHeight": 68,
+            "MinTop": 412
+          },
+          {
+            "LineText": "Contas de resultado",
+            "Words": [
+              {
+                "WordText": "Contas",
+                "Left": 561,
+                "Top": 520,
+                "Height": 31,
+                "Width": 103
+              },
+              {
+                "WordText": "de",
+                "Left": 668,
+                "Top": 521,
+                "Height": 30,
+                "Width": 38
+              },
+              {
+                "WordText": "resultado",
+                "Left": 710,
+                "Top": 520,
+                "Height": 31,
+                "Width": 147
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 520
+          },
+          {
+            "LineText": "Nota",
+            "Words": [
+              {
+                "WordText": "Nota",
+                "Left": 1199,
+                "Top": 520,
+                "Height": 36,
+                "Width": 82
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 520
+          },
+          {
+            "LineText": "Individual",
+            "Words": [
+              {
+                "WordText": "Individual",
+                "Left": 1464,
+                "Top": 494,
+                "Height": 31,
+                "Width": 153
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 494
+          },
+          {
+            "LineText": "Consolidado",
+            "Words": [
+              {
+                "WordText": "Consolidado",
+                "Left": 1919,
+                "Top": 495,
+                "Height": 31,
+                "Width": 184
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 495
+          },
+          {
+            "LineText": "2024",
+            "Words": [
+              {
+                "WordText": "2024",
+                "Left": 1373,
+                "Top": 546,
+                "Height": 41,
+                "Width": 87
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 546
+          },
+          {
+            "LineText": "2023",
+            "Words": [
+              {
+                "WordText": "2023",
+                "Left": 1607,
+                "Top": 551,
+                "Height": 36,
+                "Width": 87
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 551
+          },
+          {
+            "LineText": "2024",
+            "Words": [
+              {
+                "WordText": "2024",
+                "Left": 1842,
+                "Top": 551,
+                "Height": 36,
+                "Width": 87
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 551
+          },
+          {
+            "LineText": "2023",
+            "Words": [
+              {
+                "WordText": "2023",
+                "Left": 2077,
+                "Top": 546,
+                "Height": 41,
+                "Width": 87
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 546
+          },
+          {
+            "LineText": "Receitas líquidas",
+            "Words": [
+              {
+                "WordText": "Receitas",
+                "Left": 245,
+                "Top": 622,
+                "Height": 36,
+                "Width": 125
+              },
+              {
+                "WordText": "líquidas",
+                "Left": 374,
+                "Top": 622,
+                "Height": 36,
+                "Width": 121
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 622
+          },
+          {
+            "LineText": "17",
+            "Words": [
+              {
+                "WordText": "17",
+                "Left": 1209,
+                "Top": 622,
+                "Height": 36,
+                "Width": 51
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 622
+          },
+          {
+            "LineText": "1.871.832",
+            "Words": [
+              {
+                "WordText": "1.871.832",
+                "Left": 1362,
+                "Top": 621,
+                "Height": 37,
+                "Width": 164
+              }
+            ],
+            "MaxHeight": 37,
+            "MinTop": 621
+          },
+          {
+            "LineText": "2.877.023",
+            "Words": [
+              {
+                "WordText": "2.877.023",
+                "Left": 1602,
+                "Top": 622,
+                "Height": 37,
+                "Width": 158
+              }
+            ],
+            "MaxHeight": 37,
+            "MinTop": 622
+          },
+          {
+            "LineText": "1.871.832",
+            "Words": [
+              {
+                "WordText": "1.871.832",
+                "Left": 1842,
+                "Top": 622,
+                "Height": 31,
+                "Width": 153
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 622
+          },
+          {
+            "LineText": "2.877.023",
+            "Words": [
+              {
+                "WordText": "2.877.023",
+                "Left": 2072,
+                "Top": 622,
+                "Height": 36,
+                "Width": 158
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 622
+          },
+          {
+            "LineText": "Custo das mercadorias vendidas e serviços prestados",
+            "Words": [
+              {
+                "WordText": "Custo",
+                "Left": 245,
+                "Top": 698,
+                "Height": 37,
+                "Width": 84
+              },
+              {
+                "WordText": "das",
+                "Left": 334,
+                "Top": 698,
+                "Height": 37,
+                "Width": 51
+              },
+              {
+                "WordText": "mercadorias",
+                "Left": 390,
+                "Top": 698,
+                "Height": 37,
+                "Width": 181
+              },
+              {
+                "WordText": "vendidas",
+                "Left": 576,
+                "Top": 698,
+                "Height": 37,
+                "Width": 130
+              },
+              {
+                "WordText": "e",
+                "Left": 711,
+                "Top": 698,
+                "Height": 37,
+                "Width": 19
+              },
+              {
+                "WordText": "serviços",
+                "Left": 734,
+                "Top": 698,
+                "Height": 37,
+                "Width": 116
+              },
+              {
+                "WordText": "prestados",
+                "Left": 855,
+                "Top": 698,
+                "Height": 37,
+                "Width": 151
+              }
+            ],
+            "MaxHeight": 37,
+            "MinTop": 698
+          },
+          {
+            "LineText": "17",
+            "Words": [
+              {
+                "WordText": "17",
+                "Left": 1214,
+                "Top": 699,
+                "Height": 31,
+                "Width": 46
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 699
+          },
+          {
+            "LineText": "(1.666.951)",
+            "Words": [
+              {
+                "WordText": "(1.666.951)",
+                "Left": 1351,
+                "Top": 695,
+                "Height": 48,
+                "Width": 180
+              }
+            ],
+            "MaxHeight": 48,
+            "MinTop": 695
+          },
+          {
+            "LineText": "(2.501.973)",
+            "Words": [
+              {
+                "WordText": "(2.501.973)",
+                "Left": 1587,
+                "Top": 699,
+                "Height": 36,
+                "Width": 179
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 699
+          },
+          {
+            "LineText": "(1.666.951)",
+            "Words": [
+              {
+                "WordText": "(1.666.951)",
+                "Left": 1822,
+                "Top": 699,
+                "Height": 36,
+                "Width": 179
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 699
+          },
+          {
+            "LineText": "(2.501.973)",
+            "Words": [
+              {
+                "WordText": "(2.501.973)",
+                "Left": 2056,
+                "Top": 699,
+                "Height": 41,
+                "Width": 179
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 699
+          },
+          {
+            "LineText": "Lucro bruto",
+            "Words": [
+              {
+                "WordText": "Lucro",
+                "Left": 250,
+                "Top": 770,
+                "Height": 31,
+                "Width": 80
+              },
+              {
+                "WordText": "bruto",
+                "Left": 334,
+                "Top": 770,
+                "Height": 31,
+                "Width": 85
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 770
+          },
+          {
+            "LineText": "204.881",
+            "Words": [
+              {
+                "WordText": "204.881",
+                "Left": 1393,
+                "Top": 770,
+                "Height": 26,
+                "Width": 128
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 770
+          },
+          {
+            "LineText": "375.050",
+            "Words": [
+              {
+                "WordText": "375.050",
+                "Left": 1628,
+                "Top": 769,
+                "Height": 33,
+                "Width": 133
+              }
+            ],
+            "MaxHeight": 33,
+            "MinTop": 769
+          },
+          {
+            "LineText": "204.881",
+            "Words": [
+              {
+                "WordText": "204.881",
+                "Left": 1863,
+                "Top": 765,
+                "Height": 31,
+                "Width": 133
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 765
+          },
+          {
+            "LineText": "375.050",
+            "Words": [
+              {
+                "WordText": "375.050",
+                "Left": 2102,
+                "Top": 764,
+                "Height": 38,
+                "Width": 128
+              }
+            ],
+            "MaxHeight": 38,
+            "MinTop": 764
+          },
+          {
+            "LineText": "Despesas operacionais",
+            "Words": [
+              {
+                "WordText": "Despesas",
+                "Left": 245,
+                "Top": 842,
+                "Height": 36,
+                "Width": 142
+              },
+              {
+                "WordText": "operacionais",
+                "Left": 392,
+                "Top": 842,
+                "Height": 36,
+                "Width": 190
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 842
+          },
+          {
+            "LineText": "18",
+            "Words": [
+              {
+                "WordText": "18",
+                "Left": 1209,
+                "Top": 842,
+                "Height": 31,
+                "Width": 46
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 842
+          },
+          {
+            "LineText": "(165.145)",
+            "Words": [
+              {
+                "WordText": "(165.145)",
+                "Left": 1383,
+                "Top": 842,
+                "Height": 36,
+                "Width": 153
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 842
+          },
+          {
+            "LineText": "(265.868)",
+            "Words": [
+              {
+                "WordText": "(265.868)",
+                "Left": 1623,
+                "Top": 842,
+                "Height": 36,
+                "Width": 148
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 842
+          },
+          {
+            "LineText": "(171.796)",
+            "Words": [
+              {
+                "WordText": "(171.796)",
+                "Left": 1852,
+                "Top": 842,
+                "Height": 36,
+                "Width": 158
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 842
+          },
+          {
+            "LineText": "(267.905)",
+            "Words": [
+              {
+                "WordText": "(267.905)",
+                "Left": 2082,
+                "Top": 841,
+                "Height": 42,
+                "Width": 163
+              }
+            ],
+            "MaxHeight": 42,
+            "MinTop": 841
+          },
+          {
+            "LineText": "Pessoal",
+            "Words": [
+              {
+                "WordText": "Pessoal",
+                "Left": 245,
+                "Top": 902,
+                "Height": 27,
+                "Width": 123
+              }
+            ],
+            "MaxHeight": 27,
+            "MinTop": 902
+          },
+          {
+            "LineText": "(11.694)",
+            "Words": [
+              {
+                "WordText": "(11.694)",
+                "Left": 1393,
+                "Top": 897,
+                "Height": 36,
+                "Width": 138
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 897
+          },
+          {
+            "LineText": "(14.304)",
+            "Words": [
+              {
+                "WordText": "(14.304)",
+                "Left": 1633,
+                "Top": 898,
+                "Height": 41,
+                "Width": 133
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 898
+          },
+          {
+            "LineText": "(13,796)",
+            "Words": [
+              {
+                "WordText": "(13,796)",
+                "Left": 1873,
+                "Top": 898,
+                "Height": 41,
+                "Width": 128
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 898
+          },
+          {
+            "LineText": "(15,065)",
+            "Words": [
+              {
+                "WordText": "(15,065)",
+                "Left": 2102,
+                "Top": 898,
+                "Height": 41,
+                "Width": 133
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 898
+          },
+          {
+            "LineText": "Administrativas",
+            "Words": [
+              {
+                "WordText": "Administrativas",
+                "Left": 245,
+                "Top": 954,
+                "Height": 31,
+                "Width": 230
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 954
+          },
+          {
+            "LineText": "(20.100)",
+            "Words": [
+              {
+                "WordText": "(20.100)",
+                "Left": 1398,
+                "Top": 954,
+                "Height": 31,
+                "Width": 133
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 954
+          },
+          {
+            "LineText": "(27.513)",
+            "Words": [
+              {
+                "WordText": "(27.513)",
+                "Left": 1638,
+                "Top": 954,
+                "Height": 31,
+                "Width": 128
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 954
+          },
+          {
+            "LineText": "(24.649)",
+            "Words": [
+              {
+                "WordText": "(24.649)",
+                "Left": 1873,
+                "Top": 953,
+                "Height": 31,
+                "Width": 128
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 953
+          },
+          {
+            "LineText": "(28.789)",
+            "Words": [
+              {
+                "WordText": "(28.789)",
+                "Left": 2102,
+                "Top": 952,
+                "Height": 38,
+                "Width": 133
+              }
+            ],
+            "MaxHeight": 38,
+            "MinTop": 952
+          },
+          {
+            "LineText": "Comerciais",
+            "Words": [
+              {
+                "WordText": "Comerciais",
+                "Left": 245,
+                "Top": 1004,
+                "Height": 31,
+                "Width": 163
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1004
+          },
+          {
+            "LineText": "(133.351)",
+            "Words": [
+              {
+                "WordText": "(133.351)",
+                "Left": 1388,
+                "Top": 1005,
+                "Height": 31,
+                "Width": 143
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1005
+          },
+          {
+            "LineText": "(224.051)",
+            "Words": [
+              {
+                "WordText": "(224.051)",
+                "Left": 1623,
+                "Top": 1005,
+                "Height": 36,
+                "Width": 143
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1005
+          },
+          {
+            "LineText": "(133.351)",
+            "Words": [
+              {
+                "WordText": "(133.351)",
+                "Left": 1852,
+                "Top": 1005,
+                "Height": 36,
+                "Width": 148
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1005
+          },
+          {
+            "LineText": "(224.051)",
+            "Words": [
+              {
+                "WordText": "(224.051)",
+                "Left": 2087,
+                "Top": 1005,
+                "Height": 41,
+                "Width": 148
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1005
+          },
+          {
+            "LineText": "Outras receitas e despesas operacionais",
+            "Words": [
+              {
+                "WordText": "Outras",
+                "Left": 245,
+                "Top": 1061,
+                "Height": 36,
+                "Width": 102
+              },
+              {
+                "WordText": "receitas",
+                "Left": 352,
+                "Top": 1061,
+                "Height": 35,
+                "Width": 124
+              },
+              {
+                "WordText": "e",
+                "Left": 481,
+                "Top": 1061,
+                "Height": 35,
+                "Width": 18
+              },
+              {
+                "WordText": "despesas",
+                "Left": 503,
+                "Top": 1061,
+                "Height": 35,
+                "Width": 138
+              },
+              {
+                "WordText": "operacionais",
+                "Left": 645,
+                "Top": 1061,
+                "Height": 36,
+                "Width": 192
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1061
+          },
+          {
+            "LineText": "19",
+            "Words": [
+              {
+                "WordText": "19",
+                "Left": 1214,
+                "Top": 1061,
+                "Height": 31,
+                "Width": 41
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1061
+          },
+          {
+            "LineText": "53.696",
+            "Words": [
+              {
+                "WordText": "53.696",
+                "Left": 1413,
+                "Top": 1061,
+                "Height": 31,
+                "Width": 107
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1061
+          },
+          {
+            "LineText": "1.355",
+            "Words": [
+              {
+                "WordText": "1.355",
+                "Left": 1669,
+                "Top": 1061,
+                "Height": 31,
+                "Width": 92
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1061
+          },
+          {
+            "LineText": "53.719",
+            "Words": [
+              {
+                "WordText": "53.719",
+                "Left": 1878,
+                "Top": 1061,
+                "Height": 41,
+                "Width": 117
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1061
+          },
+          {
+            "LineText": "1.357",
+            "Words": [
+              {
+                "WordText": "1.357",
+                "Left": 2133,
+                "Top": 1061,
+                "Height": 41,
+                "Width": 97
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1061
+          },
+          {
+            "LineText": "Resultado de equivalência patrimonial",
+            "Words": [
+              {
+                "WordText": "Resultado",
+                "Left": 250,
+                "Top": 1117,
+                "Height": 31,
+                "Width": 145
+              },
+              {
+                "WordText": "de",
+                "Left": 399,
+                "Top": 1117,
+                "Height": 30,
+                "Width": 38
+              },
+              {
+                "WordText": "equivalência",
+                "Left": 441,
+                "Top": 1117,
+                "Height": 30,
+                "Width": 187
+              },
+              {
+                "WordText": "patrimonial",
+                "Left": 631,
+                "Top": 1117,
+                "Height": 31,
+                "Width": 180
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1117
+          },
+          {
+            "LineText": "9",
+            "Words": [
+              {
+                "WordText": "9",
+                "Left": 1225,
+                "Top": 1117,
+                "Height": 31,
+                "Width": 26
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1117
+          },
+          {
+            "LineText": "(11.040)",
+            "Words": [
+              {
+                "WordText": "(11.040)",
+                "Left": 1398,
+                "Top": 1117,
+                "Height": 36,
+                "Width": 133
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1117
+          },
+          {
+            "LineText": "159",
+            "Words": [
+              {
+                "WordText": "159",
+                "Left": 1694,
+                "Top": 1117,
+                "Height": 31,
+                "Width": 61
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1117
+          },
+          {
+            "LineText": "(44)",
+            "Words": [
+              {
+                "WordText": "(44)",
+                "Left": 1929,
+                "Top": 1117,
+                "Height": 36,
+                "Width": 71
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1117
+          },
+          {
+            "LineText": "Lucro operacional",
+            "Words": [
+              {
+                "WordText": "Lucro",
+                "Left": 245,
+                "Top": 1183,
+                "Height": 36,
+                "Width": 85
+              },
+              {
+                "WordText": "operacional",
+                "Left": 334,
+                "Top": 1183,
+                "Height": 36,
+                "Width": 176
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1183
+          },
+          {
+            "LineText": "82.392",
+            "Words": [
+              {
+                "WordText": "82.392",
+                "Left": 1403,
+                "Top": 1178,
+                "Height": 41,
+                "Width": 128
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1178
+          },
+          {
+            "LineText": "110.696",
+            "Words": [
+              {
+                "WordText": "110.696",
+                "Left": 1623,
+                "Top": 1178,
+                "Height": 41,
+                "Width": 138
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1178
+          },
+          {
+            "LineText": "86.760",
+            "Words": [
+              {
+                "WordText": "86.760",
+                "Left": 1877,
+                "Top": 1176,
+                "Height": 45,
+                "Width": 119
+              }
+            ],
+            "MaxHeight": 45,
+            "MinTop": 1176
+          },
+          {
+            "LineText": "108.502",
+            "Words": [
+              {
+                "WordText": "108.502",
+                "Left": 2092,
+                "Top": 1177,
+                "Height": 44,
+                "Width": 139
+              }
+            ],
+            "MaxHeight": 44,
+            "MinTop": 1177
+          },
+          {
+            "LineText": "Resultado financeiro",
+            "Words": [
+              {
+                "WordText": "Resultado",
+                "Left": 245,
+                "Top": 1254,
+                "Height": 31,
+                "Width": 149
+              },
+              {
+                "WordText": "financeiro",
+                "Left": 398,
+                "Top": 1254,
+                "Height": 31,
+                "Width": 154
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1254
+          },
+          {
+            "LineText": "20",
+            "Words": [
+              {
+                "WordText": "20",
+                "Left": 1204,
+                "Top": 1250,
+                "Height": 41,
+                "Width": 51
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1250
+          },
+          {
+            "LineText": "(38.525)",
+            "Words": [
+              {
+                "WordText": "(38.525)",
+                "Left": 1393,
+                "Top": 1249,
+                "Height": 47,
+                "Width": 143
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 1249
+          },
+          {
+            "LineText": "28.967",
+            "Words": [
+              {
+                "WordText": "28.967",
+                "Left": 1653,
+                "Top": 1249,
+                "Height": 42,
+                "Width": 113
+              }
+            ],
+            "MaxHeight": 42,
+            "MinTop": 1249
+          },
+          {
+            "LineText": "(52.498)",
+            "Words": [
+              {
+                "WordText": "(52.498)",
+                "Left": 1862,
+                "Top": 1249,
+                "Height": 47,
+                "Width": 143
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 1249
+          },
+          {
+            "LineText": "32.760",
+            "Words": [
+              {
+                "WordText": "32.760",
+                "Left": 2123,
+                "Top": 1250,
+                "Height": 41,
+                "Width": 117
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1250
+          },
+          {
+            "LineText": "Despesas financeiras",
+            "Words": [
+              {
+                "WordText": "Despesas",
+                "Left": 245,
+                "Top": 1310,
+                "Height": 37,
+                "Width": 140
+              },
+              {
+                "WordText": "financeiras",
+                "Left": 390,
+                "Top": 1310,
+                "Height": 37,
+                "Width": 167
+              }
+            ],
+            "MaxHeight": 37,
+            "MinTop": 1310
+          },
+          {
+            "LineText": "(68.362)",
+            "Words": [
+              {
+                "WordText": "(68.362)",
+                "Left": 1393,
+                "Top": 1305,
+                "Height": 47,
+                "Width": 138
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 1305
+          },
+          {
+            "LineText": "(46.182)",
+            "Words": [
+              {
+                "WordText": "(46.182)",
+                "Left": 1627,
+                "Top": 1300,
+                "Height": 53,
+                "Width": 144
+              }
+            ],
+            "MaxHeight": 53,
+            "MinTop": 1300
+          },
+          {
+            "LineText": "(82.343)",
+            "Words": [
+              {
+                "WordText": "(82.343)",
+                "Left": 1863,
+                "Top": 1301,
+                "Height": 51,
+                "Width": 138
+              }
+            ],
+            "MaxHeight": 51,
+            "MinTop": 1301
+          },
+          {
+            "LineText": "(49.242)",
+            "Words": [
+              {
+                "WordText": "(49.242)",
+                "Left": 2102,
+                "Top": 1301,
+                "Height": 51,
+                "Width": 138
+              }
+            ],
+            "MaxHeight": 51,
+            "MinTop": 1301
+          },
+          {
+            "LineText": "Receitas financeiras",
+            "Words": [
+              {
+                "WordText": "Receitas",
+                "Left": 245,
+                "Top": 1367,
+                "Height": 31,
+                "Width": 122
+              },
+              {
+                "WordText": "financeiras",
+                "Left": 371,
+                "Top": 1367,
+                "Height": 31,
+                "Width": 165
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1367
+          },
+          {
+            "LineText": "29.837",
+            "Words": [
+              {
+                "WordText": "29.837",
+                "Left": 1408,
+                "Top": 1361,
+                "Height": 41,
+                "Width": 107
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1361
+          },
+          {
+            "LineText": "75.149",
+            "Words": [
+              {
+                "WordText": "75.149",
+                "Left": 1643,
+                "Top": 1361,
+                "Height": 41,
+                "Width": 112
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1361
+          },
+          {
+            "LineText": "29.845",
+            "Words": [
+              {
+                "WordText": "29.845",
+                "Left": 1878,
+                "Top": 1362,
+                "Height": 41,
+                "Width": 112
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1362
+          },
+          {
+            "LineText": "82.002",
+            "Words": [
+              {
+                "WordText": "82.002",
+                "Left": 2113,
+                "Top": 1362,
+                "Height": 41,
+                "Width": 112
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1362
+          },
+          {
+            "LineText": "Lucro antes dos impostos",
+            "Words": [
+              {
+                "WordText": "Lucro",
+                "Left": 245,
+                "Top": 1438,
+                "Height": 36,
+                "Width": 85
+              },
+              {
+                "WordText": "antes",
+                "Left": 334,
+                "Top": 1438,
+                "Height": 35,
+                "Width": 80
+              },
+              {
+                "WordText": "dos",
+                "Left": 418,
+                "Top": 1438,
+                "Height": 35,
+                "Width": 53
+              },
+              {
+                "WordText": "impostos",
+                "Left": 476,
+                "Top": 1438,
+                "Height": 36,
+                "Width": 136
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1438
+          },
+          {
+            "LineText": "43.867",
+            "Words": [
+              {
+                "WordText": "43.867",
+                "Left": 1408,
+                "Top": 1433,
+                "Height": 31,
+                "Width": 112
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1433
+          },
+          {
+            "LineText": "139.663",
+            "Words": [
+              {
+                "WordText": "139.663",
+                "Left": 1622,
+                "Top": 1432,
+                "Height": 38,
+                "Width": 133
+              }
+            ],
+            "MaxHeight": 38,
+            "MinTop": 1432
+          },
+          {
+            "LineText": "34.262",
+            "Words": [
+              {
+                "WordText": "34.262",
+                "Left": 1883,
+                "Top": 1432,
+                "Height": 32,
+                "Width": 113
+              }
+            ],
+            "MaxHeight": 32,
+            "MinTop": 1432
+          },
+          {
+            "LineText": "141.262",
+            "Words": [
+              {
+                "WordText": "141.262",
+                "Left": 2092,
+                "Top": 1432,
+                "Height": 38,
+                "Width": 138
+              }
+            ],
+            "MaxHeight": 38,
+            "MinTop": 1432
+          },
+          {
+            "LineText": "Imposto de renda e contribuição social correntes",
+            "Words": [
+              {
+                "WordText": "Imposto",
+                "Left": 245,
+                "Top": 1509,
+                "Height": 36,
+                "Width": 120
+              },
+              {
+                "WordText": "de",
+                "Left": 370,
+                "Top": 1509,
+                "Height": 35,
+                "Width": 36
+              },
+              {
+                "WordText": "renda",
+                "Left": 410,
+                "Top": 1509,
+                "Height": 35,
+                "Width": 89
+              },
+              {
+                "WordText": "e",
+                "Left": 503,
+                "Top": 1509,
+                "Height": 35,
+                "Width": 22
+              },
+              {
+                "WordText": "contribuição",
+                "Left": 529,
+                "Top": 1509,
+                "Height": 35,
+                "Width": 178
+              },
+              {
+                "WordText": "social",
+                "Left": 712,
+                "Top": 1509,
+                "Height": 35,
+                "Width": 84
+              },
+              {
+                "WordText": "correntes",
+                "Left": 800,
+                "Top": 1509,
+                "Height": 36,
+                "Width": 139
+              }
+            ],
+            "MaxHeight": 36,
+            "MinTop": 1509
+          },
+          {
+            "LineText": "(9.070)",
+            "Words": [
+              {
+                "WordText": "(9.070)",
+                "Left": 1413,
+                "Top": 1510,
+                "Height": 41,
+                "Width": 117
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1510
+          },
+          {
+            "LineText": "(25,790)",
+            "Words": [
+              {
+                "WordText": "(25,790)",
+                "Left": 1628,
+                "Top": 1505,
+                "Height": 46,
+                "Width": 138
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 1505
+          },
+          {
+            "LineText": "(9.070)",
+            "Words": [
+              {
+                "WordText": "(9.070)",
+                "Left": 1883,
+                "Top": 1510,
+                "Height": 41,
+                "Width": 117
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1510
+          },
+          {
+            "LineText": "(25.790)",
+            "Words": [
+              {
+                "WordText": "(25.790)",
+                "Left": 2102,
+                "Top": 1505,
+                "Height": 46,
+                "Width": 133
+              }
+            ],
+            "MaxHeight": 46,
+            "MinTop": 1505
+          },
+          {
+            "LineText": "Imposto de renda e contribuição social diferidos",
+            "Words": [
+              {
+                "WordText": "Imposto",
+                "Left": 245,
+                "Top": 1565,
+                "Height": 31,
+                "Width": 122
+              },
+              {
+                "WordText": "de",
+                "Left": 371,
+                "Top": 1565,
+                "Height": 30,
+                "Width": 38
+              },
+              {
+                "WordText": "renda",
+                "Left": 413,
+                "Top": 1565,
+                "Height": 30,
+                "Width": 88
+              },
+              {
+                "WordText": "e",
+                "Left": 504,
+                "Top": 1565,
+                "Height": 30,
+                "Width": 23
+              },
+              {
+                "WordText": "contribuição",
+                "Left": 531,
+                "Top": 1565,
+                "Height": 30,
+                "Width": 175
+              },
+              {
+                "WordText": "social",
+                "Left": 710,
+                "Top": 1565,
+                "Height": 30,
+                "Width": 84
+              },
+              {
+                "WordText": "diferidos",
+                "Left": 797,
+                "Top": 1565,
+                "Height": 31,
+                "Width": 132
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1565
+          },
+          {
+            "LineText": "21",
+            "Words": [
+              {
+                "WordText": "21",
+                "Left": 1209,
+                "Top": 1566,
+                "Height": 31,
+                "Width": 46
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 1566
+          },
+          {
+            "LineText": "10.286",
+            "Words": [
+              {
+                "WordText": "10.286",
+                "Left": 1408,
+                "Top": 1560,
+                "Height": 42,
+                "Width": 113
+              }
+            ],
+            "MaxHeight": 42,
+            "MinTop": 1560
+          },
+          {
+            "LineText": "(10.708)",
+            "Words": [
+              {
+                "WordText": "(10.708)",
+                "Left": 1628,
+                "Top": 1561,
+                "Height": 41,
+                "Width": 138
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1561
+          },
+          {
+            "LineText": "19.886",
+            "Words": [
+              {
+                "WordText": "19.886",
+                "Left": 1878,
+                "Top": 1561,
+                "Height": 41,
+                "Width": 112
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1561
+          },
+          {
+            "LineText": "(12.306)",
+            "Words": [
+              {
+                "WordText": "(12.306)",
+                "Left": 2102,
+                "Top": 1561,
+                "Height": 41,
+                "Width": 128
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1561
+          },
+          {
+            "LineText": "Lucro do exercício",
+            "Words": [
+              {
+                "WordText": "Lucro",
+                "Left": 240,
+                "Top": 1627,
+                "Height": 41,
+                "Width": 87
+              },
+              {
+                "WordText": "do",
+                "Left": 332,
+                "Top": 1628,
+                "Height": 41,
+                "Width": 41
+              },
+              {
+                "WordText": "exercício",
+                "Left": 377,
+                "Top": 1627,
+                "Height": 41,
+                "Width": 138
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1627
+          },
+          {
+            "LineText": "45.083",
+            "Words": [
+              {
+                "WordText": "45.083",
+                "Left": 1418,
+                "Top": 1637,
+                "Height": 37,
+                "Width": 113
+              }
+            ],
+            "MaxHeight": 37,
+            "MinTop": 1637
+          },
+          {
+            "LineText": "103.165",
+            "Words": [
+              {
+                "WordText": "103.165",
+                "Left": 1633,
+                "Top": 1637,
+                "Height": 41,
+                "Width": 138
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1637
+          },
+          {
+            "LineText": "45.078",
+            "Words": [
+              {
+                "WordText": "45.078",
+                "Left": 1888,
+                "Top": 1632,
+                "Height": 47,
+                "Width": 118
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 1632
+          },
+          {
+            "LineText": "103.166",
+            "Words": [
+              {
+                "WordText": "103.166",
+                "Left": 2107,
+                "Top": 1626,
+                "Height": 47,
+                "Width": 133
+              }
+            ],
+            "MaxHeight": 47,
+            "MinTop": 1626
+          },
+          {
+            "LineText": "Atribuído aos acionistas não controladores",
+            "Words": [
+              {
+                "WordText": "Atribuído",
+                "Left": 245,
+                "Top": 1714,
+                "Height": 26,
+                "Width": 140
+              },
+              {
+                "WordText": "aos",
+                "Left": 388,
+                "Top": 1714,
+                "Height": 25,
+                "Width": 54
+              },
+              {
+                "WordText": "acionistas",
+                "Left": 445,
+                "Top": 1714,
+                "Height": 25,
+                "Width": 146
+              },
+              {
+                "WordText": "não",
+                "Left": 594,
+                "Top": 1714,
+                "Height": 25,
+                "Width": 60
+              },
+              {
+                "WordText": "controladores",
+                "Left": 658,
+                "Top": 1714,
+                "Height": 26,
+                "Width": 210
+              }
+            ],
+            "MaxHeight": 26,
+            "MinTop": 1714
+          },
+          {
+            "LineText": "(4)",
+            "Words": [
+              {
+                "WordText": "(4)",
+                "Left": 1949,
+                "Top": 1709,
+                "Height": 41,
+                "Width": 51
+              }
+            ],
+            "MaxHeight": 41,
+            "MinTop": 1709
+          },
+          {
+            "LineText": "As notas explicativas são parte integrante destas demonstrações financeiras individuais e consolidadas",
+            "Words": [
+              {
+                "WordText": "As",
+                "Left": 561,
+                "Top": 3315,
+                "Height": 31,
+                "Width": 31
+              },
+              {
+                "WordText": "notas",
+                "Left": 596,
+                "Top": 3315,
+                "Height": 30,
+                "Width": 76
+              },
+              {
+                "WordText": "explicativas",
+                "Left": 676,
+                "Top": 3315,
+                "Height": 30,
+                "Width": 156
+              },
+              {
+                "WordText": "são",
+                "Left": 836,
+                "Top": 3315,
+                "Height": 30,
+                "Width": 49
+              },
+              {
+                "WordText": "parte",
+                "Left": 889,
+                "Top": 3315,
+                "Height": 30,
+                "Width": 72
+              },
+              {
+                "WordText": "integrante",
+                "Left": 965,
+                "Top": 3315,
+                "Height": 30,
+                "Width": 145
+              },
+              {
+                "WordText": "destas",
+                "Left": 1114,
+                "Top": 3315,
+                "Height": 30,
+                "Width": 91
+              },
+              {
+                "WordText": "demonstrações",
+                "Left": 1209,
+                "Top": 3315,
+                "Height": 30,
+                "Width": 206
+              },
+              {
+                "WordText": "financeiras",
+                "Left": 1418,
+                "Top": 3315,
+                "Height": 30,
+                "Width": 148
+              },
+              {
+                "WordText": "individuais",
+                "Left": 1570,
+                "Top": 3315,
+                "Height": 30,
+                "Width": 148
+              },
+              {
+                "WordText": "e",
+                "Left": 1723,
+                "Top": 3315,
+                "Height": 30,
+                "Width": 19
+              },
+              {
+                "WordText": "consolidadas",
+                "Left": 1745,
+                "Top": 3315,
+                "Height": 31,
+                "Width": 178
+              }
+            ],
+            "MaxHeight": 31,
+            "MinTop": 3315
+          },
+          {
+            "LineText": "Página 6 de 26",
+            "Words": [
+              {
+                "WordText": "Página",
+                "Left": 2041,
+                "Top": 3355,
+                "Height": 32,
+                "Width": 97
+              },
+              {
+                "WordText": "6",
+                "Left": 2142,
+                "Top": 3355,
+                "Height": 32,
+                "Width": 20
+              },
+              {
+                "WordText": "de",
+                "Left": 2166,
+                "Top": 3355,
+                "Height": 32,
+                "Width": 36
+              },
+              {
+                "WordText": "26",
+                "Left": 2207,
+                "Top": 3355,
+                "Height": 32,
+                "Width": 39
+              }
+            ],
+            "MaxHeight": 32,
+            "MinTop": 3355
+          }
+        ],
+        "HasOverlay": true
+      },
+      "FileParseExitCode": 1,
+      "TextOrientation": "0",
+      "ParsedText": "GRUPO\t\r\nFV\t\r\nItahum Export Comércio de Cereais S/A\t\r\nDemonstração do resultado, em milhares de Reais\t\r\nPeríodos entre 1º de janeiro e 31 de dezembro\t\r\nIndividual\tConsolidado\t\r\nContas de resultado\tNota\t\r\n2024\t2023\t2024\t2023\t\r\nReceitas líquidas\t17\t1.871.832\t2.877.023\t1.871.832\t2.877.023\t\r\nCusto das mercadorias vendidas e serviços prestados\t17\t(1.666.951)\t(2.501.973)\t(1.666.951)\t(2.501.973)\t\r\nLucro bruto\t204.881\t375.050\t204.881\t375.050\t\r\nDespesas operacionais\t18\t(165.145)\t(265.868)\t(171.796)\t(267.905)\t\r\nPessoal\t(11.694)\t(14.304)\t(13,796)\t(15,065)\t\r\nAdministrativas\t(20.100)\t(27.513)\t(24.649)\t(28.789)\t\r\nComerciais\t(133.351)\t(224.051)\t(133.351)\t(224.051)\t\r\nOutras receitas e despesas operacionais\t19\t53.696\t1.355\t53.719\t1.357\t\r\nResultado de equivalência patrimonial\t9\t(11.040)\t159\t(44)\t\r\nLucro operacional\t82.392\t110.696\t86.760\t108.502\t\r\nResultado financeiro\t20\t(38.525)\t28.967\t(52.498)\t32.760\t\r\nDespesas financeiras\t(68.362)\t(46.182)\t(82.343)\t(49.242)\t\r\nReceitas financeiras\t29.837\t75.149\t29.845\t82.002\t\r\nLucro antes dos impostos\t43.867\t139.663\t34.262\t141.262\t\r\nImposto de renda e contribuição social correntes\t(9.070)\t(25,790)\t(9.070)\t(25.790)\t\r\nImposto de renda e contribuição social diferidos\t21\t10.286\t(10.708)\t19.886\t(12.306)\t\r\nLucro do exercício\t45.083\t103.165\t45.078\t103.166\t\r\nAtribuído aos acionistas não controladores\t(4)\t\r\nAs notas explicativas são parte integrante destas demonstrações financeiras individuais e consolidadas\t\r\nPágina 6 de 26\t\r\n",
+      "ErrorMessage": "",
+      "ErrorDetails": ""
+    }
+  ],
+  "OCRExitCode": 1,
+  "IsErroredOnProcessing": false,
+  "ProcessingTimeInMilliseconds": 11.581,
+  "SearchablePDFURL": "Searchable PDF not generated as it was not requested."
+}

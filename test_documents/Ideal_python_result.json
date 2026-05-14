@@ -1,0 +1,1004 @@
+{
+  "ocr_result_klippa": {
+    "version": "1",
+    "components": {
+      "tables": {
+        "tables": [
+          {
+            "document": 0,
+            "row_count": 15,
+            "column_count": 3,
+            "cells": [
+              {
+                "row_index": 0,
+                "column_index": 0,
+                "content": "Ativo Notas 31/12/2023 31/12/2022",
+                "header": true
+              },
+              {
+                "row_index": 0,
+                "column_index": 1,
+                "content": "",
+                "header": true
+              },
+              {
+                "row_index": 0,
+                "column_index": 2,
+                "content": "",
+                "header": true
+              },
+              {
+                "row_index": 1,
+                "column_index": 0,
+                "content": "Ativo Circulante",
+                "header": false
+              },
+              {
+                "row_index": 1,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 1,
+                "column_index": 2,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 2,
+                "column_index": 0,
+                "content": "DISPONIVEL",
+                "header": false
+              },
+              {
+                "row_index": 2,
+                "column_index": 1,
+                "content": "1.642.671,07",
+                "header": false
+              },
+              {
+                "row_index": 2,
+                "column_index": 2,
+                "content": "4.797.524,80",
+                "header": false
+              },
+              {
+                "row_index": 3,
+                "column_index": 0,
+                "content": "REALIZAVEL A CURTO PRAZO",
+                "header": false
+              },
+              {
+                "row_index": 3,
+                "column_index": 1,
+                "content": "24.452.834,74",
+                "header": false
+              },
+              {
+                "row_index": 3,
+                "column_index": 2,
+                "content": "7.719.658,29",
+                "header": false
+              },
+              {
+                "row_index": 4,
+                "column_index": 0,
+                "content": "ESTOQUES",
+                "header": false
+              },
+              {
+                "row_index": 4,
+                "column_index": 1,
+                "content": "8.657.986,65",
+                "header": false
+              },
+              {
+                "row_index": 4,
+                "column_index": 2,
+                "content": "2.655.738,11",
+                "header": false
+              },
+              {
+                "row_index": 5,
+                "column_index": 0,
+                "content": "IMPOSTOS A RECUPERAR",
+                "header": false
+              },
+              {
+                "row_index": 5,
+                "column_index": 1,
+                "content": "320.731,51",
+                "header": false
+              },
+              {
+                "row_index": 5,
+                "column_index": 2,
+                "content": "77.668,58",
+                "header": false
+              },
+              {
+                "row_index": 6,
+                "column_index": 0,
+                "content": "OUTROS CREDITOS",
+                "header": false
+              },
+              {
+                "row_index": 6,
+                "column_index": 1,
+                "content": "5.264.858,10",
+                "header": false
+              },
+              {
+                "row_index": 6,
+                "column_index": 2,
+                "content": "773.913,74",
+                "header": false
+              },
+              {
+                "row_index": 7,
+                "column_index": 0,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 7,
+                "column_index": 1,
+                "content": "40.339.082,07",
+                "header": false
+              },
+              {
+                "row_index": 7,
+                "column_index": 2,
+                "content": "16.024.503,52",
+                "header": false
+              },
+              {
+                "row_index": 8,
+                "column_index": 0,
+                "content": "Ativo Não Circulante",
+                "header": false
+              },
+              {
+                "row_index": 8,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 8,
+                "column_index": 2,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 9,
+                "column_index": 0,
+                "content": "REALIZAVEL A LONGO PRAZO",
+                "header": false
+              },
+              {
+                "row_index": 9,
+                "column_index": 1,
+                "content": "1.899.564,09",
+                "header": false
+              },
+              {
+                "row_index": 9,
+                "column_index": 2,
+                "content": "3.331.531,54",
+                "header": false
+              },
+              {
+                "row_index": 10,
+                "column_index": 0,
+                "content": "INVESTIMENTOS",
+                "header": false
+              },
+              {
+                "row_index": 10,
+                "column_index": 1,
+                "content": "59.647,00",
+                "header": false
+              },
+              {
+                "row_index": 10,
+                "column_index": 2,
+                "content": "0,00",
+                "header": false
+              },
+              {
+                "row_index": 11,
+                "column_index": 0,
+                "content": "IMOBILIZADO",
+                "header": false
+              },
+              {
+                "row_index": 11,
+                "column_index": 1,
+                "content": "2.926,44",
+                "header": false
+              },
+              {
+                "row_index": 11,
+                "column_index": 2,
+                "content": "29.941,19",
+                "header": false
+              },
+              {
+                "row_index": 12,
+                "column_index": 0,
+                "content": "INTANGIVEL",
+                "header": false
+              },
+              {
+                "row_index": 12,
+                "column_index": 1,
+                "content": "0,00",
+                "header": false
+              },
+              {
+                "row_index": 12,
+                "column_index": 2,
+                "content": "0,00",
+                "header": false
+              },
+              {
+                "row_index": 13,
+                "column_index": 0,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 13,
+                "column_index": 1,
+                "content": "1.962.137,53",
+                "header": false
+              },
+              {
+                "row_index": 13,
+                "column_index": 2,
+                "content": "3.361.472,73",
+                "header": false
+              },
+              {
+                "row_index": 14,
+                "column_index": 0,
+                "content": "Total do Ativo",
+                "header": false
+              },
+              {
+                "row_index": 14,
+                "column_index": 1,
+                "content": "42.301.219,60",
+                "header": false
+              },
+              {
+                "row_index": 14,
+                "column_index": 2,
+                "content": "19.385.976,25",
+                "header": false
+              }
+            ]
+          },
+          {
+            "document": 0,
+            "row_count": 15,
+            "column_count": 3,
+            "cells": [
+              {
+                "row_index": 0,
+                "column_index": 0,
+                "content": "Passivo e patrimônio líquido Notas 31/12/2023 31/12/2022",
+                "header": true
+              },
+              {
+                "row_index": 0,
+                "column_index": 1,
+                "content": "",
+                "header": true
+              },
+              {
+                "row_index": 0,
+                "column_index": 2,
+                "content": "",
+                "header": true
+              },
+              {
+                "row_index": 1,
+                "column_index": 0,
+                "content": "Passivo Circulante",
+                "header": false
+              },
+              {
+                "row_index": 1,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 1,
+                "column_index": 2,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 2,
+                "column_index": 0,
+                "content": "EXIGIVEL A CURTO PRAZO",
+                "header": false
+              },
+              {
+                "row_index": 2,
+                "column_index": 1,
+                "content": "2.178.105,58",
+                "header": false
+              },
+              {
+                "row_index": 2,
+                "column_index": 2,
+                "content": "512.567,37",
+                "header": false
+              },
+              {
+                "row_index": 3,
+                "column_index": 0,
+                "content": "EMPRESTIMOS E FINANCIAMENTOS",
+                "header": false
+              },
+              {
+                "row_index": 3,
+                "column_index": 1,
+                "content": "2.980.380,39",
+                "header": false
+              },
+              {
+                "row_index": 3,
+                "column_index": 2,
+                "content": "0,00",
+                "header": false
+              },
+              {
+                "row_index": 4,
+                "column_index": 0,
+                "content": "OUTRAS CONTAS A PAGAR",
+                "header": false
+              },
+              {
+                "row_index": 4,
+                "column_index": 1,
+                "content": "0,00",
+                "header": false
+              },
+              {
+                "row_index": 4,
+                "column_index": 2,
+                "content": "360.737,52",
+                "header": false
+              },
+              {
+                "row_index": 5,
+                "column_index": 0,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 5,
+                "column_index": 1,
+                "content": "5.158.485,97",
+                "header": false
+              },
+              {
+                "row_index": 5,
+                "column_index": 2,
+                "content": "873.304,89",
+                "header": false
+              },
+              {
+                "row_index": 6,
+                "column_index": 0,
+                "content": "Passivo Não Circulante",
+                "header": false
+              },
+              {
+                "row_index": 6,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 6,
+                "column_index": 2,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 7,
+                "column_index": 0,
+                "content": "EXIGIVEL A LONGO PRAZO",
+                "header": false
+              },
+              {
+                "row_index": 7,
+                "column_index": 1,
+                "content": "19.703.714,44",
+                "header": false
+              },
+              {
+                "row_index": 7,
+                "column_index": 2,
+                "content": "10.305.187,62",
+                "header": false
+              },
+              {
+                "row_index": 8,
+                "column_index": 0,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 8,
+                "column_index": 1,
+                "content": "19.703.714,44",
+                "header": false
+              },
+              {
+                "row_index": 8,
+                "column_index": 2,
+                "content": "10.305.187,62",
+                "header": false
+              },
+              {
+                "row_index": 9,
+                "column_index": 0,
+                "content": "Patrimônio Líquido",
+                "header": false
+              },
+              {
+                "row_index": 9,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 9,
+                "column_index": 2,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 10,
+                "column_index": 0,
+                "content": "CAPITAL SOCIAL",
+                "header": false
+              },
+              {
+                "row_index": 10,
+                "column_index": 1,
+                "content": "396.000,00",
+                "header": false
+              },
+              {
+                "row_index": 10,
+                "column_index": 2,
+                "content": "396.000,00",
+                "header": false
+              },
+              {
+                "row_index": 11,
+                "column_index": 0,
+                "content": "RESERVAS",
+                "header": false
+              },
+              {
+                "row_index": 11,
+                "column_index": 1,
+                "content": "0,00",
+                "header": false
+              },
+              {
+                "row_index": 11,
+                "column_index": 2,
+                "content": "0,00",
+                "header": false
+              },
+              {
+                "row_index": 12,
+                "column_index": 0,
+                "content": "LUCROS | PREJUIZOS",
+                "header": false
+              },
+              {
+                "row_index": 12,
+                "column_index": 1,
+                "content": "17.043.019,19",
+                "header": false
+              },
+              {
+                "row_index": 12,
+                "column_index": 2,
+                "content": "7.811.483,74",
+                "header": false
+              },
+              {
+                "row_index": 13,
+                "column_index": 0,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 13,
+                "column_index": 1,
+                "content": "17.439.019,19",
+                "header": false
+              },
+              {
+                "row_index": 13,
+                "column_index": 2,
+                "content": "8.207.483,74",
+                "header": false
+              },
+              {
+                "row_index": 14,
+                "column_index": 0,
+                "content": "Total do passivo e patrimônio",
+                "header": false
+              },
+              {
+                "row_index": 14,
+                "column_index": 1,
+                "content": "42.301.219,60",
+                "header": false
+              },
+              {
+                "row_index": 14,
+                "column_index": 2,
+                "content": "19.385.976,25",
+                "header": false
+              }
+            ]
+          },
+          {
+            "document": 1,
+            "row_count": 18,
+            "column_count": 4,
+            "cells": [
+              {
+                "row_index": 0,
+                "column_index": 0,
+                "content": "Demonstração do resultado de exercício em de Dezembro de 2023 e 2022",
+                "header": true
+              },
+              {
+                "row_index": 0,
+                "column_index": 1,
+                "content": "31",
+                "header": true
+              },
+              {
+                "row_index": 0,
+                "column_index": 2,
+                "content": "",
+                "header": true
+              },
+              {
+                "row_index": 0,
+                "column_index": 3,
+                "content": "",
+                "header": true
+              },
+              {
+                "row_index": 1,
+                "column_index": 0,
+                "content": "unidades de reais.",
+                "header": false
+              },
+              {
+                "row_index": 1,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 1,
+                "column_index": 2,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 1,
+                "column_index": 3,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 2,
+                "column_index": 0,
+                "content": "Notas 31/12/2023 31/12/2022",
+                "header": false
+              },
+              {
+                "row_index": 2,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 2,
+                "column_index": 2,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 2,
+                "column_index": 3,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 3,
+                "column_index": 0,
+                "content": "RESULTADO DO EXERCICIO",
+                "header": false
+              },
+              {
+                "row_index": 3,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 3,
+                "column_index": 2,
+                "content": "11.613.423,00",
+                "header": false
+              },
+              {
+                "row_index": 3,
+                "column_index": 3,
+                "content": "5.242.969,43",
+                "header": false
+              },
+              {
+                "row_index": 4,
+                "column_index": 0,
+                "content": "RESULTADO BRUTO",
+                "header": false
+              },
+              {
+                "row_index": 4,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 4,
+                "column_index": 2,
+                "content": "17.988.611,23",
+                "header": false
+              },
+              {
+                "row_index": 4,
+                "column_index": 3,
+                "content": "7.434.197,04",
+                "header": false
+              },
+              {
+                "row_index": 5,
+                "column_index": 0,
+                "content": "RECEITA BRUTA DE VENDAS",
+                "header": false
+              },
+              {
+                "row_index": 5,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 5,
+                "column_index": 2,
+                "content": "32.065.454,00",
+                "header": false
+              },
+              {
+                "row_index": 5,
+                "column_index": 3,
+                "content": "14.368.656,87",
+                "header": false
+              },
+              {
+                "row_index": 6,
+                "column_index": 0,
+                "content": "( ) DEDUÇOES DE VENDAS",
+                "header": false
+              },
+              {
+                "row_index": 6,
+                "column_index": 1,
+                "content": "-",
+                "header": false
+              },
+              {
+                "row_index": 6,
+                "column_index": 2,
+                "content": "(2.448.581,85)",
+                "header": false
+              },
+              {
+                "row_index": 6,
+                "column_index": 3,
+                "content": "(1.229.049,86)",
+                "header": false
+              },
+              {
+                "row_index": 7,
+                "column_index": 0,
+                "content": "CUSTOS DE PRODUÇÃO",
+                "header": false
+              },
+              {
+                "row_index": 7,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 7,
+                "column_index": 2,
+                "content": "0,00",
+                "header": false
+              },
+              {
+                "row_index": 7,
+                "column_index": 3,
+                "content": "0,00",
+                "header": false
+              },
+              {
+                "row_index": 8,
+                "column_index": 0,
+                "content": "CUSTO DA MERCADORIA VENDIDA",
+                "header": false
+              },
+              {
+                "row_index": 8,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 8,
+                "column_index": 2,
+                "content": "(10.481.046,11)",
+                "header": false
+              },
+              {
+                "row_index": 8,
+                "column_index": 3,
+                "content": "(5.311.856,24)",
+                "header": false
+              },
+              {
+                "row_index": 9,
+                "column_index": 0,
+                "content": "CUSTOS DOS SERVICOS PRESTADOS",
+                "header": false
+              },
+              {
+                "row_index": 9,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 9,
+                "column_index": 2,
+                "content": "(1.147.214,81)",
+                "header": false
+              },
+              {
+                "row_index": 9,
+                "column_index": 3,
+                "content": "(393.553,73)",
+                "header": false
+              },
+              {
+                "row_index": 10,
+                "column_index": 0,
+                "content": "DESPESAS",
+                "header": false
+              },
+              {
+                "row_index": 10,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 10,
+                "column_index": 2,
+                "content": "(5.665.652,88)",
+                "header": false
+              },
+              {
+                "row_index": 10,
+                "column_index": 3,
+                "content": "(1.971.139,68)",
+                "header": false
+              },
+              {
+                "row_index": 11,
+                "column_index": 0,
+                "content": "DESPESAS ADMINISTRATIVAS",
+                "header": false
+              },
+              {
+                "row_index": 11,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 11,
+                "column_index": 2,
+                "content": "(4.147.072,17)",
+                "header": false
+              },
+              {
+                "row_index": 11,
+                "column_index": 3,
+                "content": "(1.580.644,84)",
+                "header": false
+              },
+              {
+                "row_index": 12,
+                "column_index": 0,
+                "content": "DESPESAS TRIBUTARIAS",
+                "header": false
+              },
+              {
+                "row_index": 12,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 12,
+                "column_index": 2,
+                "content": "(875.194,08)",
+                "header": false
+              },
+              {
+                "row_index": 12,
+                "column_index": 3,
+                "content": "(233.688,91)",
+                "header": false
+              },
+              {
+                "row_index": 13,
+                "column_index": 0,
+                "content": "RECEITAS E DESPESAS FINANCEIRAS",
+                "header": false
+              },
+              {
+                "row_index": 13,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 13,
+                "column_index": 2,
+                "content": "(643.386,63)",
+                "header": false
+              },
+              {
+                "row_index": 13,
+                "column_index": 3,
+                "content": "(156.805,93)",
+                "header": false
+              },
+              {
+                "row_index": 14,
+                "column_index": 0,
+                "content": "OUTRAS RECEITAS E DESPESAS OPERACIONAIS",
+                "header": false
+              },
+              {
+                "row_index": 14,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 14,
+                "column_index": 2,
+                "content": "23.151,56",
+                "header": false
+              },
+              {
+                "row_index": 14,
+                "column_index": 3,
+                "content": "20.174,77",
+                "header": false
+              },
+              {
+                "row_index": 15,
+                "column_index": 0,
+                "content": "OUTRAS RECEITAS E DESPESAS OPERACIONAIS",
+                "header": false
+              },
+              {
+                "row_index": 15,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 15,
+                "column_index": 2,
+                "content": "23.151,56",
+                "header": false
+              },
+              {
+                "row_index": 15,
+                "column_index": 3,
+                "content": "20.174,77",
+                "header": false
+              },
+              {
+                "row_index": 16,
+                "column_index": 0,
+                "content": "PROVISAO S/ RESULTADO",
+                "header": false
+              },
+              {
+                "row_index": 16,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 16,
+                "column_index": 2,
+                "content": "(732.686,91)",
+                "header": false
+              },
+              {
+                "row_index": 16,
+                "column_index": 3,
+                "content": "(240.262,70)",
+                "header": false
+              },
+              {
+                "row_index": 17,
+                "column_index": 0,
+                "content": "PROVISAO DE IMPOSTOS S/ RESULTADO",
+                "header": false
+              },
+              {
+                "row_index": 17,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 17,
+                "column_index": 2,
+                "content": "(732.686,91)",
+                "header": false
+              },
+              {
+                "row_index": 17,
+                "column_index": 3,
+                "content": "(240.262,70)",
+                "header": false
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

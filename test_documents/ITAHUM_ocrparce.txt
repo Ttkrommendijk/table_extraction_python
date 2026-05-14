@@ -1,0 +1,58 @@
+
+****** Result for Image/Page 1 ******
+GRUPO
+COFV
+Itahum Export Comércio de Cereais S/A
+Balanço patrimonial em 31 de dezembro, em milhares de Reais
+Individual	Consolidado	Individual	Consolidado
+Contas	Nota	Contas	Nota
+2024	2023	2024	2023	2024	2023	2024	2023
+Ativo	366.673	492.001	410.652	535.377	Passivo e patrimônio líquido	366.673	492.001	410.652	535.377
+Circulante	206.904	326.230	187.184	323.249	Circulante	92.435	244.824	107.234	255.459
+Caixa e equivalentes de caixa	55.555	54.413	55.572	54.416	Obrigações trabalhistas	1.373	1.663	1.559	1.992
+Contas a receber	43.509	156.045	43.509	156.045	Obrigações fiscais	11	12.029	14.812	12.037	14.832
+Estoques	33.384	63.192	33.384	63.192	Fornecedores	12	49.369	177.395	49.383	177.395
+Impostos a recuperar	36.577	18.974	36.659	19.017	Empréstimos e financiamentos	13	23.995	13.312	38.586	23.598
+Instrumentos financeiros	24 (c1)	3.862	4.155	3.862	4.155	Adiantamentos de clientes	14	2.593	30.056	2.593	30.056
+Outros créditos	8	34.017	29.451	14.198	26.424	Outras obrigações	15	3.076	7.586	3.076	7.586
+Não circulante	159.769	165.771	223.468	212.128	Não circulante	119.484	61.126	148.662	93.861
+Outros créditos	86	1.271	86	1.271	Empréstimos e financiamentos	13	115.656	50.394	144.834	83.129
+Impostos diferidos	21	14.105	3.819	22.108	2.221	Outras obrigações	15	3.828	10.732	3.828	10.732
+Investimentos	5.755	13.496	3.339	83
+Imobilizado	10	139.816	147.185	197.828	208.497	Patrimônio líquido	154,754	186.051 154.754	186.051
+Intangível	7	107	56	Capital social	8.558	8.558	8.558	8,558
+Reservas de lucros	146.196	177.493	146.196	177.493
+Participação de não controladores
+Total do patrimônio líquido	154.754 186.051	154.756	186.057
+As notas explicativas são parte integrante destas demonstrações financeiras individuais e consolidadas
+Página 5 de 26
+
+****** Result for Image/Page 2 ******
+GRUPO
+FV
+Itahum Export Comércio de Cereais S/A
+Demonstração do resultado, em milhares de Reais
+Períodos entre 1º de janeiro e 31 de dezembro
+Individual	Consolidado
+Contas de resultado	Nota
+2024	2023	2024	2023
+Receitas líquidas	17	1.871.832	2.877.023	1.871.832	2.877.023
+Custo das mercadorias vendidas e serviços prestados	17	(1.666.951)	(2.501.973)	(1.666.951)	(2.501.973)
+Lucro bruto	204.881	375.050	204.881	375.050
+Despesas operacionais	18	(165.145)	(265.868)	(171.796)	(267.905)
+Pessoal	(11.694)	(14.304)	(13,796)	(15,065)
+Administrativas	(20.100)	(27.513)	(24.649)	(28.789)
+Comerciais	(133.351)	(224.051)	(133.351)	(224.051)
+Outras receitas e despesas operacionais	19	53.696	1.355	53.719	1.357
+Resultado de equivalência patrimonial	9	(11.040)	159	(44)
+Lucro operacional	82.392	110.696	86.760	108.502
+Resultado financeiro	20	(38.525)	28.967	(52.498)	32.760
+Despesas financeiras	(68.362)	(46.182)	(82.343)	(49.242)
+Receitas financeiras	29.837	75.149	29.845	82.002
+Lucro antes dos impostos	43.867	139.663	34.262	141.262
+Imposto de renda e contribuição social correntes	(9.070)	(25,790)	(9.070)	(25.790)
+Imposto de renda e contribuição social diferidos	21	10.286	(10.708)	19.886	(12.306)
+Lucro do exercício	45.083	103.165	45.078	103.166
+Atribuído aos acionistas não controladores	(4)
+As notas explicativas são parte integrante destas demonstrações financeiras individuais e consolidadas
+Página 6 de 26
