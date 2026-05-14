@@ -4,6 +4,4 @@ __pycache__/
 .env
 .ipynb_checkpoints/
 
-# Ignore test documents recursively
 test_documents/
-**/test_documents/**
