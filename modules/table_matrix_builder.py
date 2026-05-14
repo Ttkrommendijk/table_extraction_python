@@ -407,8 +407,20 @@ def _assign_word_to_column(word, anchors, row_is_header_like):
         return 0
 
     if note_anchor and note_anchor["x"] is not None:
+        note_corridor_left = max(0, note_anchor["x"] - 140)
+        first_value_x = min(value_positions) if value_positions else None
+        note_corridor_right = (
+            first_value_x - 40
+            if first_value_x is not None
+            else note_anchor["x"] + 140
+        )
+
+        # Explicitly reserve the horizontal corridor between labels and the
+        # first value column for compact note/reference tokens. This prevents
+        # note numbers such as "12" or OCR variants like "3.12" from leaking
+        # into financial value cells like "102.266".
         if (
-            abs(center_x - note_anchor["x"]) <= 120
+            note_corridor_left <= center_x <= note_corridor_right
             and (
                 is_small_note_reference(text)
                 or lower in {"nota", "notas", "explicativa", "explicativas", "e"}
