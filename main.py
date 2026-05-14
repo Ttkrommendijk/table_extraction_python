@@ -1,7 +1,10 @@
 import json
 from pathlib import Path
 
-from modules.klippa_serializer import serialize_matrix_to_klippa_table
+from modules.klippa_serializer import (
+    serialize_klippa_result_from_ocrparse,
+    serialize_matrix_to_klippa_table,
+)
 from modules.ocrparse_loader import extract_words, load_ocrparse_json
 from modules.row_builder import group_words_into_rows
 from modules.table_matrix_builder import reconstruct_matrices_from_rows
@@ -27,12 +30,7 @@ def build_klippa_result(ocrparse_json):
 
             tables.append(table)
 
-    return {
-        "ocr_result_klippa": {
-            "version": "1",
-            "components": {"tables": {"tables": tables}},
-        }
-    }
+    return serialize_klippa_result_from_ocrparse(tables, ocrparse_json)
 
 
 def ask_input_file():

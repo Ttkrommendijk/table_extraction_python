@@ -1,10 +1,23 @@
 import json
 
 
+_LAST_OCRPARSE_JSON = None
+
+
 def load_ocrparse_json(path: str) -> dict:
 
+    global _LAST_OCRPARSE_JSON
+
     with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+        _LAST_OCRPARSE_JSON = json.load(f)
+
+    return _LAST_OCRPARSE_JSON
+
+
+def get_last_ocrparse_json() -> dict | None:
+    """Return the most recently loaded OCRParse JSON, when available."""
+
+    return _LAST_OCRPARSE_JSON
 
 
 def extract_words(ocr_json: dict) -> list:
@@ -65,3 +78,57 @@ def extract_words(ocr_json: dict) -> list:
         )
 
     return pages
+
+
+
+def _line_text_from_overlay(page: dict) -> str:
+
+    overlay = page.get("Overlay", {})
+    lines = overlay.get("Lines", [])
+
+    line_texts = []
+
+    for line in lines:
+        text = line.get("LineText", "")
+
+        if text is None:
+            text = ""
+
+        text = str(text).strip()
+
+        if text:
+            line_texts.append(text)
+
+    return "\n".join(line_texts)
+
+
+def extract_text_content(ocr_json: dict) -> list:
+    """Return OCRParse ParsedText per page.
+
+    OCRParse stores full page text in ParsedResults[n].ParsedText. The
+    Klippa-compatible output should expose that as
+    components.tables.text_content, split one list item per OCR page.
+
+    We intentionally prefer ParsedText over Overlay.LineText because
+    ParsedText is the OCR engine's own page-level text reconstruction.
+    Overlay.LineText is only used as a defensive fallback when ParsedText is
+    missing or empty.
+    """
+
+    text_content = []
+
+    parsed_results = ocr_json.get("ParsedResults", [])
+
+    for page in parsed_results:
+        parsed_text = page.get("ParsedText")
+
+        if parsed_text is None or str(parsed_text) == "":
+            page_text = _line_text_from_overlay(page)
+        else:
+            # Keep the OCRParse page text content. Only remove trailing null-like
+            # whitespace so we do not create unstable extra blank pages/lines.
+            page_text = str(parsed_text).rstrip()
+
+        text_content.append(page_text)
+
+    return text_content

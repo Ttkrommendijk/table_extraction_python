@@ -1,3 +1,9 @@
+try:
+    from .ocrparse_loader import extract_text_content, get_last_ocrparse_json
+except ImportError:  # pragma: no cover - supports direct script execution
+    from ocrparse_loader import extract_text_content, get_last_ocrparse_json
+
+
 def _is_year_cell(content):
     value = (content or "").strip()
     return value.isdigit() and len(value) == 4
@@ -66,3 +72,75 @@ def serialize_matrix_to_klippa_table(
         "column_count": column_count,
         "cells": cells,
     }
+
+
+
+def serialize_klippa_result(tables, text_content=None, version="1"):
+    """Build the full Klippa-compatible OCR result envelope.
+
+    Shape:
+    {
+        "ocr_result_klippa": {
+            "version": "1",
+            "components": {
+                "tables": {
+                    "tables": [...],
+                    "text_content": [...]
+                }
+            }
+        }
+    }
+
+    ``tables`` must already be serialized Klippa-style table dictionaries.
+    ``text_content`` is a list of extracted page text strings. It defaults to
+    an empty list to keep the key present even when text extraction was not
+    supplied by the caller.
+    """
+
+    if text_content is None:
+        ocr_json = get_last_ocrparse_json()
+        text_content = extract_text_content(ocr_json) if ocr_json else []
+
+    return {
+        "ocr_result_klippa": {
+            "version": version,
+            "components": {
+                "tables": {
+                    "tables": tables,
+                    "text_content": text_content,
+                }
+            },
+        }
+    }
+
+
+def attach_text_content_to_klippa_result(result, text_content):
+    """Add components.tables.text_content to an existing result in place.
+
+    This helper is useful for existing pipeline code that already creates the
+    result envelope manually. It preserves all current table data and only adds
+    or replaces the text_content sibling key.
+    """
+
+    root = result.setdefault("ocr_result_klippa", {})
+    root.setdefault("version", "1")
+    components = root.setdefault("components", {})
+    tables_component = components.setdefault("tables", {})
+    tables_component.setdefault("tables", [])
+    tables_component["text_content"] = text_content or []
+    return result
+
+
+def serialize_klippa_result_from_ocrparse(tables, ocr_json, version="1"):
+    """Build the Klippa-compatible result using ParsedResults[n].ParsedText.
+
+    This is the safest entry point for runners that have the OCRParse JSON
+    available at serialization time. It guarantees that
+    components.tables.text_content is populated from ParsedText per page.
+    """
+
+    return serialize_klippa_result(
+        tables,
+        text_content=extract_text_content(ocr_json),
+        version=version,
+    )

@@ -1,28 +1,102 @@
-# Table Extraction Python
+# Table Extraction API
 
-First MVP structure for:
-- OCRParse ingestion
-- layout reconstruction
-- Klippa compatible JSON generation
+`main.py` is still preserved for manual use.
+
+Use `api.py` when you want to run the service.
+
+## Install
+
+```bash
+pip install -r requirements.txt
+```
 
 ## Run
 
 ```bash
-python main.py
+uvicorn api:app --reload
 ```
 
-## Input
-
-Place OCRParse JSON in:
+Open:
 
 ```text
-test_documents/ocrparse.json
+http://127.0.0.1:8000/docs
 ```
 
-## Output
-
-Generated file:
+## Healthcheck
 
 ```text
-test_documents/generated_klippa_result.json
+GET /
+```
+
+Response:
+
+```json
+{
+  "status": "running"
+}
+```
+
+## Main endpoint
+
+```text
+POST /extract
+```
+
+Content type:
+
+```text
+multipart/form-data
+```
+
+Fields:
+
+```text
+inputFile = AGTECH_ocrparse.json
+organisation_document_id = 121
+```
+
+This endpoint currently expects OCRParse JSON, not PDF.
+
+## Response shape
+
+```json
+[
+  {
+    "json": {
+      "data": {
+        "organisation_document_id": 121,
+        "ocr_result_klippa": {
+          "version": "1",
+          "components": {
+            "tables": {
+              "tables": []
+            }
+          },
+          "text_content": []
+        }
+      }
+    }
+  }
+]
+```
+
+## Compatibility JSON endpoint
+
+```text
+POST /extract/json
+```
+
+This accepts the previous JSON body structure:
+
+```json
+{
+  "organisation_document_id": 121,
+  "document_array": [
+    {
+      "data": {
+        "ParsedResults": []
+      }
+    }
+  ]
+}
 ```
