@@ -131,3 +131,132 @@ Supported examples:
 ```
 
 The endpoint returns a PDF file directly.
+
+
+## Manual use remains unchanged
+
+You can still run the parser manually exactly as before:
+
+```bash
+python main.py
+```
+
+The API service is separate and uses `api.py`.
+
+## Local API run without container
+
+For local development:
+
+```bash
+uvicorn api:app --reload
+```
+
+For local testing with production-like concurrency:
+
+```bash
+uvicorn api:app --host 0.0.0.0 --port 8000 --workers 4 --backlog 2048
+```
+
+Do not use `--reload` together with `--workers`.
+
+## Podman deployment
+
+Build:
+
+```bash
+podman build -t table-extraction-api -f Containerfile .
+```
+
+Run:
+
+```bash
+podman run --replace --name table-extraction-api -p 8000:8000 table-extraction-api
+```
+
+The container defaults to:
+
+```text
+APP_WORKERS=4
+APP_BACKLOG=2048
+APP_PORT=8000
+```
+
+That means the service can accept bursts of requests while only a controlled number of worker processes execute Python work at the same time.
+
+To override the worker count:
+
+```bash
+podman run --replace --name table-extraction-api \
+  -p 8000:8000 \
+  -e APP_WORKERS=2 \
+  -e APP_BACKLOG=2048 \
+  table-extraction-api
+```
+
+Recommended starting values:
+
+```text
+2 CPU cores  -> APP_WORKERS=2
+4 CPU cores  -> APP_WORKERS=4
+8 CPU cores  -> APP_WORKERS=4 or 8
+```
+
+## Synchronous concurrency model
+
+The service still works synchronously. A caller sends a request and waits for the result.
+
+With Podman/Uvicorn configured like this:
+
+```text
+APP_WORKERS=4
+APP_BACKLOG=2048
+```
+
+The behavior is:
+
+```text
+100 requests arrive
+4 workers process requests immediately
+remaining connections wait in the server/socket backlog
+requests are not intentionally dropped by the app
+```
+
+Practical limits still apply:
+
+```text
+client timeout
+reverse proxy timeout
+server memory
+request size
+container restart
+```
+
+If you use Nginx, Traefik, Apache, or another reverse proxy in front of this service, configure its timeout high enough for the slowest expected extraction.
+
+Example Nginx setting:
+
+```nginx
+proxy_read_timeout 300s;
+proxy_connect_timeout 300s;
+proxy_send_timeout 300s;
+```
+
+## Useful Podman commands
+
+View logs:
+
+```bash
+podman logs -f table-extraction-api
+```
+
+Stop:
+
+```bash
+podman stop table-extraction-api
+```
+
+Remove:
+
+```bash
+podman rm table-extraction-api
+```

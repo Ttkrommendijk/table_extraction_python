@@ -1,6 +1,5 @@
 import json
 
-
 _LAST_OCRPARSE_JSON = None
 
 
@@ -20,27 +19,47 @@ def get_last_ocrparse_json() -> dict | None:
     return _LAST_OCRPARSE_JSON
 
 
+def _get_parsed_results(ocr_json) -> list:
+    """Return the OCRParse ParsedResults list from all supported inputs.
+
+    Supported shapes:
+    - {"ParsedResults": [...]}
+    - [{"ParsedResults": [...]}]
+    - [{"Overlay"|"TextOverlay": ...}, ...]
+    """
+
+    if isinstance(ocr_json, dict):
+        return ocr_json.get("ParsedResults", [])
+
+    if isinstance(ocr_json, list):
+        if len(ocr_json) == 1 and isinstance(ocr_json[0], dict) and "ParsedResults" in ocr_json[0]:
+            return ocr_json[0].get("ParsedResults", [])
+
+        return ocr_json
+
+    return []
+
+
 def extract_words(ocr_json: dict) -> list:
 
     pages = []
-
-    parsed_results = ocr_json.get("ParsedResults", [])
+    parsed_results = _get_parsed_results(ocr_json)
 
     for page_index, page in enumerate(parsed_results):
+        if not isinstance(page, dict):
+            continue
 
-        overlay = page.get("Overlay", {})
+        overlay = page.get("Overlay") or page.get("TextOverlay") or {}
         lines = overlay.get("Lines", [])
 
         words = []
 
         for line_index, line in enumerate(lines):
-
             line_text = line.get("LineText", "").strip()
             line_words = line.get("Words", [])
             line_id = f"{page_index}:{line_index}"
 
             for word_index, word in enumerate(line_words):
-
                 left = word["Left"]
                 top = word["Top"]
                 width = word["Width"]
@@ -57,12 +76,6 @@ def extract_words(ocr_json: dict) -> list:
                         "height": height,
                         "center_x": left + (width / 2),
                         "center_y": top + (height / 2),
-                        # Preserve OCRParse line metadata. Some OCR engines already
-                        # reconstruct the full visual text line correctly. Later
-                        # layout stages may crop or split words by region, so keeping
-                        # the original line lets us restore labels such as
-                        # "Fornecedores - terrenos" when only the rightmost fragment
-                        # survived the geometry split.
                         "line_id": line_id,
                         "line_index": line_index,
                         "line_word_index": word_index,
@@ -80,10 +93,9 @@ def extract_words(ocr_json: dict) -> list:
     return pages
 
 
-
 def _line_text_from_overlay(page: dict) -> str:
 
-    overlay = page.get("Overlay", {})
+    overlay = page.get("Overlay") or page.get("TextOverlay") or {}
     lines = overlay.get("Lines", [])
 
     line_texts = []
@@ -117,7 +129,7 @@ def extract_text_content(ocr_json: dict) -> list:
 
     text_content = []
 
-    parsed_results = ocr_json.get("ParsedResults", [])
+    parsed_results = _get_parsed_results(ocr_json)
 
     for page in parsed_results:
         parsed_text = page.get("ParsedText")

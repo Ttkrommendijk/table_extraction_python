@@ -24,6 +24,10 @@ class DocumentItem(BaseModel):
 
 class ExtractRequest(BaseModel):
     organisation_document_id: int
+    # Preferred JSON equivalent of multipart inputFile.
+    # Accepts a JSON object, JSON string, or base64 encoded JSON string.
+    inputFile: Any | None = None
+    # Backwards-compatible n8n/webhook shape.
     document_array: list[DocumentItem] = Field(default_factory=list)
 
 
@@ -108,61 +112,48 @@ async def extract(
 ) -> list[dict[str, Any]]:
     """Extract tables from an uploaded OCRParse JSON file.
 
-    Expected request type:
-      multipart/form-data
-
-    Expected fields:
-      inputFile: AGTECH_ocrparse.json
+    Multipart input:
+      inputFile: OCRParse JSON file
       organisation_document_id: 121
     """
 
     raw_bytes = await inputFile.read()
     ocrparse_json = _load_ocrparse_json_from_bytes(raw_bytes, inputFile.filename or "inputFile")
-
-    generated_result = build_klippa_result(ocrparse_json)
-    ocr_result_klippa = _format_ocr_result_for_api(generated_result)
-
-    return [
-        {
-            "json": {
-                "data": {
-                    "organisation_document_id": organisation_document_id,
-                    "ocr_result_klippa": ocr_result_klippa,
-                }
-            }
-        }
-    ]
+    return _build_api_response(organisation_document_id, [ocrparse_json])
 
 
 @app.post("/extract/json")
 def extract_json(payload: ExtractRequest) -> list[dict[str, Any]]:
-    """Compatibility endpoint for the previous JSON body format."""
+    """Extract tables from OCRParse JSON sent in a JSON body.
 
-    if not payload.document_array:
+    Preferred JSON input mirrors /extract:
+      {
+        "organisation_document_id": 121,
+        "inputFile": { ... OCRParse JSON ... }
+      }
+
+    Backwards-compatible input is also accepted:
+      {
+        "organisation_document_id": 121,
+        "document_array": [{"data": { ... OCRParse JSON ... }}]
+      }
+    """
+
+    documents: list[Any] = []
+
+    if payload.inputFile is not None:
+        documents.append(payload.inputFile)
+
+    documents.extend(document.data for document in payload.document_array)
+
+    if not documents:
         raise HTTPException(
             status_code=400,
-            detail="document_array must contain at least one document",
+            detail="Provide inputFile or document_array with at least one document",
         )
 
-    results: list[dict[str, Any]] = []
-
-    for document in payload.document_array:
-        ocrparse_json = _load_ocrparse_json(document.data)
-        generated_result = build_klippa_result(ocrparse_json)
-        ocr_result_klippa = _format_ocr_result_for_api(generated_result)
-
-        results.append(
-            {
-                "json": {
-                    "data": {
-                        "organisation_document_id": payload.organisation_document_id,
-                        "ocr_result_klippa": ocr_result_klippa,
-                    }
-                }
-            }
-        )
-
-    return results
+    ocrparse_documents = [_load_ocrparse_json(document) for document in documents]
+    return _build_api_response(payload.organisation_document_id, ocrparse_documents)
 
 
 @app.post("/extract/ocrparse")
@@ -254,20 +245,39 @@ def _build_extracted_pdf_filename(filename: str, page_range: str) -> str:
     return f"{base_name}_pages_{safe_range}.pdf"
 
 
+def _build_api_response(
+    organisation_document_id: int,
+    ocrparse_documents: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """Run the same extraction path for manual, multipart, and JSON inputs."""
+
+    results: list[dict[str, Any]] = []
+
+    for ocrparse_json in ocrparse_documents:
+        generated_result = build_klippa_result(ocrparse_json)
+        ocr_result_klippa = _format_ocr_result_for_api(generated_result)
+
+        results.append(
+            {
+                "json": {
+                    "data": {
+                        "organisation_document_id": organisation_document_id,
+                        "ocr_result_klippa": ocr_result_klippa,
+                    }
+                }
+            }
+        )
+
+    return results
+
+
 def _format_ocr_result_for_api(generated_result: dict[str, Any]) -> dict[str, Any]:
-    """Return the Klippa compatible OCR result expected by the caller."""
+    """Return exactly the same Klippa result produced by the manual runner."""
 
-    ocr_result = generated_result.get("ocr_result_klippa", {})
-    tables_component = ocr_result.get("components", {}).get("tables", {})
-    text_content = tables_component.get("text_content", [])
-
-    return {
-        **ocr_result,
-        "text_content": text_content,
-    }
+    return generated_result.get("ocr_result_klippa", {})
 
 
-def _load_ocrparse_json_from_bytes(raw_bytes: bytes, filename: str) -> dict[str, Any]:
+def _load_ocrparse_json_from_bytes(raw_bytes: bytes, filename: str) -> Any:
     if not raw_bytes:
         raise HTTPException(
             status_code=400,
@@ -292,7 +302,7 @@ def _load_ocrparse_json_from_bytes(raw_bytes: bytes, filename: str) -> dict[str,
     return _parse_json_string(json_text)
 
 
-def _load_ocrparse_json(data: Any) -> dict[str, Any]:
+def _load_ocrparse_json(data: Any) -> Any:
     """Load OCRParse JSON from the compatibility JSON endpoint."""
 
     if isinstance(data, dict):
@@ -341,7 +351,7 @@ def _load_ocrparse_json(data: Any) -> dict[str, Any]:
     return _parse_json_string(json_text)
 
 
-def _parse_json_string(value: str) -> dict[str, Any]:
+def _parse_json_string(value: str) -> Any:
     try:
         parsed = json.loads(value)
     except json.JSONDecodeError as exc:
@@ -349,12 +359,6 @@ def _parse_json_string(value: str) -> dict[str, Any]:
             status_code=400,
             detail=f"Document data is not valid OCRParse JSON: {exc}",
         ) from exc
-
-    if not isinstance(parsed, dict):
-        raise HTTPException(
-            status_code=400,
-            detail="OCRParse JSON must be a JSON object",
-        )
 
     _validate_ocrparse_shape(parsed)
     return parsed
@@ -380,9 +384,28 @@ def _decode_data_uri_or_base64(value: str) -> tuple[str, bytes]:
     return mime_type, raw_bytes
 
 
-def _validate_ocrparse_shape(value: dict[str, Any]) -> None:
-    if "ParsedResults" not in value:
-        raise HTTPException(
-            status_code=400,
-            detail="Expected OCRParse JSON with a ParsedResults field",
+def _validate_ocrparse_shape(value: Any) -> None:
+    if isinstance(value, dict) and "ParsedResults" in value:
+        return
+
+    if (
+        isinstance(value, list)
+        and len(value) == 1
+        and isinstance(value[0], dict)
+        and "ParsedResults" in value[0]
+    ):
+        return
+
+    if (
+        isinstance(value, list)
+        and all(
+            isinstance(page, dict) and ("Overlay" in page or "TextOverlay" in page or "ParsedText" in page)
+            for page in value
         )
+    ):
+        return
+
+    raise HTTPException(
+        status_code=400,
+        detail="Expected OCRParse JSON with a ParsedResults field",
+    )
