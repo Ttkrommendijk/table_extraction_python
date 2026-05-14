@@ -69,6 +69,21 @@ TABLE_START_TERMS = {
     "notas",
 }
 
+METADATA_TITLE_TERMS = {
+    "demonstração do resultado",
+    "demonstracao do resultado",
+    "demonstração de resultado",
+    "demonstracao de resultado",
+    "demonstração dos resultados",
+    "demonstracao dos resultados",
+    "balanço patrimonial",
+    "balanco patrimonial",
+    "unidades de reais",
+    "em unidades de reais",
+    "em milhares",
+    "milhares de reais",
+}
+
 
 # =========================================================
 # column helpers
@@ -362,9 +377,13 @@ def _looks_like_table_start(row):
     if not text:
         return False
 
+    # Do not let page titles or unit lines start a table. Klippa usually starts
+    # DRE tables at the real grid header, for example "Notas | 31/12/...",
+    # not at the narrative title above it.
+    if _is_metadata_title_text(text):
+        return False
+
     # A title-only line such as "resultados" is page metadata, not the table.
-    # Start income-statement tables at the real grid header or first row with
-    # values, otherwise title/footer material becomes serialized as rows.
     title_only_terms = {"resultado", "resultados"}
     if text in title_only_terms:
         return False
@@ -404,6 +423,12 @@ def _normalize_text_for_matching(text):
 
     return " ".join(normalized.split())
 
+
+
+def _is_metadata_title_text(text):
+    normalized = _normalize_text_for_matching(text)
+
+    return any(term in normalized for term in METADATA_TITLE_TERMS)
 
 def _is_final_total_row(row):
     """
@@ -447,6 +472,9 @@ def filter_non_table_rows(matrix):
             break
 
         if not started:
+            if _is_metadata_title_text(row_text):
+                continue
+
             if _looks_like_table_start(row):
                 started = True
             else:
