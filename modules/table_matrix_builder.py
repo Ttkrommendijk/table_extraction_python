@@ -1,4 +1,5 @@
 from collections import defaultdict
+import re
 
 from modules.column_detector import (
     detect_numeric_columns,
@@ -110,6 +111,132 @@ def _row_text(row):
 
 def _row_text_lower(row):
     return _row_text(row).lower()
+
+def _normalize_line_text_for_compare(text):
+    text = text.strip().lower()
+    text = re.sub(r"\s+", " ", text)
+    return text
+
+
+def _line_text_has_amount(text):
+    """Return True when source LineText appears to include value columns.
+
+    We only use OCRParse LineText to restore labels. If the line text contains
+    amount-like values, it is probably a whole visual row rather than a label
+    segment and should not replace the label cell.
+    """
+
+    return bool(
+        re.search(r"\d{1,3}(?:[.]\d{3})+(?:,\d+)?", text)
+        or re.search(r"\d+,\d{2}", text)
+    )
+
+
+def _visible_text_is_partial_line(full_text, visible_text):
+    full = _normalize_line_text_for_compare(full_text)
+    visible = _normalize_line_text_for_compare(visible_text)
+
+    if not full or not visible:
+        return False
+
+    if full == visible:
+        return False
+
+    return visible in full
+
+
+def _line_has_alpha(words):
+    return any(any(ch.isalpha() for ch in w.get("text", "")) for w in words)
+
+
+def _line_words_text(words):
+    return " ".join(w.get("text", "").strip() for w in sorted(words, key=lambda w: w.get("x1", 0)) if w.get("text", "").strip())
+
+
+def _source_line_text(word):
+    return word.get("line_text", "").strip()
+
+
+def _should_restore_label_from_source_line(full_text, visible_words):
+    """Decide whether to use OCRParse LineText for the label cell.
+
+    This is intentionally conservative. It only restores the line text when the
+    current region contains a partial alpha fragment of that OCR line and the
+    source line does not contain amount-like values. This prevents full-row
+    LineText from swallowing note/value columns, while fixing cases where a
+    geometry split left only "terrenos" from "Fornecedores - terrenos".
+    """
+
+    if not full_text:
+        return False
+
+    if _line_text_has_amount(full_text):
+        return False
+
+    if not _line_has_alpha(visible_words):
+        return False
+
+    visible_text = _line_words_text(visible_words)
+
+    return _visible_text_is_partial_line(full_text, visible_text)
+
+
+def _restore_label_cells_from_source_lines(row, row_cells):
+    """Restore complete OCRParse label lines after geometric splitting.
+
+    Rows are reconstructed from words, but OCRParse can provide a correct
+    LineText. When a region split/crop leaves a partial label fragment, replace
+    the label cell with the original LineText for that source line.
+    """
+
+    words_by_line = defaultdict(list)
+
+    for word in row.get("words", []):
+        line_id = word.get("line_id")
+
+        if line_id is None:
+            continue
+
+        words_by_line[line_id].append(word)
+
+    restored_lines = []
+    restored_line_ids = set()
+
+    for line_id, words in words_by_line.items():
+        full_text = _source_line_text(words[0])
+
+        if _should_restore_label_from_source_line(full_text, words):
+            restored_lines.append(full_text)
+            restored_line_ids.add(line_id)
+
+    if not restored_lines:
+        return row_cells
+
+    remaining_label_words = []
+
+    for word in row.get("words", []):
+        if word.get("line_id") in restored_line_ids:
+            continue
+
+        text = word.get("text", "").strip()
+
+        if not text or text.lower() in NOISE_WORDS:
+            continue
+
+        # Keep non-restored ordinary label words that were already destined for
+        # the label column. Do not pull note/value words into the label.
+        if not is_numeric(text) and not is_small_note_reference(text):
+            remaining_label_words.append(text)
+
+    combined = []
+    combined.extend(remaining_label_words)
+    combined.extend(restored_lines)
+
+    if combined:
+        row_cells[0] = combined
+
+    return row_cells
+
 
 
 def _has_header_term(text):
@@ -261,6 +388,17 @@ def _assign_word_to_column(word, anchors, row_is_header_like):
     note_anchor = _note_anchor(anchors)
     value_positions = _value_anchor_positions(anchors)
 
+    # A hyphen inside an OCR source label line is punctuation, not a
+    # financial dash value. Keep it in the label column. Standalone dash
+    # values in real numeric areas still fall through to value assignment.
+    if (
+        text == "-"
+        and _source_line_text(word)
+        and not _line_text_has_amount(_source_line_text(word))
+        and any(ch.isalpha() for ch in _source_line_text(word))
+    ):
+        return 0
+
     if note_anchor and note_anchor["x"] is not None:
         if (
             abs(center_x - note_anchor["x"]) <= 120
@@ -327,6 +465,8 @@ def rows_to_matrix(rows, numeric_columns=None):
             row_cells[col].append(text)
 
         matrix_row = []
+
+        row_cells = _restore_label_cells_from_source_lines(row, row_cells)
 
         for col in range(column_count):
             content = " ".join(row_cells.get(col, [])).strip()

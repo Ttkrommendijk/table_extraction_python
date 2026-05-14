@@ -782,7 +782,7 @@
               {
                 "row_index": 2,
                 "column_index": 0,
-                "content": "vendas",
+                "content": "Impostos incidentes sobre as vendas",
                 "header": false
               },
               {
@@ -818,7 +818,7 @@
               {
                 "row_index": 4,
                 "column_index": 0,
-                "content": "vendidos",
+                "content": "Custo dos produtos e serviços vendidos",
                 "header": false
               },
               {
@@ -962,7 +962,7 @@
               {
                 "row_index": 12,
                 "column_index": 0,
-                "content": "e da contribuição social",
+                "content": "Lucro antes do imposto de renda e da contribuição social",
                 "header": false
               },
               {
@@ -980,7 +980,7 @@
               {
                 "row_index": 13,
                 "column_index": 0,
-                "content": "social",
+                "content": "Imposto de renda e contribuição social",
                 "header": false
               },
               {
@@ -1016,13 +1016,13 @@
               {
                 "row_index": 15,
                 "column_index": 0,
-                "content": "",
+                "content": "Lucro por ações do capital final - R$",
                 "header": false
               },
               {
                 "row_index": 15,
                 "column_index": 1,
-                "content": "- R$ 0,80",
+                "content": "R$ 0,80",
                 "header": false
               },
               {

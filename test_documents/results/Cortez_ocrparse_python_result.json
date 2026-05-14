@@ -600,13 +600,13 @@
               {
                 "row_index": 16,
                 "column_index": 2,
-                "content": "130.663 -",
+                "content": "130.663",
                 "header": false
               },
               {
                 "row_index": 16,
                 "column_index": 3,
-                "content": "128.289",
+                "content": "- 128.289",
                 "header": false
               },
               {
@@ -1646,7 +1646,7 @@
               {
                 "row_index": 3,
                 "column_index": 0,
-                "content": "prestados",
+                "content": "Custo dos serviços prestados",
                 "header": false
               },
               {
@@ -1718,7 +1718,7 @@
               {
                 "row_index": 5,
                 "column_index": 0,
-                "content": "operacionais",
+                "content": "(+/-) (Despesas)/receitas operacionais",
                 "header": false
               },
               {
@@ -1790,7 +1790,7 @@
               {
                 "row_index": 7,
                 "column_index": 0,
-                "content": "patrimonial",
+                "content": "Resultado de equivalência patrimonial",
                 "header": false
               },
               {
@@ -1826,7 +1826,7 @@
               {
                 "row_index": 8,
                 "column_index": 0,
-                "content": "operacionais, líquidas",
+                "content": "3020 Outras receitas (despesas) operacionais, líquidas",
                 "header": false
               },
               {
@@ -1970,7 +1970,7 @@
               {
                 "row_index": 12,
                 "column_index": 0,
-                "content": "líquido",
+                "content": "(=) Resultado financeiro, líquido",
                 "header": false
               },
               {
@@ -2006,7 +2006,7 @@
               {
                 "row_index": 13,
                 "column_index": 0,
-                "content": "impostos sobre a renda",
+                "content": "(=) Resultado antes dos impostos sobre a renda",
                 "header": false
               },
               {
@@ -2042,7 +2042,7 @@
               {
                 "row_index": 14,
                 "column_index": 0,
-                "content": "corrente",
+                "content": "Impostos sobre a renda - corrente",
                 "header": false
               },
               {
@@ -2054,7 +2054,7 @@
               {
                 "row_index": 14,
                 "column_index": 2,
-                "content": "- (25.586)",
+                "content": "(25.586)",
                 "header": false
               },
               {
@@ -2078,7 +2078,7 @@
               {
                 "row_index": 15,
                 "column_index": 0,
-                "content": "dos não controladores",
+                "content": "(=) Lucro antes participação dos não controladores",
                 "header": false
               },
               {
@@ -2114,7 +2114,7 @@
               {
                 "row_index": 16,
                 "column_index": 0,
-                "content": "controladores",
+                "content": "Lucro atribuido aos não controladores",
                 "header": false
               },
               {

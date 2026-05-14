@@ -90,6 +90,14 @@ def detect_numeric_columns(rows: list, include_note_references=False) -> list:
         for word in row.get("words", []):
             text = word["text"].strip()
 
+            # A standalone dash can be a real empty/zero amount, but it is
+            # too ambiguous to create a numeric column. In labels such as
+            # "Fornecedores - terrenos" it otherwise creates a false value
+            # column before the real note/reference column. Existing amount
+            # columns will still receive dash tokens during word assignment.
+            if text == "-":
+                continue
+
             if not include_note_references and is_small_note_reference(text):
                 continue
 
@@ -111,6 +119,9 @@ def detect_numeric_columns(rows: list, include_note_references=False) -> list:
 
             for word in row.get("words", []):
                 text = word["text"].strip()
+
+                if text == "-":
+                    continue
 
                 if not include_note_references and is_small_note_reference(text):
                     continue

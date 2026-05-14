@@ -20,9 +20,13 @@ def extract_words(ocr_json: dict) -> list:
 
         words = []
 
-        for line in lines:
+        for line_index, line in enumerate(lines):
 
-            for word in line.get("Words", []):
+            line_text = line.get("LineText", "").strip()
+            line_words = line.get("Words", [])
+            line_id = f"{page_index}:{line_index}"
+
+            for word_index, word in enumerate(line_words):
 
                 left = word["Left"]
                 top = word["Top"]
@@ -40,6 +44,16 @@ def extract_words(ocr_json: dict) -> list:
                         "height": height,
                         "center_x": left + (width / 2),
                         "center_y": top + (height / 2),
+                        # Preserve OCRParse line metadata. Some OCR engines already
+                        # reconstruct the full visual text line correctly. Later
+                        # layout stages may crop or split words by region, so keeping
+                        # the original line lets us restore labels such as
+                        # "Fornecedores - terrenos" when only the rightmost fragment
+                        # survived the geometry split.
+                        "line_id": line_id,
+                        "line_index": line_index,
+                        "line_word_index": word_index,
+                        "line_text": line_text,
                     }
                 )
 
