@@ -599,12 +599,24 @@ def _is_final_total_row(row):
     """
     Detect strong balance-sheet final total rows.
 
-    These rows normally mark the end of a side-by-side financial table. Text
-    after them is often signature, certification or footer material, and should
-    not be attached to the table component.
+    Exclude internal section totals such as ``Total do ativo circulante`` so
+    the serializer does not prematurely close a table before later sections.
     """
 
     text = _normalize_text_for_matching(" ".join(row))
+
+    if "total" not in text:
+        return False
+
+    section_terms = {
+        "circulante",
+        "nao circulante",
+        "realizavel",
+        "patrimonio liquido",
+    }
+
+    if any(term in text for term in section_terms):
+        return False
 
     return any(term in text for term in FINAL_TOTAL_TERMS)
 

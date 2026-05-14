@@ -299,12 +299,12 @@ def split_side_by_side_regions(rows):
     """
 
     if not should_split_side_by_side(rows):
-        return [crop_table_region_rows(rows)]
+        return _split_after_final_total_restarts(crop_table_region_rows(rows))
 
     split_x = _find_best_split_x(rows)
 
     if split_x is None:
-        return [crop_table_region_rows(rows)]
+        return _split_after_final_total_restarts(crop_table_region_rows(rows))
 
     left_rows = []
     right_rows = []
@@ -333,7 +333,186 @@ def split_side_by_side_regions(rows):
         if _region_has_table_content(cropped):
             regions.append(cropped)
 
-    return regions or [crop_table_region_rows(rows)]
+    return regions or _split_after_final_total_restarts(crop_table_region_rows(rows))
+
+
+def _normalize_text_for_matching(text):
+    replacements = {
+        "á": "a",
+        "à": "a",
+        "â": "a",
+        "ã": "a",
+        "é": "e",
+        "ê": "e",
+        "í": "i",
+        "ó": "o",
+        "ô": "o",
+        "õ": "o",
+        "ú": "u",
+        "ç": "c",
+    }
+
+    normalized = (text or "").lower()
+
+    for source, target in replacements.items():
+        normalized = normalized.replace(source, target)
+
+    return " ".join(normalized.split())
+
+
+def _is_strong_final_total_row(row):
+    """Return True only for table-closing totals, not section subtotals.
+
+    This deliberately excludes labels such as ``Total do ativo circulante``
+    because those are internal section totals. It is used only to create a
+    possible vertical table boundary before the matrix serializer applies its
+    normal row filtering.
+    """
+
+    text = _normalize_text_for_matching(_row_text(row))
+
+    if "total" not in text:
+        return False
+
+    section_terms = {
+        "circulante",
+        "nao circulante",
+        "realizavel",
+        "patrimonio liquido",
+    }
+
+    if any(term in text for term in section_terms):
+        return False
+
+    return (
+        "total do ativo" in text
+        or "total ativo" in text
+        or "total do passivo" in text
+        or "total passivo" in text
+    )
+
+
+def _median_row_gap(rows):
+    gaps = []
+
+    previous_y = None
+    for row in rows:
+        y = row.get("center_y", 0)
+        if previous_y is not None:
+            gap = y - previous_y
+            if gap > 0:
+                gaps.append(gap)
+        previous_y = y
+
+    if not gaps:
+        return 0
+
+    gaps = sorted(gaps)
+    return gaps[len(gaps) // 2]
+
+
+def _row_value_centers(row):
+    return [
+        word["center_x"]
+        for word in row.get("words", [])
+        if _is_value_word(word)
+    ]
+
+
+def _columns_roughly_match(candidate_centers, reference_centers, tolerance=180):
+    if not candidate_centers or not reference_centers:
+        return False
+
+    matches = 0
+    for candidate in candidate_centers:
+        if any(abs(candidate - reference) <= tolerance for reference in reference_centers):
+            matches += 1
+
+    return matches >= min(2, len(reference_centers), len(candidate_centers))
+
+
+def _has_following_aligned_numeric_block(rows, start_index, reference_centers):
+    numeric_rows = 0
+    alpha_rows = 0
+
+    for row in rows[start_index:start_index + 10]:
+        text = _row_text_lower(row)
+        if _looks_like_end(row) or "notas explicativas" in text:
+            break
+
+        centers = _row_value_centers(row)
+
+        if centers and _columns_roughly_match(centers, reference_centers):
+            numeric_rows += 1
+
+        if _row_has_alpha(row):
+            alpha_rows += 1
+
+    return numeric_rows >= 2 and alpha_rows >= 2
+
+
+def _split_after_final_total_restarts(rows):
+    """Split stacked tables after a strong final total when layout restarts.
+
+    Low-risk geometry rule:
+    after a strong final total, if a later label-only row is followed by
+    multiple rows whose numeric columns match the prior table, treat that as a
+    new stacked table region. No label words such as Ativo/Passivo/DRE are used
+    as anchors.
+    """
+
+    if len(rows) < 4:
+        return [rows]
+
+    median_gap = _median_row_gap(rows)
+    regions = []
+    start = 0
+
+    idx = 0
+    while idx < len(rows):
+        row = rows[idx]
+
+        if not _is_strong_final_total_row(row):
+            idx += 1
+            continue
+
+        reference_centers = _row_value_centers(row)
+        if len(reference_centers) < 2:
+            idx += 1
+            continue
+
+        split_index = None
+
+        for probe in range(idx + 1, min(len(rows), idx + 6)):
+            gap = rows[probe].get("center_y", 0) - row.get("center_y", 0)
+            if median_gap and gap < median_gap * 1.2:
+                continue
+
+            if _row_has_number(rows[probe]):
+                continue
+
+            if not _row_has_alpha(rows[probe]):
+                continue
+
+            if _has_following_aligned_numeric_block(rows, probe + 1, reference_centers):
+                split_index = probe
+                break
+
+        if split_index is not None:
+            before = rows[start:split_index]
+            if _region_has_table_content(before):
+                regions.append(before)
+            start = split_index
+            idx = split_index + 1
+            continue
+
+        idx += 1
+
+    tail = rows[start:]
+    if _region_has_table_content(tail):
+        regions.append(tail)
+
+    return regions or [rows]
 
 
 TITLE_TERMS = {

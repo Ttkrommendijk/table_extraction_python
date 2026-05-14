@@ -6,7 +6,7 @@
         "tables": [
           {
             "document": 0,
-            "row_count": 10,
+            "row_count": 24,
             "column_count": 4,
             "cells": [
               {
@@ -248,12 +248,348 @@
                 "column_index": 3,
                 "content": "386.189",
                 "header": false
+              },
+              {
+                "row_index": 10,
+                "column_index": 0,
+                "content": "Não circulante",
+                "header": false
+              },
+              {
+                "row_index": 10,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 10,
+                "column_index": 2,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 10,
+                "column_index": 3,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 11,
+                "column_index": 0,
+                "content": "Realizável a longo prazo",
+                "header": false
+              },
+              {
+                "row_index": 11,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 11,
+                "column_index": 2,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 11,
+                "column_index": 3,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 12,
+                "column_index": 0,
+                "content": "Aplicações financeiras",
+                "header": false
+              },
+              {
+                "row_index": 12,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 12,
+                "column_index": 2,
+                "content": "24.385",
+                "header": false
+              },
+              {
+                "row_index": 12,
+                "column_index": 3,
+                "content": "257",
+                "header": false
+              },
+              {
+                "row_index": 13,
+                "column_index": 0,
+                "content": "Contas a receber de clientes",
+                "header": false
+              },
+              {
+                "row_index": 13,
+                "column_index": 1,
+                "content": "5",
+                "header": false
+              },
+              {
+                "row_index": 13,
+                "column_index": 2,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 13,
+                "column_index": 3,
+                "content": "16.174",
+                "header": false
+              },
+              {
+                "row_index": 14,
+                "column_index": 0,
+                "content": "Estoques de terrenos",
+                "header": false
+              },
+              {
+                "row_index": 14,
+                "column_index": 1,
+                "content": "6",
+                "header": false
+              },
+              {
+                "row_index": 14,
+                "column_index": 2,
+                "content": "224.811",
+                "header": false
+              },
+              {
+                "row_index": 14,
+                "column_index": 3,
+                "content": "172.422",
+                "header": false
+              },
+              {
+                "row_index": 15,
+                "column_index": 0,
+                "content": "Despesas do exercício seguinte",
+                "header": false
+              },
+              {
+                "row_index": 15,
+                "column_index": 1,
+                "content": "10",
+                "header": false
+              },
+              {
+                "row_index": 15,
+                "column_index": 2,
+                "content": "23.224",
+                "header": false
+              },
+              {
+                "row_index": 15,
+                "column_index": 3,
+                "content": "19.182",
+                "header": false
+              },
+              {
+                "row_index": 16,
+                "column_index": 0,
+                "content": "Depósitos judiciais",
+                "header": false
+              },
+              {
+                "row_index": 16,
+                "column_index": 1,
+                "content": "18",
+                "header": false
+              },
+              {
+                "row_index": 16,
+                "column_index": 2,
+                "content": "392",
+                "header": false
+              },
+              {
+                "row_index": 16,
+                "column_index": 3,
+                "content": "224",
+                "header": false
+              },
+              {
+                "row_index": 17,
+                "column_index": 0,
+                "content": "Outros créditos",
+                "header": false
+              },
+              {
+                "row_index": 17,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 17,
+                "column_index": 2,
+                "content": "186",
+                "header": false
+              },
+              {
+                "row_index": 17,
+                "column_index": 3,
+                "content": "186",
+                "header": false
+              },
+              {
+                "row_index": 18,
+                "column_index": 0,
+                "content": "Total do realizável a longo prazo",
+                "header": false
+              },
+              {
+                "row_index": 18,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 18,
+                "column_index": 2,
+                "content": "272.998",
+                "header": false
+              },
+              {
+                "row_index": 18,
+                "column_index": 3,
+                "content": "208.445",
+                "header": false
+              },
+              {
+                "row_index": 19,
+                "column_index": 0,
+                "content": "Imobilizado",
+                "header": false
+              },
+              {
+                "row_index": 19,
+                "column_index": 1,
+                "content": "7",
+                "header": false
+              },
+              {
+                "row_index": 19,
+                "column_index": 2,
+                "content": "27.810",
+                "header": false
+              },
+              {
+                "row_index": 19,
+                "column_index": 3,
+                "content": "21.864",
+                "header": false
+              },
+              {
+                "row_index": 20,
+                "column_index": 0,
+                "content": "Direito de uso de arrendamento",
+                "header": false
+              },
+              {
+                "row_index": 20,
+                "column_index": 1,
+                "content": "8",
+                "header": false
+              },
+              {
+                "row_index": 20,
+                "column_index": 2,
+                "content": "2.449",
+                "header": false
+              },
+              {
+                "row_index": 20,
+                "column_index": 3,
+                "content": "3.415",
+                "header": false
+              },
+              {
+                "row_index": 21,
+                "column_index": 0,
+                "content": "Intangível",
+                "header": false
+              },
+              {
+                "row_index": 21,
+                "column_index": 1,
+                "content": "9",
+                "header": false
+              },
+              {
+                "row_index": 21,
+                "column_index": 2,
+                "content": "127",
+                "header": false
+              },
+              {
+                "row_index": 21,
+                "column_index": 3,
+                "content": "30",
+                "header": false
+              },
+              {
+                "row_index": 22,
+                "column_index": 0,
+                "content": "Total do ativo não circulante",
+                "header": false
+              },
+              {
+                "row_index": 22,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 22,
+                "column_index": 2,
+                "content": "303.384",
+                "header": false
+              },
+              {
+                "row_index": 22,
+                "column_index": 3,
+                "content": "233.754",
+                "header": false
+              },
+              {
+                "row_index": 23,
+                "column_index": 0,
+                "content": "Total do ativo",
+                "header": false
+              },
+              {
+                "row_index": 23,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 23,
+                "column_index": 2,
+                "content": "922.319",
+                "header": false
+              },
+              {
+                "row_index": 23,
+                "column_index": 3,
+                "content": "619.943",
+                "header": false
               }
             ]
           },
           {
             "document": 1,
-            "row_count": 15,
+            "row_count": 34,
             "column_count": 4,
             "cells": [
               {
@@ -614,6 +950,462 @@
                 "row_index": 14,
                 "column_index": 3,
                 "content": "242.936",
+                "header": false
+              },
+              {
+                "row_index": 15,
+                "column_index": 0,
+                "content": "Não circulante",
+                "header": false
+              },
+              {
+                "row_index": 15,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 15,
+                "column_index": 2,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 15,
+                "column_index": 3,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 16,
+                "column_index": 0,
+                "content": "Fornecedores",
+                "header": false
+              },
+              {
+                "row_index": 16,
+                "column_index": 1,
+                "content": "11",
+                "header": false
+              },
+              {
+                "row_index": 16,
+                "column_index": 2,
+                "content": "3.046",
+                "header": false
+              },
+              {
+                "row_index": 16,
+                "column_index": 3,
+                "content": "3.151",
+                "header": false
+              },
+              {
+                "row_index": 17,
+                "column_index": 0,
+                "content": "Fornecedores de terrenos",
+                "header": false
+              },
+              {
+                "row_index": 17,
+                "column_index": 1,
+                "content": "11",
+                "header": false
+              },
+              {
+                "row_index": 17,
+                "column_index": 2,
+                "content": "24.230",
+                "header": false
+              },
+              {
+                "row_index": 17,
+                "column_index": 3,
+                "content": "51.540",
+                "header": false
+              },
+              {
+                "row_index": 18,
+                "column_index": 0,
+                "content": "Arrendamentos a pagar",
+                "header": false
+              },
+              {
+                "row_index": 18,
+                "column_index": 1,
+                "content": "8",
+                "header": false
+              },
+              {
+                "row_index": 18,
+                "column_index": 2,
+                "content": "1.287",
+                "header": false
+              },
+              {
+                "row_index": 18,
+                "column_index": 3,
+                "content": "2.116",
+                "header": false
+              },
+              {
+                "row_index": 19,
+                "column_index": 0,
+                "content": "Empréstimos e financiamentos",
+                "header": false
+              },
+              {
+                "row_index": 19,
+                "column_index": 1,
+                "content": "12",
+                "header": false
+              },
+              {
+                "row_index": 19,
+                "column_index": 2,
+                "content": "192.883",
+                "header": false
+              },
+              {
+                "row_index": 19,
+                "column_index": 3,
+                "content": "95.719",
+                "header": false
+              },
+              {
+                "row_index": 20,
+                "column_index": 0,
+                "content": "Debêntures - parte relacionada",
+                "header": false
+              },
+              {
+                "row_index": 20,
+                "column_index": 1,
+                "content": "13",
+                "header": false
+              },
+              {
+                "row_index": 20,
+                "column_index": 2,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 20,
+                "column_index": 3,
+                "content": "14.193",
+                "header": false
+              },
+              {
+                "row_index": 21,
+                "column_index": 0,
+                "content": "Debêntures",
+                "header": false
+              },
+              {
+                "row_index": 21,
+                "column_index": 1,
+                "content": "13",
+                "header": false
+              },
+              {
+                "row_index": 21,
+                "column_index": 2,
+                "content": "99.922",
+                "header": false
+              },
+              {
+                "row_index": 21,
+                "column_index": 3,
+                "content": "30.583",
+                "header": false
+              },
+              {
+                "row_index": 22,
+                "column_index": 0,
+                "content": "Provisões",
+                "header": false
+              },
+              {
+                "row_index": 22,
+                "column_index": 1,
+                "content": "18",
+                "header": false
+              },
+              {
+                "row_index": 22,
+                "column_index": 2,
+                "content": "30.567",
+                "header": false
+              },
+              {
+                "row_index": 22,
+                "column_index": 3,
+                "content": "19.978",
+                "header": false
+              },
+              {
+                "row_index": 23,
+                "column_index": 0,
+                "content": "Parceiros em empreendimentos imobiliários",
+                "header": false
+              },
+              {
+                "row_index": 23,
+                "column_index": 1,
+                "content": "16",
+                "header": false
+              },
+              {
+                "row_index": 23,
+                "column_index": 2,
+                "content": "33.760",
+                "header": false
+              },
+              {
+                "row_index": 23,
+                "column_index": 3,
+                "content": "25.562",
+                "header": false
+              },
+              {
+                "row_index": 24,
+                "column_index": 0,
+                "content": "Obrigações tributárias",
+                "header": false
+              },
+              {
+                "row_index": 24,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 24,
+                "column_index": 2,
+                "content": "843",
+                "header": false
+              },
+              {
+                "row_index": 24,
+                "column_index": 3,
+                "content": "1.393",
+                "header": false
+              },
+              {
+                "row_index": 25,
+                "column_index": 0,
+                "content": "Outras obrigações",
+                "header": false
+              },
+              {
+                "row_index": 25,
+                "column_index": 1,
+                "content": "15",
+                "header": false
+              },
+              {
+                "row_index": 25,
+                "column_index": 2,
+                "content": "13.005",
+                "header": false
+              },
+              {
+                "row_index": 25,
+                "column_index": 3,
+                "content": "22.121",
+                "header": false
+              },
+              {
+                "row_index": 26,
+                "column_index": 0,
+                "content": "Total do passivo não circulante",
+                "header": false
+              },
+              {
+                "row_index": 26,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 26,
+                "column_index": 2,
+                "content": "399.543",
+                "header": false
+              },
+              {
+                "row_index": 26,
+                "column_index": 3,
+                "content": "266.356",
+                "header": false
+              },
+              {
+                "row_index": 27,
+                "column_index": 0,
+                "content": "Patrimônio líquido",
+                "header": false
+              },
+              {
+                "row_index": 27,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 27,
+                "column_index": 2,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 27,
+                "column_index": 3,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 28,
+                "column_index": 0,
+                "content": "Capital social",
+                "header": false
+              },
+              {
+                "row_index": 28,
+                "column_index": 1,
+                "content": "19",
+                "header": false
+              },
+              {
+                "row_index": 28,
+                "column_index": 2,
+                "content": "59.498",
+                "header": false
+              },
+              {
+                "row_index": 28,
+                "column_index": 3,
+                "content": "38.933",
+                "header": false
+              },
+              {
+                "row_index": 29,
+                "column_index": 0,
+                "content": "Reservas de lucros",
+                "header": false
+              },
+              {
+                "row_index": 29,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 29,
+                "column_index": 2,
+                "content": "111.502",
+                "header": false
+              },
+              {
+                "row_index": 29,
+                "column_index": 3,
+                "content": "55.945",
+                "header": false
+              },
+              {
+                "row_index": 30,
+                "column_index": 0,
+                "content": "Reserva legal",
+                "header": false
+              },
+              {
+                "row_index": 30,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 30,
+                "column_index": 2,
+                "content": "12.000",
+                "header": false
+              },
+              {
+                "row_index": 30,
+                "column_index": 3,
+                "content": "8.012",
+                "header": false
+              },
+              {
+                "row_index": 31,
+                "column_index": 0,
+                "content": "Reserva estatutária",
+                "header": false
+              },
+              {
+                "row_index": 31,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 31,
+                "column_index": 2,
+                "content": "12.000",
+                "header": false
+              },
+              {
+                "row_index": 31,
+                "column_index": 3,
+                "content": "7.761",
+                "header": false
+              },
+              {
+                "row_index": 32,
+                "column_index": 0,
+                "content": "Total do patrimônio líquido",
+                "header": false
+              },
+              {
+                "row_index": 32,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 32,
+                "column_index": 2,
+                "content": "195.000",
+                "header": false
+              },
+              {
+                "row_index": 32,
+                "column_index": 3,
+                "content": "110.651",
+                "header": false
+              },
+              {
+                "row_index": 33,
+                "column_index": 0,
+                "content": "Total do passivo e patrimônio líquido",
+                "header": false
+              },
+              {
+                "row_index": 33,
+                "column_index": 1,
+                "content": "",
+                "header": false
+              },
+              {
+                "row_index": 33,
+                "column_index": 2,
+                "content": "922.319",
+                "header": false
+              },
+              {
+                "row_index": 33,
+                "column_index": 3,
+                "content": "619.943",
                 "header": false
               }
             ]
