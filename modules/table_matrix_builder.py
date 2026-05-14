@@ -463,6 +463,22 @@ def _clean_cell_content(content):
     if match:
         return match.group(1)
 
+    # Last-resort note/value cleanup after column assignment. If a compact
+    # reference token was assigned into the first value cell together with a
+    # financial amount, keep the financial amount and drop the reference.
+    # Examples: "456 102.266" -> "102.266", "9 e 11 10.401" -> "10.401".
+    # This deliberately only matches compact references followed by amount-like
+    # values, so ordinary text cells and decimal values such as "R$ 0,80" are
+    # not changed.
+    match = re.match(
+        r"^(?:\d{1,3}(?:\s+e\s+\d{1,3})?|\d{1,3}(?:\s+\d{1,3})+)\s+(-?\d{1,3}(?:[.]\d{3})+(?:,\d+)?|-?\d+,\d{2})$",
+        content,
+        flags=re.IGNORECASE,
+    )
+
+    if match:
+        return match.group(1)
+
     return content
 
 # =========================================================
