@@ -37,14 +37,37 @@ def is_numeric(text: str) -> bool:
     if text == "-":
         return True
 
-    return bool(NUMBER_REGEX.match(text))
+    if bool(NUMBER_REGEX.match(text)):
+        return True
+
+    # Some OCR outputs drop the thousands separator in values such as 3.020,
+    # producing "3020". Treat four-or-more digit non-year tokens as values.
+    if text.isdigit() and len(text) >= 4:
+        year = int(text)
+        return not (1900 <= year <= 2099)
+
+    return False
 
 
 def is_small_note_reference(text: str) -> bool:
 
     text = text.strip()
 
-    return text.isdigit() and len(text) <= 2
+    if text.isdigit() and len(text) <= 2:
+        return True
+
+    # Notes can be OCR'd as decimal-looking references such as "3.12".
+    # Treat only compact one/two digit groups as notes. This avoids
+    # classifying real amounts such as "3.020" as references.
+    if "." in text:
+        parts = text.split(".")
+        return (
+            len(parts) == 2
+            and all(part.isdigit() for part in parts)
+            and all(1 <= len(part) <= 2 for part in parts)
+        )
+
+    return False
 
 
 def cluster_positions(positions, threshold=140):

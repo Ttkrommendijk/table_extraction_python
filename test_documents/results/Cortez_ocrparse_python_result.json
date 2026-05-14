@@ -228,13 +228,13 @@
               {
                 "row_index": 6,
                 "column_index": 0,
-                "content": "utras contas a receber e",
+                "content": "utras contas a receber",
                 "header": false
               },
               {
                 "row_index": 6,
                 "column_index": 1,
-                "content": "9 11",
+                "content": "9 e 11",
                 "header": false
               },
               {
@@ -444,7 +444,7 @@
               {
                 "row_index": 12,
                 "column_index": 0,
-                "content": "Investimentos 하라",
+                "content": "Investimentos",
                 "header": false
               },
               {
@@ -606,7 +606,7 @@
               {
                 "row_index": 16,
                 "column_index": 3,
-                "content": "- 128.289",
+                "content": "128.289",
                 "header": false
               },
               {
@@ -889,13 +889,13 @@
               {
                 "row_index": 7,
                 "column_index": 1,
-                "content": "",
+                "content": "3.12",
                 "header": false
               },
               {
                 "row_index": 7,
                 "column_index": 2,
-                "content": "3.12 7.608",
+                "content": "7.608",
                 "header": false
               },
               {
@@ -1099,7 +1099,7 @@
               {
                 "row_index": 13,
                 "column_index": 0,
-                "content": "Outras contas a pagar : :",
+                "content": "Outras contas a pagar",
                 "header": false
               },
               {
@@ -1363,25 +1363,25 @@
               {
                 "row_index": 20,
                 "column_index": 2,
-                "content": "(13.482)",
+                "content": "-13.482",
                 "header": false
               },
               {
                 "row_index": 20,
                 "column_index": 3,
-                "content": "(13.482)",
+                "content": "-13.482",
                 "header": false
               },
               {
                 "row_index": 20,
                 "column_index": 4,
-                "content": "(13.482)",
+                "content": "-13.482",
                 "header": false
               },
               {
                 "row_index": 20,
                 "column_index": 5,
-                "content": "(13.482)",
+                "content": "-13.482",
                 "header": false
               },
               {
@@ -1610,7 +1610,7 @@
               {
                 "row_index": 2,
                 "column_index": 0,
-                "content": "",
+                "content": "Receita operacional líquida",
                 "header": false
               },
               {
@@ -1658,31 +1658,31 @@
               {
                 "row_index": 3,
                 "column_index": 2,
-                "content": "(458.942)",
+                "content": "-458.942",
                 "header": false
               },
               {
                 "row_index": 3,
                 "column_index": 3,
-                "content": "(327.807)",
+                "content": "-327.807",
                 "header": false
               },
               {
                 "row_index": 3,
                 "column_index": 4,
-                "content": "(436.325)",
+                "content": "-436.325",
                 "header": false
               },
               {
                 "row_index": 3,
                 "column_index": 5,
-                "content": "(325.072)",
+                "content": "-325.072",
                 "header": false
               },
               {
                 "row_index": 4,
                 "column_index": 0,
-                "content": "",
+                "content": "(=) Lucro bruto",
                 "header": false
               },
               {
@@ -1754,7 +1754,7 @@
               {
                 "row_index": 6,
                 "column_index": 0,
-                "content": "",
+                "content": "Gerais e administrativas",
                 "header": false
               },
               {
@@ -1766,25 +1766,25 @@
               {
                 "row_index": 6,
                 "column_index": 2,
-                "content": "(40.116)",
+                "content": "-40.116",
                 "header": false
               },
               {
                 "row_index": 6,
                 "column_index": 3,
-                "content": "(41.739)",
+                "content": "-41.739",
                 "header": false
               },
               {
                 "row_index": 6,
                 "column_index": 4,
-                "content": "(41.618)",
+                "content": "-41.618",
                 "header": false
               },
               {
                 "row_index": 6,
                 "column_index": 5,
-                "content": "(42.830)",
+                "content": "-42.830",
                 "header": false
               },
               {
@@ -1826,7 +1826,7 @@
               {
                 "row_index": 8,
                 "column_index": 0,
-                "content": "3020 Outras receitas (despesas) operacionais, líquidas",
+                "content": "Outras receitas (despesas) operacionais, líquidas",
                 "header": false
               },
               {
@@ -1862,7 +1862,7 @@
               {
                 "row_index": 9,
                 "column_index": 0,
-                "content": "",
+                "content": "(=) Lucro operacional",
                 "header": false
               },
               {
@@ -1898,7 +1898,7 @@
               {
                 "row_index": 10,
                 "column_index": 0,
-                "content": "러러",
+                "content": "Receitas financeiras",
                 "header": false
               },
               {
@@ -1934,7 +1934,7 @@
               {
                 "row_index": 11,
                 "column_index": 0,
-                "content": "",
+                "content": "Despesas financeiras",
                 "header": false
               },
               {
@@ -1946,25 +1946,25 @@
               {
                 "row_index": 11,
                 "column_index": 2,
-                "content": "(778)",
+                "content": "-778",
                 "header": false
               },
               {
                 "row_index": 11,
                 "column_index": 3,
-                "content": "(486)",
+                "content": "-486",
                 "header": false
               },
               {
                 "row_index": 11,
                 "column_index": 4,
-                "content": "(1.339)",
+                "content": "-1.339",
                 "header": false
               },
               {
                 "row_index": 11,
                 "column_index": 5,
-                "content": "(902)",
+                "content": "-902",
                 "header": false
               },
               {
@@ -2054,25 +2054,25 @@
               {
                 "row_index": 14,
                 "column_index": 2,
-                "content": "(25.586)",
+                "content": "-25.586",
                 "header": false
               },
               {
                 "row_index": 14,
                 "column_index": 3,
-                "content": "(27.126)",
+                "content": "-27.126",
                 "header": false
               },
               {
                 "row_index": 14,
                 "column_index": 4,
-                "content": "(31.427)",
+                "content": "-31.427",
                 "header": false
               },
               {
                 "row_index": 14,
                 "column_index": 5,
-                "content": "(30.578)",
+                "content": "-30.578",
                 "header": false
               },
               {
@@ -2144,13 +2144,13 @@
               {
                 "row_index": 16,
                 "column_index": 5,
-                "content": "(286)",
+                "content": "-286",
                 "header": false
               },
               {
                 "row_index": 17,
                 "column_index": 0,
-                "content": "",
+                "content": "Lucro líquido do exercício",
                 "header": false
               },
               {

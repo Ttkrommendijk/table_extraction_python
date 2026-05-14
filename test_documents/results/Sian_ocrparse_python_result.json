@@ -397,19 +397,19 @@
               {
                 "row_index": 3,
                 "column_index": 0,
-                "content": "(-) DEDUÇÕES ( )",
+                "content": "(-) DEDUÇÕES",
                 "header": false
               },
               {
                 "row_index": 3,
                 "column_index": 1,
-                "content": "3.120.274,03",
+                "content": "-3.120.274,03",
                 "header": false
               },
               {
                 "row_index": 3,
                 "column_index": 2,
-                "content": "(5.346.631,25)",
+                "content": "-5.346.631,25",
                 "header": false
               },
               {
@@ -427,7 +427,7 @@
               {
                 "row_index": 4,
                 "column_index": 2,
-                "content": "(144.888,71)",
+                "content": "-144.888,71",
                 "header": false
               },
               {
@@ -439,13 +439,13 @@
               {
                 "row_index": 5,
                 "column_index": 1,
-                "content": "(3.120.274,03)",
+                "content": "-3.120.274,03",
                 "header": false
               },
               {
                 "row_index": 5,
                 "column_index": 2,
-                "content": "(5.201.742,54)",
+                "content": "-5.201.742,54",
                 "header": false
               },
               {
@@ -475,13 +475,13 @@
               {
                 "row_index": 7,
                 "column_index": 1,
-                "content": "(43.455.380,82)",
+                "content": "-43.455.380,82",
                 "header": false
               },
               {
                 "row_index": 7,
                 "column_index": 2,
-                "content": "(58.409.008,32)",
+                "content": "-58.409.008,32",
                 "header": false
               },
               {
@@ -511,13 +511,13 @@
               {
                 "row_index": 9,
                 "column_index": 1,
-                "content": "(8.599.570,46)",
+                "content": "-8.599.570,46",
                 "header": false
               },
               {
                 "row_index": 9,
                 "column_index": 2,
-                "content": "(16.856.842,82)",
+                "content": "-16.856.842,82",
                 "header": false
               },
               {
@@ -529,13 +529,13 @@
               {
                 "row_index": 10,
                 "column_index": 1,
-                "content": "(1.262.440,34)",
+                "content": "-1.262.440,34",
                 "header": false
               },
               {
                 "row_index": 10,
                 "column_index": 2,
-                "content": "(2.298.914,79)",
+                "content": "-2.298.914,79",
                 "header": false
               },
               {
@@ -547,13 +547,13 @@
               {
                 "row_index": 11,
                 "column_index": 1,
-                "content": "(2.759.584,88)",
+                "content": "-2.759.584,88",
                 "header": false
               },
               {
                 "row_index": 11,
                 "column_index": 2,
-                "content": "(9.715.137,70)",
+                "content": "-9.715.137,70",
                 "header": false
               },
               {
@@ -565,13 +565,13 @@
               {
                 "row_index": 12,
                 "column_index": 1,
-                "content": "(45.253,30)",
+                "content": "-45.253,30",
                 "header": false
               },
               {
                 "row_index": 12,
                 "column_index": 2,
-                "content": "(63.949,00)",
+                "content": "-63.949,00",
                 "header": false
               },
               {
@@ -583,13 +583,13 @@
               {
                 "row_index": 13,
                 "column_index": 1,
-                "content": "(703.568,00)",
+                "content": "-703.568,00",
                 "header": false
               },
               {
                 "row_index": 13,
                 "column_index": 2,
-                "content": "(774.316,45)",
+                "content": "-774.316,45",
                 "header": false
               },
               {
@@ -601,13 +601,13 @@
               {
                 "row_index": 14,
                 "column_index": 1,
-                "content": "(672.990,72)",
+                "content": "-672.990,72",
                 "header": false
               },
               {
                 "row_index": 14,
                 "column_index": 2,
-                "content": "(3.214.824,10)",
+                "content": "-3.214.824,10",
                 "header": false
               },
               {
@@ -637,13 +637,13 @@
               {
                 "row_index": 16,
                 "column_index": 1,
-                "content": "(3.155.733,22)",
+                "content": "-3.155.733,22",
                 "header": false
               },
               {
                 "row_index": 16,
                 "column_index": 2,
-                "content": "(789.700,78)",
+                "content": "-789.700,78",
                 "header": false
               },
               {
@@ -655,7 +655,7 @@
               {
                 "row_index": 17,
                 "column_index": 1,
-                "content": "(3.344.182,17)",
+                "content": "-3.344.182,17",
                 "header": false
               },
               {
@@ -679,13 +679,13 @@
               {
                 "row_index": 18,
                 "column_index": 2,
-                "content": "(278.843,04)",
+                "content": "-278.843,04",
                 "header": false
               },
               {
                 "row_index": 19,
                 "column_index": 0,
-                "content": "PROVISAO CSL :",
+                "content": "PROVISAO CSL",
                 "header": false
               },
               {
@@ -697,7 +697,7 @@
               {
                 "row_index": 19,
                 "column_index": 2,
-                "content": "(109.023,49)",
+                "content": "-109.023,49",
                 "header": false
               },
               {
@@ -709,7 +709,7 @@
               {
                 "row_index": 20,
                 "column_index": 1,
-                "content": "(3.344.182,17)",
+                "content": "-3.344.182,17",
                 "header": false
               },
               {

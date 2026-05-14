@@ -854,13 +854,13 @@
               {
                 "row_index": 4,
                 "column_index": 2,
-                "content": "(2.448.581,85)",
+                "content": "-2.448.581,85",
                 "header": false
               },
               {
                 "row_index": 4,
                 "column_index": 3,
-                "content": "(1.229.049,86)",
+                "content": "-1.229.049,86",
                 "header": false
               },
               {
@@ -902,13 +902,13 @@
               {
                 "row_index": 6,
                 "column_index": 2,
-                "content": "(10.481.046,11)",
+                "content": "-10.481.046,11",
                 "header": false
               },
               {
                 "row_index": 6,
                 "column_index": 3,
-                "content": "(5.311.856,24)",
+                "content": "-5.311.856,24",
                 "header": false
               },
               {
@@ -926,13 +926,13 @@
               {
                 "row_index": 7,
                 "column_index": 2,
-                "content": "(1.147.214,81)",
+                "content": "-1.147.214,81",
                 "header": false
               },
               {
                 "row_index": 7,
                 "column_index": 3,
-                "content": "(393.553,73)",
+                "content": "-393.553,73",
                 "header": false
               },
               {
@@ -950,13 +950,13 @@
               {
                 "row_index": 8,
                 "column_index": 2,
-                "content": "(5.665.652,88)",
+                "content": "-5.665.652,88",
                 "header": false
               },
               {
                 "row_index": 8,
                 "column_index": 3,
-                "content": "(1.971.139,68)",
+                "content": "-1.971.139,68",
                 "header": false
               },
               {
@@ -974,13 +974,13 @@
               {
                 "row_index": 9,
                 "column_index": 2,
-                "content": "(4.147.072,17)",
+                "content": "-4.147.072,17",
                 "header": false
               },
               {
                 "row_index": 9,
                 "column_index": 3,
-                "content": "(1.580.644,84)",
+                "content": "-1.580.644,84",
                 "header": false
               },
               {
@@ -998,13 +998,13 @@
               {
                 "row_index": 10,
                 "column_index": 2,
-                "content": "(875.194,08)",
+                "content": "-875.194,08",
                 "header": false
               },
               {
                 "row_index": 10,
                 "column_index": 3,
-                "content": "(233.688,91)",
+                "content": "-233.688,91",
                 "header": false
               },
               {
@@ -1022,13 +1022,13 @@
               {
                 "row_index": 11,
                 "column_index": 2,
-                "content": "(643.386,63)",
+                "content": "-643.386,63",
                 "header": false
               },
               {
                 "row_index": 11,
                 "column_index": 3,
-                "content": "(156.805,93)",
+                "content": "-156.805,93",
                 "header": false
               },
               {
@@ -1094,13 +1094,13 @@
               {
                 "row_index": 14,
                 "column_index": 2,
-                "content": "(732.686,91)",
+                "content": "-732.686,91",
                 "header": false
               },
               {
                 "row_index": 14,
                 "column_index": 3,
-                "content": "(240.262,70)",
+                "content": "-240.262,70",
                 "header": false
               },
               {
@@ -1118,13 +1118,13 @@
               {
                 "row_index": 15,
                 "column_index": 2,
-                "content": "(732.686,91)",
+                "content": "-732.686,91",
                 "header": false
               },
               {
                 "row_index": 15,
                 "column_index": 3,
-                "content": "(240.262,70)",
+                "content": "-240.262,70",
                 "header": false
               }
             ]

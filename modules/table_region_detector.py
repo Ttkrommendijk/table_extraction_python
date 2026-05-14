@@ -45,6 +45,12 @@ def _row_has_alpha(row):
 def _is_value_word(word):
     text = word["text"].strip()
 
+    # Standalone dashes are too ambiguous for region splitting. In labels such
+    # as "Impostos sobre a renda - corrente" they can otherwise create a false
+    # value column and trigger an invalid side-by-side split.
+    if text == "-":
+        return False
+
     if is_small_note_reference(text):
         return False
 
@@ -70,7 +76,30 @@ def _clone_row_with_words(row, words):
 
 
 def _looks_like_start(row):
-    text = _row_text_lower(row)
+    text = _row_text_lower(row).strip()
+
+    # Page titles like "Demonstração dos resultados" and date/unit lines are
+    # not table starts. Starting there pollutes value-column detection and can
+    # trigger a false side-by-side split on DRE pages.
+    title_terms = {
+        "resultados",
+        "resultado",
+        "demonstração dos resultados",
+        "demonstracao dos resultados",
+        "demonstração do resultado",
+        "demonstracao do resultado",
+        "exercícios findos",
+        "exercicios findos",
+        "milhares de reais",
+        "unidades de reais",
+    }
+
+    if not text:
+        return False
+
+    if text in title_terms or any(term in text for term in title_terms if len(term) > 10):
+        return False
+
     return any(keyword in text for keyword in TABLE_START_KEYWORDS)
 
 

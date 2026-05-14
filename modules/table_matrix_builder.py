@@ -7,10 +7,12 @@ from modules.column_detector import (
     is_small_note_reference,
 )
 from modules.table_region_detector import split_side_by_side_regions, detect_table_regions
+from modules.financial_token_normalizer import normalize_financial_tokens_in_rows
 
 
 NOISE_WORDS = {
     "ff",
+    "러러",
 }
 
 # Klippa compatibility principle:
@@ -145,8 +147,12 @@ def _visible_text_is_partial_line(full_text, visible_text):
     return visible in full
 
 
+def _has_latin_alpha(text):
+    return bool(re.search(r"[A-Za-zÀ-ÖØ-öø-ÿ]", text or ""))
+
+
 def _line_has_alpha(words):
-    return any(any(ch.isalpha() for ch in w.get("text", "")) for w in words)
+    return any(_has_latin_alpha(w.get("text", "")) for w in words)
 
 
 def _line_words_text(words):
@@ -157,36 +163,62 @@ def _source_line_text(word):
     return word.get("line_text", "").strip()
 
 
-def _should_restore_label_from_source_line(full_text, visible_words):
-    """Decide whether to use OCRParse LineText for the label cell.
+def _source_line_is_label_like(full_text):
+    normalized = _normalize_line_text_for_compare(full_text)
 
-    This is intentionally conservative. It only restores the line text when the
-    current region contains a partial alpha fragment of that OCR line and the
-    source line does not contain amount-like values. This prevents full-row
-    LineText from swallowing note/value columns, while fixing cases where a
-    geometry split left only "terrenos" from "Fornecedores - terrenos".
-    """
-
-    if not full_text:
+    if not normalized:
         return False
 
     if _line_text_has_amount(full_text):
         return False
 
+    # Do not move visual headers such as Nota, Controladora, Consolidado,
+    # Individual or currency markers into the label column. These should keep
+    # their geometric column assignment.
+    if normalized in HEADER_TERMS:
+        return False
+
+    if "r$" in normalized or "$" in normalized:
+        return False
+
+    if not _has_latin_alpha(normalized):
+        return False
+
+    return True
+
+
+def _should_restore_label_from_source_line(full_text, visible_words):
+    """Decide whether to use OCRParse LineText for the label cell.
+
+    OCRParse LineText is useful for preserving word order, but it must not be
+    used blindly when the same source line also contains note references. In
+    those cases, restoring the full line leaks notes such as "9 e 11" into the
+    label cell.
+    """
+
+    if not _source_line_is_label_like(full_text):
+        return False
+
     if not _line_has_alpha(visible_words):
         return False
 
-    visible_text = _line_words_text(visible_words)
+    # If the OCR line contains compact note references, keep the geometric
+    # label/note split instead of restoring the entire source line.
+    if any(is_small_note_reference(w.get("text", "").strip()) for w in visible_words):
+        return False
 
-    return _visible_text_is_partial_line(full_text, visible_text)
+    if re.search(r"\b\d{1,2}\s+e\s+\d{1,2}\b", full_text, flags=re.IGNORECASE):
+        return False
+
+    return True
 
 
 def _restore_label_cells_from_source_lines(row, row_cells):
-    """Restore complete OCRParse label lines after geometric splitting.
+    """Restore OCRParse label line order without leaking notes/values.
 
-    Rows are reconstructed from words, but OCRParse can provide a correct
-    LineText. When a region split/crop leaves a partial label fragment, replace
-    the label cell with the original LineText for that source line.
+    Only full source lines that are independently label-like are restored. Do
+    not append other row words here, because note fragments like the "e" in
+    "9 e 11" can otherwise leak back into the label cell.
     """
 
     words_by_line = defaultdict(list)
@@ -200,40 +232,15 @@ def _restore_label_cells_from_source_lines(row, row_cells):
         words_by_line[line_id].append(word)
 
     restored_lines = []
-    restored_line_ids = set()
 
-    for line_id, words in words_by_line.items():
+    for line_id, words in sorted(words_by_line.items()):
         full_text = _source_line_text(words[0])
 
         if _should_restore_label_from_source_line(full_text, words):
             restored_lines.append(full_text)
-            restored_line_ids.add(line_id)
 
-    if not restored_lines:
-        return row_cells
-
-    remaining_label_words = []
-
-    for word in row.get("words", []):
-        if word.get("line_id") in restored_line_ids:
-            continue
-
-        text = word.get("text", "").strip()
-
-        if not text or text.lower() in NOISE_WORDS:
-            continue
-
-        # Keep non-restored ordinary label words that were already destined for
-        # the label column. Do not pull note/value words into the label.
-        if not is_numeric(text) and not is_small_note_reference(text):
-            remaining_label_words.append(text)
-
-    combined = []
-    combined.extend(remaining_label_words)
-    combined.extend(restored_lines)
-
-    if combined:
-        row_cells[0] = combined
+    if restored_lines:
+        row_cells[0] = restored_lines
 
     return row_cells
 
@@ -404,7 +411,7 @@ def _assign_word_to_column(word, anchors, row_is_header_like):
             abs(center_x - note_anchor["x"]) <= 120
             and (
                 is_small_note_reference(text)
-                or lower in {"nota", "notas", "explicativa", "explicativas"}
+                or lower in {"nota", "notas", "explicativa", "explicativas", "e"}
             )
         ):
             return note_anchor["index"]
@@ -430,11 +437,29 @@ def _assign_word_to_column(word, anchors, row_is_header_like):
     return 0
 
 
+
+
+def _clean_cell_content(content):
+    content = content.strip()
+
+    # If a wide placeholder dash was OCR'd immediately before a normal amount,
+    # it can end up in the same value cell as "- 128.289". True negatives are
+    # normalized earlier to "-128.289" with no space, so this removes only the
+    # placeholder artifact.
+    match = re.match(r"^-\s+(\d{1,3}(?:[.,]\d{3})*(?:[.,]\d+)?)$", content)
+
+    if match:
+        return match.group(1)
+
+    return content
+
 # =========================================================
 # matrix creation
 # =========================================================
 
 def rows_to_matrix(rows, numeric_columns=None):
+    rows = normalize_financial_tokens_in_rows(rows)
+
     if numeric_columns is None:
         numeric_columns = detect_numeric_columns(rows)
 
@@ -470,7 +495,7 @@ def rows_to_matrix(rows, numeric_columns=None):
 
         for col in range(column_count):
             content = " ".join(row_cells.get(col, [])).strip()
-            matrix_row.append(content)
+            matrix_row.append(_clean_cell_content(content))
 
         # Preserve visual rows that contain any text/value. Do not remove sparse
         # rows, because Klippa keeps many sparse subtotal/header rows.
@@ -721,6 +746,7 @@ def reconstruct_matrices_from_rows(rows):
         if not region_rows:
             continue
 
+        region_rows = normalize_financial_tokens_in_rows(region_rows)
         numeric_columns = detect_numeric_columns(region_rows)
         matrix = rows_to_matrix(region_rows, numeric_columns)
         matrix = normalize_matrix(matrix)
