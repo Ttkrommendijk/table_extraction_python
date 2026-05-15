@@ -6,7 +6,7 @@
         "tables": [
           {
             "document": 0,
-            "row_count": 18,
+            "row_count": 36,
             "column_count": 3,
             "cells": [
               {
@@ -332,334 +332,327 @@
                 "column_index": 2,
                 "content": "103.705.195,02",
                 "header": false
-              }
-            ]
-          },
-          {
-            "document": 0,
-            "row_count": 18,
-            "column_count": 3,
-            "cells": [
+              },
               {
-                "row_index": 0,
+                "row_index": 18,
                 "column_index": 0,
                 "content": "PASSIVO",
-                "header": true
+                "header": false
               },
               {
-                "row_index": 0,
+                "row_index": 18,
                 "column_index": 1,
                 "content": "",
-                "header": true
+                "header": false
               },
               {
-                "row_index": 0,
+                "row_index": 18,
                 "column_index": 2,
                 "content": "",
-                "header": true
+                "header": false
               },
               {
-                "row_index": 1,
+                "row_index": 19,
                 "column_index": 0,
                 "content": "CIRCULANTE",
                 "header": false
               },
               {
-                "row_index": 1,
+                "row_index": 19,
                 "column_index": 1,
                 "content": "18.900.284,64",
                 "header": false
               },
               {
-                "row_index": 1,
+                "row_index": 19,
                 "column_index": 2,
                 "content": "13.907.931,58",
                 "header": false
               },
               {
-                "row_index": 2,
+                "row_index": 20,
                 "column_index": 0,
                 "content": "Fornecedores",
                 "header": false
               },
               {
-                "row_index": 2,
+                "row_index": 20,
                 "column_index": 1,
                 "content": "12.927.893,52",
                 "header": false
               },
               {
-                "row_index": 2,
+                "row_index": 20,
                 "column_index": 2,
                 "content": "9.656.621,59",
                 "header": false
               },
               {
-                "row_index": 3,
+                "row_index": 21,
                 "column_index": 0,
                 "content": "Obrigações Fiscais",
                 "header": false
               },
               {
-                "row_index": 3,
+                "row_index": 21,
                 "column_index": 1,
                 "content": "1.644.975,97",
                 "header": false
               },
               {
-                "row_index": 3,
+                "row_index": 21,
                 "column_index": 2,
                 "content": "1.665.351,45",
                 "header": false
               },
               {
-                "row_index": 4,
+                "row_index": 22,
                 "column_index": 0,
                 "content": "Obrigações trabalhistas",
                 "header": false
               },
               {
-                "row_index": 4,
+                "row_index": 22,
                 "column_index": 1,
                 "content": "2.445.385,56",
                 "header": false
               },
               {
-                "row_index": 4,
+                "row_index": 22,
                 "column_index": 2,
                 "content": "1.536.378,32",
                 "header": false
               },
               {
-                "row_index": 5,
+                "row_index": 23,
                 "column_index": 0,
                 "content": "Outras contas a pagar",
                 "header": false
               },
               {
-                "row_index": 5,
+                "row_index": 23,
                 "column_index": 1,
                 "content": "1.882.029,59",
                 "header": false
               },
               {
-                "row_index": 5,
+                "row_index": 23,
                 "column_index": 2,
                 "content": "1.049.580,22",
                 "header": false
               },
               {
-                "row_index": 6,
+                "row_index": 24,
                 "column_index": 0,
                 "content": "NÃO CIRCULANTE",
                 "header": false
               },
               {
-                "row_index": 6,
+                "row_index": 24,
                 "column_index": 1,
                 "content": "60.474.007,49",
                 "header": false
               },
               {
-                "row_index": 6,
+                "row_index": 24,
                 "column_index": 2,
                 "content": "45.456.180,63",
                 "header": false
               },
               {
-                "row_index": 7,
+                "row_index": 25,
                 "column_index": 0,
                 "content": "Empréstimos e financiamentos Bancários",
                 "header": false
               },
               {
-                "row_index": 7,
+                "row_index": 25,
                 "column_index": 1,
                 "content": "17.960.990,29",
                 "header": false
               },
               {
-                "row_index": 7,
+                "row_index": 25,
                 "column_index": 2,
                 "content": "15.211.801,92",
                 "header": false
               },
               {
-                "row_index": 8,
+                "row_index": 26,
                 "column_index": 0,
                 "content": "Empréstimos de pessoas ligadas",
                 "header": false
               },
               {
-                "row_index": 8,
+                "row_index": 26,
                 "column_index": 1,
                 "content": "3.783.590,69",
                 "header": false
               },
               {
-                "row_index": 8,
+                "row_index": 26,
                 "column_index": 2,
                 "content": "2.080.906,45",
                 "header": false
               },
               {
-                "row_index": 9,
+                "row_index": 27,
                 "column_index": 0,
                 "content": "Empréstimos c/terceiro",
                 "header": false
               },
               {
-                "row_index": 9,
+                "row_index": 27,
                 "column_index": 1,
                 "content": "6.437.765,39",
                 "header": false
               },
               {
-                "row_index": 9,
+                "row_index": 27,
                 "column_index": 2,
                 "content": "880.741,81",
                 "header": false
               },
               {
-                "row_index": 10,
+                "row_index": 28,
                 "column_index": 0,
                 "content": "Adiantamento de clientes",
                 "header": false
               },
               {
-                "row_index": 10,
+                "row_index": 28,
                 "column_index": 1,
                 "content": "31.876.540,87",
                 "header": false
               },
               {
-                "row_index": 10,
+                "row_index": 28,
                 "column_index": 2,
                 "content": "23.726.457,32",
                 "header": false
               },
               {
-                "row_index": 11,
+                "row_index": 29,
                 "column_index": 0,
                 "content": "Obrigações Fiscais",
                 "header": false
               },
               {
-                "row_index": 11,
+                "row_index": 29,
                 "column_index": 1,
                 "content": "1.003,39",
                 "header": false
               },
               {
-                "row_index": 11,
+                "row_index": 29,
                 "column_index": 2,
                 "content": "583.263,12",
                 "header": false
               },
               {
-                "row_index": 12,
+                "row_index": 30,
                 "column_index": 0,
                 "content": "Outros Créditos",
                 "header": false
               },
               {
-                "row_index": 12,
+                "row_index": 30,
                 "column_index": 1,
                 "content": "",
                 "header": false
               },
               {
-                "row_index": 12,
+                "row_index": 30,
                 "column_index": 2,
                 "content": "2.558.893,15",
                 "header": false
               },
               {
-                "row_index": 13,
+                "row_index": 31,
                 "column_index": 0,
                 "content": "Provisão para contingência",
                 "header": false
               },
               {
-                "row_index": 13,
+                "row_index": 31,
                 "column_index": 1,
                 "content": "414.116,86",
                 "header": false
               },
               {
-                "row_index": 13,
+                "row_index": 31,
                 "column_index": 2,
                 "content": "414.116,86",
                 "header": false
               },
               {
-                "row_index": 14,
+                "row_index": 32,
                 "column_index": 0,
                 "content": "PATRIMÔNIO LÍQUIDO",
                 "header": false
               },
               {
-                "row_index": 14,
+                "row_index": 32,
                 "column_index": 1,
                 "content": "40.658.712,97",
                 "header": false
               },
               {
-                "row_index": 14,
+                "row_index": 32,
                 "column_index": 2,
                 "content": "44.341.082,81",
                 "header": false
               },
               {
-                "row_index": 15,
+                "row_index": 33,
                 "column_index": 0,
                 "content": "Capital social",
                 "header": false
               },
               {
-                "row_index": 15,
+                "row_index": 33,
                 "column_index": 1,
                 "content": "26.240.546,00",
                 "header": false
               },
               {
-                "row_index": 15,
+                "row_index": 33,
                 "column_index": 2,
                 "content": "26.240.546,00",
                 "header": false
               },
               {
-                "row_index": 16,
+                "row_index": 34,
                 "column_index": 0,
                 "content": "Lucros (prejuízos) acumulados",
                 "header": false
               },
               {
-                "row_index": 16,
+                "row_index": 34,
                 "column_index": 1,
                 "content": "14.418.166,97",
                 "header": false
               },
               {
-                "row_index": 16,
+                "row_index": 34,
                 "column_index": 2,
                 "content": "18.100.536,81",
                 "header": false
               },
               {
-                "row_index": 17,
+                "row_index": 35,
                 "column_index": 0,
                 "content": "TOTAL DO PASSIVO",
                 "header": false
               },
               {
-                "row_index": 17,
+                "row_index": 35,
                 "column_index": 1,
                 "content": "120.033.005,10",
                 "header": false
               },
               {
-                "row_index": 17,
+                "row_index": 35,
                 "column_index": 2,
                 "content": "103.705.195,02",
                 "header": false

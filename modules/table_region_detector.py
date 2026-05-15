@@ -56,6 +56,10 @@ def _is_period_like(text):
     if not value:
         return False
 
+    # Accept period headers with a restatement/qualifier suffix, e.g.
+    # "2022 (Reapresentado)". The period is still the structural anchor.
+    value = re.sub(r"\s*\([^)]*\)\s*$", "", value).strip()
+
     if re.fullmatch(r"(?:19|20)\d{2}", value):
         return True
 
@@ -141,18 +145,104 @@ def _recover_header_start_index(rows, first_body_index):
     return start_index
 
 
+def _row_amount_centers(row):
+    return [
+        word["center_x"]
+        for word in row.get("words", [])
+        if _is_value_word(word)
+    ]
+
+
+def _row_looks_like_page_metadata(row):
+    """Return True for document titles/metadata that should not start a table.
+
+    This is intentionally structural. Metadata rows often sit above the visual
+    table, contain many words, and either have no repeated value columns or have
+    identifiers/dates embedded in prose. They should not be allowed to become
+    the first body row, otherwise header recovery starts too high and side by
+    side detection can split normal value columns.
+    """
+
+    text = _row_text_lower(row).strip()
+
+    if not text:
+        return True
+
+    metadata_terms = {
+        "cnpj",
+        "exercícios findos",
+        "exercicios findos",
+        "milhares de reais",
+        "em milhares",
+        "unidades de reais",
+    }
+
+    if any(term in text for term in metadata_terms):
+        return True
+
+    words = row.get("words", [])
+    alpha_words = sum(1 for word in words if _is_alpha_word(word))
+    value_words = sum(1 for word in words if _is_value_word(word))
+
+    # Long text-only title rows are not table body rows.
+    if alpha_words >= 2 and value_words == 0 and len(words) >= 3:
+        return True
+
+    return False
+
+
+def _has_following_aligned_body_rows(rows, start_index, reference_centers):
+    if not reference_centers:
+        return False
+
+    matches = 0
+
+    for row in rows[start_index + 1:start_index + 8]:
+        if _row_looks_like_page_metadata(row) or _looks_like_end(row):
+            continue
+
+        centers = _row_amount_centers(row)
+
+        if not centers:
+            continue
+
+        matched_centers = 0
+        for center in centers:
+            if any(abs(center - reference) <= 180 for reference in reference_centers):
+                matched_centers += 1
+
+        if matched_centers >= min(1, len(reference_centers)) and _row_has_alpha(row):
+            matches += 1
+
+        if matches >= 2:
+            return True
+
+    return False
+
+
 def _find_first_body_index(rows):
     for idx, row in enumerate(rows):
         text = _row_text_lower(row).strip()
 
-        if not text or _looks_like_end(row):
+        if not text or _looks_like_end(row) or _row_looks_like_page_metadata(row):
             continue
 
-        if _looks_like_body_row(row):
+        centers = _row_amount_centers(row)
+
+        # Prefer rows that already show at least two value columns. This is the
+        # strongest generic signal for a financial table body row.
+        if _row_has_alpha(row) and len(centers) >= 2:
             return idx
 
+        # Some statements only have one populated amount in the first body row.
+        # Accept it only when following rows repeat the same value-column
+        # geometry, preventing metadata identifiers from starting the table.
+        if _row_has_alpha(row) and len(centers) == 1:
+            if _has_following_aligned_body_rows(rows, idx, centers):
+                return idx
+
     for idx, row in enumerate(rows):
-        if _row_has_number(row):
+        if _row_has_number(row) and not _row_looks_like_page_metadata(row):
             return idx
 
     return 0
@@ -597,7 +687,7 @@ def _split_after_final_total_restarts(rows):
 
         for probe in range(idx + 1, min(len(rows), idx + 6)):
             gap = rows[probe].get("center_y", 0) - row.get("center_y", 0)
-            if median_gap and gap < median_gap * 1.2:
+            if median_gap and gap < median_gap * 3.0:
                 continue
 
             if _row_has_number(rows[probe]):

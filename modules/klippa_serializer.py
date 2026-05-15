@@ -12,6 +12,10 @@ def _is_period_cell(content):
     if not value:
         return False
 
+    # Accept period headers with a qualifier suffix, e.g.
+    # "2022 (Reapresentado)". The period remains the structural anchor.
+    value = re.sub(r"\s*\([^)]*\)\s*$", "", value).strip()
+
     if re.fullmatch(r"(?:19|20)\d{2}", value):
         return True
 

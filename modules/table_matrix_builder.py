@@ -288,6 +288,10 @@ def _is_period_cell(text):
     if not value:
         return False
 
+    # Accept period headers with a restatement/qualifier suffix, e.g.
+    # "2022 (Reapresentado)". The period is still the structural anchor.
+    value = re.sub(r"\s*\([^)]*\)\s*$", "", value).strip()
+
     if re.fullmatch(r"(?:19|20)\d{2}", value):
         return True
 
@@ -919,11 +923,10 @@ def filter_non_table_rows(matrix):
         if _row_amount_count(row) >= 1:
             seen_numeric_table_row = True
 
-        # Strong final-total rows close the current visual table. This prevents
-        # trailing signatures, certification text and footer fragments from being
-        # serialized as extra table rows.
-        if seen_numeric_table_row and _is_final_total_row(row):
-            break
+        # Do not close the visual table on final-total rows. Klippa commonly
+        # keeps later sections on the same page in the same table component,
+        # for example an Ativo section followed by Passivo on one page. Footer
+        # narrative removal above is enough to stop after the real table.
 
     return filtered
 
@@ -949,17 +952,44 @@ def _merge_note_header(cell_a, cell_b):
     return text
 
 
+def _has_note_header_cell(row):
+    return any(cell.strip().lower() in {"nota", "notas"} for cell in row)
+
+
+def _row_has_restatement_marker(row):
+    text = " ".join(row).lower()
+    return "reapresent" in text
+
+
+def _nonempty_cell_count(row):
+    return sum(1 for cell in row if cell.strip())
+
+
+def _merge_rows_by_column(top, bottom):
+    width = max(len(top), len(bottom))
+    top = top + [""] * (width - len(top))
+    bottom = bottom + [""] * (width - len(bottom))
+    return [_join_nonempty(top[idx], bottom[idx]) for idx in range(width)]
+
+
+def _is_sparse_period_row(row):
+    return _row_period_count(row) >= 1 and _nonempty_cell_count(row) <= 2
+
+
+def _is_column_header_row(row):
+    return _has_note_header_cell(row) or _row_period_count(row) >= 1 or _row_has_restatement_marker(row)
+
+
 def merge_multiline_rows(matrix):
-    """Normalize the most common Klippa-style multi-line headers.
+    """Normalize multi-line visual headers before serialization.
 
-    OCRParse often emits the first table header as three rows:
-    row 0: "Nota"
-    row 1: table title + "explicativa" + group labels
-    row 2: years
-
-    Klippa emits this as two header rows, with "Nota explicativa" merged and
-    years on the second header row. Keep this rule deliberately narrow so body
-    rows remain visual and untouched.
+    The rule is geometry/pattern based and mirrors Klippa behavior:
+    * section title rows such as a left-side title can remain as their own
+      header row;
+    * period labels split across two OCR rows are merged column-wise, e.g.
+      ``2022`` + ``(Reapresentado)`` -> ``2022 (Reapresentado)``;
+    * note/year header rows are kept above the first body/section row instead
+      of allowing the first body row to become the header.
     """
 
     if len(matrix) < 2:
@@ -968,6 +998,28 @@ def merge_multiline_rows(matrix):
     rows = [row[:] for row in matrix]
     width = max(len(row) for row in rows)
     rows = [row + [""] * (width - len(row)) for row in rows]
+
+    # Generic vertical merge for a sparse period row immediately followed by a
+    # note/year/restatement header row. This fixes layouts where OCR emits:
+    # row A:                         2022
+    # row B:          Nota    2023   (Reapresentado)
+    # Klippa represents that as:     Nota | 2023 | 2022 (Reapresentado)
+    idx = 0
+    merged = []
+    while idx < len(rows):
+        if (
+            idx + 1 < len(rows)
+            and _is_sparse_period_row(rows[idx])
+            and _is_column_header_row(rows[idx + 1])
+        ):
+            merged.append(_merge_rows_by_column(rows[idx], rows[idx + 1]))
+            idx += 2
+            continue
+
+        merged.append(rows[idx])
+        idx += 1
+
+    rows = merged
 
     if len(rows) >= 3 and _is_year_row(rows[2]):
         r0, r1, r2 = rows[0], rows[1], rows[2]
