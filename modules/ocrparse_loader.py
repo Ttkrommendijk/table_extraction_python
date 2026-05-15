@@ -119,7 +119,7 @@ def extract_text_content(ocr_json: dict) -> list:
 
     OCRParse stores full page text in ParsedResults[n].ParsedText. The
     Klippa-compatible output should expose that as
-    components.tables.text_content, split one list item per OCR page.
+    ocr_result_klippa.text_content, split one list item per OCR page.
 
     We intentionally prefer ParsedText over Overlay.LineText because
     ParsedText is the OCR engine's own page-level text reconstruction.

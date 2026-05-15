@@ -84,10 +84,10 @@ def serialize_klippa_result(tables, text_content=None, version="1"):
             "version": "1",
             "components": {
                 "tables": {
-                    "tables": [...],
-                    "text_content": [...]
+                    "tables": [...]
                 }
-            }
+            },
+            "text_content": [...]
         }
     }
 
@@ -107,19 +107,20 @@ def serialize_klippa_result(tables, text_content=None, version="1"):
             "components": {
                 "tables": {
                     "tables": tables,
-                    "text_content": text_content,
                 }
             },
+            "text_content": text_content,
         }
     }
 
 
 def attach_text_content_to_klippa_result(result, text_content):
-    """Add components.tables.text_content to an existing result in place.
+    """Add text_content to an existing result in place.
 
     This helper is useful for existing pipeline code that already creates the
-    result envelope manually. It preserves all current table data and only adds
-    or replaces the text_content sibling key.
+    result envelope manually. It preserves all current table data and adds or
+    replaces text_content as a sibling of components. If an older result has
+    components.tables.text_content, it is moved to the new root-level location.
     """
 
     root = result.setdefault("ocr_result_klippa", {})
@@ -127,7 +128,8 @@ def attach_text_content_to_klippa_result(result, text_content):
     components = root.setdefault("components", {})
     tables_component = components.setdefault("tables", {})
     tables_component.setdefault("tables", [])
-    tables_component["text_content"] = text_content or []
+    tables_component.pop("text_content", None)
+    root["text_content"] = text_content or []
     return result
 
 
@@ -136,7 +138,7 @@ def serialize_klippa_result_from_ocrparse(tables, ocr_json, version="1"):
 
     This is the safest entry point for runners that have the OCRParse JSON
     available at serialization time. It guarantees that
-    components.tables.text_content is populated from ParsedText per page.
+    root-level text_content is populated from ParsedText per page.
     """
 
     return serialize_klippa_result(
