@@ -587,6 +587,30 @@ def _looks_like_table_start(row):
     if any(cell.strip().isdigit() and len(cell.strip()) == 4 for cell in row):
         return True
 
+    # Last-resort continuation-table support: if a later block starts directly
+    # with data rows and does not repeat a strong semantic title, accept the
+    # first label + values row as a table start. Header-only rows such as
+    # "Conta | 31/12/..." are deliberately excluded so existing full-table
+    # pages keep their previous crop behavior.
+    header_like_terms = {
+        "conta",
+        "descricao da conta",
+        "descrição da conta",
+        "ultimo exercicio",
+        "último exercício",
+        "penultimo exercicio",
+        "penúltimo exercício",
+        "antepenultimo exercicio",
+        "antepenúltimo exercício",
+    }
+    non_empty_value_cells = sum(1 for cell in row[1:] if cell.strip())
+    if (
+        _has_latin_alpha(row[0])
+        and non_empty_value_cells >= 2
+        and not any(term in text for term in header_like_terms)
+    ):
+        return True
+
     if any(term in text for term in TABLE_START_TERMS):
         return _row_has_values(row) or text in {"ativo", "passivo", "patrimônio", "patrimonio"}
 

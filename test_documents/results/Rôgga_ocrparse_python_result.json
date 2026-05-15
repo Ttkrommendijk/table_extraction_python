@@ -589,7 +589,7 @@
           },
           {
             "document": 1,
-            "row_count": 34,
+            "row_count": 33,
             "column_count": 4,
             "cells": [
               {
@@ -1383,30 +1383,6 @@
                 "column_index": 3,
                 "content": "110.651",
                 "header": false
-              },
-              {
-                "row_index": 33,
-                "column_index": 0,
-                "content": "Total do passivo e patrimônio líquido",
-                "header": false
-              },
-              {
-                "row_index": 33,
-                "column_index": 1,
-                "content": "",
-                "header": false
-              },
-              {
-                "row_index": 33,
-                "column_index": 2,
-                "content": "922.319",
-                "header": false
-              },
-              {
-                "row_index": 33,
-                "column_index": 3,
-                "content": "619.943",
-                "header": false
               }
             ]
           },
@@ -1873,13 +1849,13 @@
               }
             ]
           }
-        ],
-        "text_content": [
-          "Rôgga S.A. Construtora e Incorporadora\t\r\nBalanço patrimonial\t\r\n31 de dezembro de 2023 e 2022\t\r\n(Em milhares de reais)\t\r\nNota\t31/12/2023\t31/12/2022\t\r\nCirculante\t\r\nCaixa e equivalentes de caixa\t4\t118.441\t67.628\t\r\nAplicações financeiras\t1.207\t\r\nContas a receber de clientes\t213.094\t100.600\t\r\nEstoques\t243.380\t186.310\t\r\nImpostos a recuperar\t1.931\t1.775\t\r\nDespesas do exercício seguinte\t37.704\t25.367\t\r\nOutros créditos\t4.385\t3.302\t\r\nTotal do ativo circulante\t618.935\t386.189\t\r\nNão circulante\t\r\nRealizável a longo prazo\t\r\nAplicações financeiras\t24.385\t257\t\r\nContas a receber de clientes\t5\t16.174\t\r\nEstoques de terrenos\t6\t224.811\t172.422\t\r\nDespesas do exercício seguinte\t10\t23.224\t19.182\t\r\nDepósitos judiciais\t18\t392\t224\t\r\nOutros créditos\t186\t186\t\r\nTotal do realizável a longo prazo\t272.998\t208.445\t\r\nImobilizado\t7\t27.810\t21.864\t\r\nDireito de uso de arrendamento\t8\t2.449\t3.415\t\r\nIntangível\t9\t127\t30\t\r\nTotal do ativo não circulante\t303.384\t233.754\t\r\nTotal do ativo\t922.319\t619.943\t\r\n7",
-          "Rôgga S.A. Construtora e Incorporadora\t\r\nBalanço patrimonial\t\r\n31 de dezembro de 2023 e 2022\t\r\n(Em milhares de reais)\t\r\nNota\t31/12/2023\t31/12/2022\t\r\nPassivo\t\r\nCirculante\t\r\nFF\t\r\nFornecedores\t41.048\t16.399\t\r\nFornecedores - terrenos\t129.808\t66.730\t\r\nEmpréstimos e financiamentos\t12\t17.082\t31.908\t\r\nDebêntures - parte relacionada\t13\t8.757\t20.109\t\r\nDebêntures\t13\t31.040\t\r\nArrendamentos a pagar\t8\t1.457\t1.680\t\r\nObrigações tributárias\t5.368\t3.528\t\r\nTributos diferidos\t14\t8.715\t2.528\t\r\nObrigações sociais\t21.707\t13.367\t\r\nObrigações estatutárias\t12.157\t6.606\t\r\nOutras obrigações\t15\t50.637\t80.081\t\r\nTotal do passivo circulante\t327.776\t242.936\t\r\nNão circulante\t\r\nFornecedores\t11\t3.046\t3.151\t\r\nFornecedores de terrenos\t11\t24.230\t51.540\t\r\nArrendamentos a pagar\t8\t1.287\t2.116\t\r\nEmpréstimos e financiamentos\t12\t192.883\t95.719\t\r\nDebêntures - parte relacionada\t13\t14.193\t\r\nDebêntures\t13\t99.922\t30.583\t\r\nProvisões\t18\t30.567\t19.978\t\r\nParceiros em empreendimentos imobiliários\t16\t33.760\t25.562\t\r\nObrigações tributárias\t843\t1.393\t\r\nOutras obrigações\t15\t13.005\t22.121\t\r\nTotal do passivo não circulante\t399.543\t266.356\t\r\nPatrimônio líquido\t\r\nCapital social\t19\t59.498\t38.933\t\r\nReservas de lucros\t111.502\t55.945\t\r\nReserva legal\t12.000\t8.012\t\r\nReserva estatutária\t12.000\t7.761\t\r\nTotal do patrimônio líquido\t195.000\t110.651\t\r\nTotal do passivo e patrimônio líquido\t922.319\t619.943\t\r\nAs notas explicativas são parte integrante das demonstrações financeiras.\t\r\n8",
-          "Rôgga S.A. Construtora e Incorporadora\t\r\nDemonstração do resultado\t\r\nExercícios findos em 31 de dezembro de 2023 e 2022\t\r\n(Em milhares de reais, exceto lucro por ação, em reais)\t\r\nNota\t2023\t2022\t\r\nReceita operacional líquida\t20\t637.975\t384.054\t\r\n(-) Custos dos bens vendidos\t22\t(394.105)\t(241.917)\t\r\nLucro bruto\t243.870\t142.137\t\r\nDespesas operacionais\t\r\nCom vendas\t23\t(63.320)\t(41.748)\t\r\nGerais e administrativas\t23\t(58,850)\t(36.277)\t\r\nOutras receitas operacionais, líquidas\t24\t4.461\t5.517\t\r\nTotal despesas operacionais\t(117.709)\t(72.508)\t\r\nLucro operacional antes do resultado\t126.161\t69.629\t\r\nfinanceiro\t\r\nResultado financeiro\t\r\nReceitas financeiras\t25\t8.628\t6.760\t\r\nDespesas financeiras\t25\t(30.135)\t(18.463)\t\r\nTotal resultado financeiro\t(21.507)\t(11.703)\t\r\nLucro antes dos impostos sobre o lucro\t104.654\t57.926\t\r\nImposto de renda e contribuição social\t14\t(15.380)\t(9.282)\t\r\nLucro líquido do exercício\t89.274\t48.644\t\r\nLucro por ação\t5,40\t2,94\t\r\nAs notas explicativas são parte integrante das demonstrações financeiras.\t\r\n9"
         ]
       }
-    }
+    },
+    "text_content": [
+      "Rôgga S.A. Construtora e Incorporadora\t\r\nBalanço patrimonial\t\r\n31 de dezembro de 2023 e 2022\t\r\n(Em milhares de reais)\t\r\nNota\t31/12/2023\t31/12/2022\t\r\nCirculante\t\r\nCaixa e equivalentes de caixa\t4\t118.441\t67.628\t\r\nAplicações financeiras\t1.207\t\r\nContas a receber de clientes\t213.094\t100.600\t\r\nEstoques\t243.380\t186.310\t\r\nImpostos a recuperar\t1.931\t1.775\t\r\nDespesas do exercício seguinte\t37.704\t25.367\t\r\nOutros créditos\t4.385\t3.302\t\r\nTotal do ativo circulante\t618.935\t386.189\t\r\nNão circulante\t\r\nRealizável a longo prazo\t\r\nAplicações financeiras\t24.385\t257\t\r\nContas a receber de clientes\t5\t16.174\t\r\nEstoques de terrenos\t6\t224.811\t172.422\t\r\nDespesas do exercício seguinte\t10\t23.224\t19.182\t\r\nDepósitos judiciais\t18\t392\t224\t\r\nOutros créditos\t186\t186\t\r\nTotal do realizável a longo prazo\t272.998\t208.445\t\r\nImobilizado\t7\t27.810\t21.864\t\r\nDireito de uso de arrendamento\t8\t2.449\t3.415\t\r\nIntangível\t9\t127\t30\t\r\nTotal do ativo não circulante\t303.384\t233.754\t\r\nTotal do ativo\t922.319\t619.943\t\r\n7",
+      "Rôgga S.A. Construtora e Incorporadora\t\r\nBalanço patrimonial\t\r\n31 de dezembro de 2023 e 2022\t\r\n(Em milhares de reais)\t\r\nNota\t31/12/2023\t31/12/2022\t\r\nPassivo\t\r\nCirculante\t\r\nFF\t\r\nFornecedores\t41.048\t16.399\t\r\nFornecedores - terrenos\t129.808\t66.730\t\r\nEmpréstimos e financiamentos\t12\t17.082\t31.908\t\r\nDebêntures - parte relacionada\t13\t8.757\t20.109\t\r\nDebêntures\t13\t31.040\t\r\nArrendamentos a pagar\t8\t1.457\t1.680\t\r\nObrigações tributárias\t5.368\t3.528\t\r\nTributos diferidos\t14\t8.715\t2.528\t\r\nObrigações sociais\t21.707\t13.367\t\r\nObrigações estatutárias\t12.157\t6.606\t\r\nOutras obrigações\t15\t50.637\t80.081\t\r\nTotal do passivo circulante\t327.776\t242.936\t\r\nNão circulante\t\r\nFornecedores\t11\t3.046\t3.151\t\r\nFornecedores de terrenos\t11\t24.230\t51.540\t\r\nArrendamentos a pagar\t8\t1.287\t2.116\t\r\nEmpréstimos e financiamentos\t12\t192.883\t95.719\t\r\nDebêntures - parte relacionada\t13\t14.193\t\r\nDebêntures\t13\t99.922\t30.583\t\r\nProvisões\t18\t30.567\t19.978\t\r\nParceiros em empreendimentos imobiliários\t16\t33.760\t25.562\t\r\nObrigações tributárias\t843\t1.393\t\r\nOutras obrigações\t15\t13.005\t22.121\t\r\nTotal do passivo não circulante\t399.543\t266.356\t\r\nPatrimônio líquido\t\r\nCapital social\t19\t59.498\t38.933\t\r\nReservas de lucros\t111.502\t55.945\t\r\nReserva legal\t12.000\t8.012\t\r\nReserva estatutária\t12.000\t7.761\t\r\nTotal do patrimônio líquido\t195.000\t110.651\t\r\nTotal do passivo e patrimônio líquido\t922.319\t619.943\t\r\nAs notas explicativas são parte integrante das demonstrações financeiras.\t\r\n8",
+      "Rôgga S.A. Construtora e Incorporadora\t\r\nDemonstração do resultado\t\r\nExercícios findos em 31 de dezembro de 2023 e 2022\t\r\n(Em milhares de reais, exceto lucro por ação, em reais)\t\r\nNota\t2023\t2022\t\r\nReceita operacional líquida\t20\t637.975\t384.054\t\r\n(-) Custos dos bens vendidos\t22\t(394.105)\t(241.917)\t\r\nLucro bruto\t243.870\t142.137\t\r\nDespesas operacionais\t\r\nCom vendas\t23\t(63.320)\t(41.748)\t\r\nGerais e administrativas\t23\t(58,850)\t(36.277)\t\r\nOutras receitas operacionais, líquidas\t24\t4.461\t5.517\t\r\nTotal despesas operacionais\t(117.709)\t(72.508)\t\r\nLucro operacional antes do resultado\t126.161\t69.629\t\r\nfinanceiro\t\r\nResultado financeiro\t\r\nReceitas financeiras\t25\t8.628\t6.760\t\r\nDespesas financeiras\t25\t(30.135)\t(18.463)\t\r\nTotal resultado financeiro\t(21.507)\t(11.703)\t\r\nLucro antes dos impostos sobre o lucro\t104.654\t57.926\t\r\nImposto de renda e contribuição social\t14\t(15.380)\t(9.282)\t\r\nLucro líquido do exercício\t89.274\t48.644\t\r\nLucro por ação\t5,40\t2,94\t\r\nAs notas explicativas são parte integrante das demonstrações financeiras.\t\r\n9"
+    ]
   }
 }

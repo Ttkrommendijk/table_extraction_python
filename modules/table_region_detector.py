@@ -292,6 +292,54 @@ def _find_best_split_x(rows):
     return best_split
 
 
+def _split_on_large_vertical_gaps(rows):
+    """Split independent stacked table blocks on large whitespace gaps.
+
+    A large vertical gap is a good signal that one table ended, but it must not
+    stop processing the rest of the page. Prefer returning an extra table block
+    over dropping a later one.
+    """
+
+    if len(rows) < 4:
+        return [rows]
+
+    median_gap = _median_row_gap(rows)
+    if not median_gap:
+        return [rows]
+
+    regions = []
+    current = [rows[0]]
+    previous = rows[0]
+
+    for row in rows[1:]:
+        gap = row.get("center_y", 0) - previous.get("center_y", 0)
+
+        if gap >= median_gap * 2.8 and _region_has_table_content(current):
+            regions.append(current)
+            current = [row]
+        else:
+            current.append(row)
+
+        previous = row
+
+    if current:
+        regions.append(current)
+
+    return regions or [rows]
+
+
+def _split_table_restarts(rows):
+    """Apply all vertical split heuristics while preserving later blocks."""
+
+    split_regions = []
+
+    for gap_region in _split_on_large_vertical_gaps(rows):
+        restart_regions = _split_after_final_total_restarts(gap_region)
+        split_regions.extend(restart_regions)
+
+    return [region for region in split_regions if _region_has_table_content(region)] or [rows]
+
+
 def split_side_by_side_regions(rows):
     """
     Return independent visual table regions. If no strong split is detected,
@@ -299,12 +347,12 @@ def split_side_by_side_regions(rows):
     """
 
     if not should_split_side_by_side(rows):
-        return _split_after_final_total_restarts(crop_table_region_rows(rows))
+        return _split_table_restarts(crop_table_region_rows(rows))
 
     split_x = _find_best_split_x(rows)
 
     if split_x is None:
-        return _split_after_final_total_restarts(crop_table_region_rows(rows))
+        return _split_table_restarts(crop_table_region_rows(rows))
 
     left_rows = []
     right_rows = []
@@ -333,7 +381,7 @@ def split_side_by_side_regions(rows):
         if _region_has_table_content(cropped):
             regions.append(cropped)
 
-    return regions or _split_after_final_total_restarts(crop_table_region_rows(rows))
+    return regions or _split_table_restarts(crop_table_region_rows(rows))
 
 
 def _normalize_text_for_matching(text):
