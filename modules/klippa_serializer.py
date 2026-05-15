@@ -1,12 +1,37 @@
+import re
+
 try:
     from .ocrparse_loader import extract_text_content, get_last_ocrparse_json
 except ImportError:  # pragma: no cover - supports direct script execution
     from ocrparse_loader import extract_text_content, get_last_ocrparse_json
 
 
+def _is_period_cell(content):
+    value = (content or "").strip().lower()
+
+    if not value:
+        return False
+
+    if re.fullmatch(r"(?:19|20)\d{2}", value):
+        return True
+
+    if re.fullmatch(r"\d{1,2}\s*/\s*\d{1,2}(?:\s*/\s*\d{2,4})?", value):
+        return True
+
+    if re.fullmatch(r"\d{1,2}[/-](?:19|20)\d{2}", value):
+        return True
+
+    if re.fullmatch(r"[a-zçãáàâéêíóôõú]{3,12}[/-](?:19|20)\d{2}", value):
+        return True
+
+    if re.fullmatch(r"[a-zçãáàâéêíóôõú]{3,12}\s+(?:19|20)\d{2}", value):
+        return True
+
+    return False
+
+
 def _is_year_cell(content):
-    value = (content or "").strip()
-    return value.isdigit() and len(value) == 4
+    return _is_period_cell(content)
 
 
 def _row_contains_header_terms(row):

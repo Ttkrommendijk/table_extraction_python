@@ -151,6 +151,37 @@ def _has_latin_alpha(text):
     return bool(re.search(r"[A-Za-zÀ-ÖØ-öø-ÿ]", text or ""))
 
 
+def _is_hierarchical_reference(text):
+    value = (text or "").strip()
+
+    if not re.fullmatch(r"\d+(?:[.]\d+)+", value):
+        return False
+
+    parts = value.split(".")
+
+    if not all(1 <= len(part) <= 3 for part in parts):
+        return False
+
+    # Values such as 1.183.495 are thousands-formatted amounts, not account
+    # references. Account/code references usually contain at least one compact
+    # subgroup such as 01, 02, 10, etc.
+    if len(parts) >= 2 and all(len(part) == 3 for part in parts[1:]):
+        return False
+
+    return True
+
+
+def _is_reference_token(text):
+    value = (text or "").strip()
+    return is_small_note_reference(value) or _is_hierarchical_reference(value)
+
+
+def _word_is_part_of_period(word):
+    line_text = (word.get("line_text") or "").strip()
+    compact_line_text = re.sub(r"\s+", "", line_text)
+    return _is_period_cell(line_text) or _is_period_cell(compact_line_text)
+
+
 def _line_has_alpha(words):
     return any(_has_latin_alpha(w.get("text", "")) for w in words)
 
@@ -218,8 +249,13 @@ def _restore_label_cells_from_source_lines(row, row_cells):
 
     Only full source lines that are independently label-like are restored. Do
     not append other row words here, because note fragments like the "e" in
-    "9 e 11" can otherwise leak back into the label cell.
+    "9 e 11" can otherwise leak back into the label cell. Header-like rows are
+    skipped so visual header cells in value columns are not duplicated into the
+    left label cell.
     """
+
+    if _row_is_header_like(row):
+        return row_cells
 
     words_by_line = defaultdict(list)
 
@@ -246,16 +282,39 @@ def _restore_label_cells_from_source_lines(row, row_cells):
 
 
 
+def _is_period_cell(text):
+    value = (text or "").strip().lower()
+
+    if not value:
+        return False
+
+    if re.fullmatch(r"(?:19|20)\d{2}", value):
+        return True
+
+    compact_value = re.sub(r"\s+", "", value)
+
+    if re.fullmatch(r"\d{1,2}[/-]\d{1,2}(?:[/-]\d{2,4})?", compact_value):
+        return True
+
+    if re.fullmatch(r"\d{1,2}[/-](?:19|20)\d{2}", compact_value):
+        return True
+
+    if re.fullmatch(r"[a-zçãáàâéêíóôõú]{3,12}[/-](?:19|20)\d{2}", value):
+        return True
+
+    if re.fullmatch(r"[a-zçãáàâéêíóôõú]{3,12}\s+(?:19|20)\d{2}", value):
+        return True
+
+    return False
+
+
 def _has_header_term(text):
     normalized = text.strip().lower()
 
     if normalized in HEADER_TERMS:
         return True
 
-    if normalized.isdigit() and len(normalized) == 4:
-        return True
-
-    if "/" in normalized and any(ch.isdigit() for ch in normalized):
+    if _is_period_cell(normalized):
         return True
 
     return False
@@ -267,44 +326,15 @@ def _row_is_header_like(row):
     if not words:
         return False
 
-    text = _row_text_lower(row)
-    header_hits = sum(
-        1
-        for word in words
-        if _has_header_term(word.get("text", ""))
-    )
+    if any(_is_period_cell(word.get("text", "")) for word in words):
+        return True
 
-    return (
-        header_hits >= 1
-        or "controladora" in text
-        or "consolidado" in text
-        or "individual" in text
-        or "31/" in text
-    )
+    value_like_words = sum(1 for word in words if is_numeric(word.get("text", "").strip()))
+    alpha_words = sum(1 for word in words if _has_latin_alpha(word.get("text", "")))
 
+    return alpha_words >= 1 and value_like_words <= 1
 
-def _has_note_column(rows, value_columns):
-    if not value_columns:
-        return False
-
-    first_value_x = value_columns[0]
-    note_like_count = 0
-
-    for row in rows:
-        for word in row.get("words", []):
-            text = word["text"].strip().lower()
-            x = word["center_x"]
-
-            if x < first_value_x and (
-                is_small_note_reference(text)
-                or text in {"nota", "notas", "explicativa", "explicativas"}
-            ):
-                note_like_count += 1
-
-    return note_like_count >= 1
-
-
-def _note_column_x(rows, first_value_x):
+def _reference_column_x(rows, first_value_x):
     candidates = []
 
     for row in rows:
@@ -312,10 +342,7 @@ def _note_column_x(rows, first_value_x):
             text = word["text"].strip().lower()
             x = word["center_x"]
 
-            if x < first_value_x and (
-                is_small_note_reference(text)
-                or text in {"nota", "notas", "explicativa", "explicativas"}
-            ):
+            if x < first_value_x and _is_reference_token(text) and not _word_is_part_of_period(word):
                 candidates.append(x)
 
     if not candidates:
@@ -324,24 +351,85 @@ def _note_column_x(rows, first_value_x):
     return sum(candidates) / len(candidates)
 
 
+def _median(values):
+    if not values:
+        return None
+
+    values = sorted(values)
+    return values[len(values) // 2]
+
+
+def _has_leading_reference_column(rows, first_value_x, reference_x):
+    if reference_x is None:
+        return False
+
+    alpha_xs = []
+
+    for row in rows:
+        has_reference = any(
+            word["center_x"] < first_value_x
+            and abs(word["center_x"] - reference_x) <= 160
+            and _is_reference_token(word.get("text", ""))
+            and not _word_is_part_of_period(word)
+            for word in row.get("words", [])
+        )
+
+        if not has_reference:
+            continue
+
+        for word in row.get("words", []):
+            if word["center_x"] < first_value_x and _has_latin_alpha(word.get("text", "")):
+                alpha_xs.append(word["center_x"])
+
+    median_alpha_x = _median(alpha_xs)
+
+    if median_alpha_x is None:
+        return False
+
+    return reference_x + 100 < median_alpha_x
+
+
+def _has_note_column(rows, value_columns):
+    if not value_columns:
+        return False
+
+    first_value_x = value_columns[0]
+    note_x = _reference_column_x(rows, first_value_x)
+
+    if note_x is None:
+        return False
+
+    return not _has_leading_reference_column(rows, first_value_x, note_x)
+
+
+def _note_column_x(rows, first_value_x):
+    return _reference_column_x(rows, first_value_x)
+
 def _build_column_anchors(rows, numeric_columns):
     """
     Create Klippa-style visual column anchors.
 
-    The first column is always label. If a note column is visually present,
-    it becomes column 1. Numeric/value columns follow. This is deliberately
-    geometry-first and does not flatten multi-row headers into semantic names.
+    If a repeated leading reference/code column is visually present before the
+    label text, it becomes column 0 and the label becomes column 1. Otherwise,
+    the first column remains the label. This is geometry-first and avoids
+    relying on specific header words.
     """
 
     value_columns = _normalize_columns(numeric_columns)
-    anchors = [{"index": 0, "x": None, "type": "label"}]
+    first_value_x = value_columns[0] if value_columns else float("inf")
+    reference_x = _reference_column_x(rows, first_value_x)
+    has_leading_reference = _has_leading_reference_column(rows, first_value_x, reference_x)
 
-    has_note_column = _has_note_column(rows, value_columns)
+    anchors = []
 
-    if has_note_column:
-        first_value_x = value_columns[0] if value_columns else float("inf")
-        note_x = _note_column_x(rows, first_value_x)
-        anchors.append({"index": 1, "x": note_x, "type": "note"})
+    if has_leading_reference:
+        anchors.append({"index": 0, "x": reference_x, "type": "code"})
+        anchors.append({"index": 1, "x": None, "type": "label"})
+    else:
+        anchors.append({"index": 0, "x": None, "type": "label"})
+
+        if _has_note_column(rows, value_columns):
+            anchors.append({"index": 1, "x": reference_x, "type": "note"})
 
     start_index = len(anchors)
 
@@ -356,7 +444,6 @@ def _build_column_anchors(rows, numeric_columns):
 
     return anchors
 
-
 def _value_anchor_positions(anchors):
     return [a["x"] for a in anchors if a["type"] == "value" and a["x"] is not None]
 
@@ -366,6 +453,20 @@ def _note_anchor(anchors):
         if anchor["type"] == "note":
             return anchor
     return None
+
+
+def _code_anchor(anchors):
+    for anchor in anchors:
+        if anchor["type"] == "code":
+            return anchor
+    return None
+
+
+def _label_anchor_index(anchors):
+    for anchor in anchors:
+        if anchor["type"] == "label":
+            return anchor["index"]
+    return 0
 
 
 def _nearest_anchor_index(x, anchors, allowed_types=None):
@@ -393,7 +494,27 @@ def _assign_word_to_column(word, anchors, row_is_header_like):
     center_x = word["center_x"]
 
     note_anchor = _note_anchor(anchors)
+    code_anchor = _code_anchor(anchors)
+    label_index = _label_anchor_index(anchors)
     value_positions = _value_anchor_positions(anchors)
+
+    if code_anchor and code_anchor["x"] is not None:
+        code_corridor_left = max(0, code_anchor["x"] - 180)
+        code_corridor_right = code_anchor["x"] + 170
+
+        if (
+            code_corridor_left <= center_x <= code_corridor_right
+            and _is_reference_token(text)
+            and not _word_is_part_of_period(word)
+        ):
+            return code_anchor["index"]
+
+        if (
+            row_is_header_like
+            and code_corridor_left <= center_x <= code_corridor_right
+            and _has_latin_alpha(text)
+        ):
+            return code_anchor["index"]
 
     # A hyphen inside an OCR source label line is punctuation, not a
     # financial dash value. Keep it in the label column. Standalone dash
@@ -404,7 +525,7 @@ def _assign_word_to_column(word, anchors, row_is_header_like):
         and not _line_text_has_amount(_source_line_text(word))
         and any(ch.isalpha() for ch in _source_line_text(word))
     ):
-        return 0
+        return label_index
 
     if note_anchor and note_anchor["x"] is not None:
         note_corridor_left = max(0, note_anchor["x"] - 140)
@@ -444,9 +565,17 @@ def _assign_word_to_column(word, anchors, row_is_header_like):
         if value_positions:
             return _nearest_anchor_index(center_x, anchors, allowed_types={"value"})
 
+    # In recovered header rows, non-period text that sits over numeric value
+    # columns should stay in its visual value column. This is geometry-based,
+    # so labels such as "Último Exercício" are not hardcoded.
+    if row_is_header_like and value_positions:
+        nearest_value = min(value_positions, key=lambda pos: abs(center_x - pos))
+        if abs(center_x - nearest_value) <= 260:
+            return _nearest_anchor_index(center_x, anchors, allowed_types={"value"})
+
     # For all ordinary alphabetic content, keep Klippa-like row labels intact in
     # column 0. Do not split normal labels into several text columns.
-    return 0
+    return label_index
 
 
 
@@ -485,6 +614,64 @@ def _clean_cell_content(content):
 # matrix creation
 # =========================================================
 
+def _header_words_for_assignment(row, row_is_header_like):
+    if not row_is_header_like:
+        return row.get("words", [])
+
+    words_by_line = defaultdict(list)
+
+    for word in row.get("words", []):
+        words_by_line[word.get("line_id")].append(word)
+
+    assignment_words = []
+    consumed_line_ids = set()
+
+    for line_id, words in words_by_line.items():
+        line_text = _source_line_text(words[0])
+
+        if not line_text:
+            continue
+
+        if _line_text_has_amount(line_text):
+            continue
+
+        if not _has_latin_alpha(line_text):
+            continue
+
+        if _is_period_cell(line_text) or _is_period_cell(re.sub(r"\s+", "", line_text)):
+            continue
+
+        sorted_words = sorted(words, key=lambda w: w.get("x1", 0))
+        average_x = sum(w.get("center_x", 0) for w in sorted_words) / len(sorted_words)
+
+        line_span = max(w.get("x2", 0) for w in sorted_words) - min(w.get("x1", 0) for w in sorted_words)
+
+        # Group full header lines mainly for value-column group labels and
+        # compact left-side labels. If a left-side line spans both the
+        # code/reference and label bands, keep individual words so geometry can
+        # split them.
+        if average_x < 1000 and len(sorted_words) > 2 and line_span > 380:
+            continue
+
+        assignment_words.append(
+            {
+                **sorted_words[0],
+                "text": line_text,
+                "x1": min(w.get("x1", 0) for w in sorted_words),
+                "x2": max(w.get("x2", 0) for w in sorted_words),
+                "center_x": average_x,
+                "center_y": sum(w.get("center_y", 0) for w in sorted_words) / len(sorted_words),
+            }
+        )
+        consumed_line_ids.add(line_id)
+
+    for word in row.get("words", []):
+        if word.get("line_id") not in consumed_line_ids:
+            assignment_words.append(word)
+
+    return sorted(assignment_words, key=lambda w: (w.get("center_y", 0), w.get("x1", 0)))
+
+
 def rows_to_matrix(rows, numeric_columns=None):
     rows = normalize_financial_tokens_in_rows(rows)
 
@@ -500,7 +687,7 @@ def rows_to_matrix(rows, numeric_columns=None):
         row_cells = defaultdict(list)
         row_is_header_like = _row_is_header_like(row)
 
-        for word in row.get("words", []):
+        for word in _header_words_for_assignment(row, row_is_header_like):
             text = word["text"].strip()
 
             if not text:
@@ -519,7 +706,8 @@ def rows_to_matrix(rows, numeric_columns=None):
 
         matrix_row = []
 
-        row_cells = _restore_label_cells_from_source_lines(row, row_cells)
+        if _label_anchor_index(anchors) == 0:
+            row_cells = _restore_label_cells_from_source_lines(row, row_cells)
 
         for col in range(column_count):
             content = " ".join(row_cells.get(col, [])).strip()
@@ -570,52 +758,71 @@ def _looks_like_table_start(row):
     if not text:
         return False
 
-    # Do not let page titles or unit lines start a table. Klippa usually starts
-    # DRE tables at the real grid header, for example "Notas | 31/12/...",
-    # not at the narrative title above it.
     if _is_metadata_title_text(text):
         return False
 
-    # A title-only line such as "resultados" is page metadata, not the table.
-    title_only_terms = {"resultado", "resultados"}
-    if text in title_only_terms:
+    return _row_amount_count(row) >= 1 or _row_period_count(row) >= 1
+
+
+def _is_amount_cell(cell):
+    value = (cell or "").strip()
+
+    if not value or _is_period_cell(value):
         return False
 
-    if any(term in text for term in {"nota", "notas", "controladora", "consolidado"}):
+    return bool(
+        re.fullmatch(r"-?\(?\d{1,3}(?:[.]\d{3})+(?:,\d+)?\)?", value)
+        or re.fullmatch(r"-?\(?\d+,\d{2}\)?", value)
+        or (value.isdigit() and len(value) >= 1 and not _is_period_cell(value))
+    )
+
+
+def _row_amount_count(row):
+    return sum(1 for cell in row if _is_amount_cell(cell))
+
+
+def _row_period_count(row):
+    return sum(1 for cell in row if _is_period_cell(cell))
+
+
+def _row_is_header_candidate_matrix(row):
+    row_text = " ".join(row).lower().strip()
+
+    if not row_text or _is_metadata_title_text(row_text) or _is_footer_row(row):
+        return False
+
+    if _row_period_count(row) >= 1:
         return True
 
-    if any(cell.strip().isdigit() and len(cell.strip()) == 4 for cell in row):
+    if any(cell.strip() for cell in row) and _row_amount_count(row) == 0:
         return True
-
-    # Last-resort continuation-table support: if a later block starts directly
-    # with data rows and does not repeat a strong semantic title, accept the
-    # first label + values row as a table start. Header-only rows such as
-    # "Conta | 31/12/..." are deliberately excluded so existing full-table
-    # pages keep their previous crop behavior.
-    header_like_terms = {
-        "conta",
-        "descricao da conta",
-        "descrição da conta",
-        "ultimo exercicio",
-        "último exercício",
-        "penultimo exercicio",
-        "penúltimo exercício",
-        "antepenultimo exercicio",
-        "antepenúltimo exercício",
-    }
-    non_empty_value_cells = sum(1 for cell in row[1:] if cell.strip())
-    if (
-        _has_latin_alpha(row[0])
-        and non_empty_value_cells >= 2
-        and not any(term in text for term in header_like_terms)
-    ):
-        return True
-
-    if any(term in text for term in TABLE_START_TERMS):
-        return _row_has_values(row) or text in {"ativo", "passivo", "patrimônio", "patrimonio"}
 
     return False
 
+
+def _find_first_amount_row_index(matrix):
+    for idx, row in enumerate(matrix):
+        row_text = " ".join(row).lower().strip()
+
+        if not row_text or _is_metadata_title_text(row_text) or _is_footer_row(row):
+            continue
+
+        if _row_amount_count(row) >= 1:
+            return idx
+
+    return None
+
+
+def _find_table_start_index(matrix, first_amount_index):
+    start_index = first_amount_index
+
+    for idx in range(first_amount_index - 1, -1, -1):
+        if not _row_is_header_candidate_matrix(matrix[idx]):
+            break
+
+        start_index = idx
+
+    return start_index
 
 def _normalize_text_for_matching(text):
     replacements = {
@@ -677,21 +884,25 @@ def filter_non_table_rows(matrix):
     """
     Klippa compatibility filter.
 
-    This intentionally does NOT clean or semantically improve table rows. It
-    only removes obvious pre-table metadata and obvious post-table footer or
-    signature rows. Once a table starts, sparse rows, section rows, subtotal rows
-    and multi-level headers are preserved.
+    Remove obvious page metadata before the table, but preserve the adjacent
+    header block above the first body row. A table may therefore start with
+    label-only or period rows before the first numeric amount row.
     """
 
     if not matrix:
         return []
 
-    filtered = []
-    started = False
-    seen_numeric_table_row = False
-    seen_total = False
+    first_amount_index = _find_first_amount_row_index(matrix)
 
-    for row in matrix:
+    if first_amount_index is None:
+        return []
+
+    start_index = _find_table_start_index(matrix, first_amount_index)
+
+    filtered = []
+    seen_numeric_table_row = False
+
+    for row in matrix[start_index:]:
         row_text = " ".join(row).lower().strip()
 
         if _is_footer_row(row):
@@ -700,25 +911,13 @@ def filter_non_table_rows(matrix):
         if "notas explicativas" in row_text and seen_numeric_table_row:
             break
 
-        if not started:
-            if _is_metadata_title_text(row_text):
-                continue
-
-            if _looks_like_table_start(row):
-                started = True
-            else:
-                continue
-
-        if _row_has_values(row):
-            seen_numeric_table_row = True
-
-        if "total" in row_text:
-            seen_total = True
-
         if "".join(row).strip() == "":
             continue
 
         filtered.append(row)
+
+        if _row_amount_count(row) >= 1:
+            seen_numeric_table_row = True
 
         # Strong final-total rows close the current visual table. This prevents
         # trailing signatures, certification text and footer fragments from being
@@ -728,10 +927,8 @@ def filter_non_table_rows(matrix):
 
     return filtered
 
-
 def _is_year_cell(cell):
-    value = cell.strip()
-    return value.isdigit() and len(value) == 4
+    return _is_period_cell(cell)
 
 
 def _is_year_row(row):
@@ -791,6 +988,8 @@ def merge_multiline_rows(matrix):
             return [combined, r2] + rows[3:]
 
     if len(rows) >= 2 and _is_year_row(rows[1]):
+        rows[0][0] = _join_nonempty(rows[0][0], rows[1][0])
+        rows[1][0] = ""
         return rows
 
     return rows

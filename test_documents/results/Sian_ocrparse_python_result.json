@@ -944,7 +944,7 @@
               {
                 "row_index": 15,
                 "column_index": 0,
-                "content": "Outras Receitas e Despesas Oeracionais",
+                "content": "Outras Oeracionais Receitas e Despesas",
                 "header": false
               },
               {
@@ -998,7 +998,7 @@
               {
                 "row_index": 18,
                 "column_index": 0,
-                "content": "PROVISÃO IMPOSTO DE RENDA",
+                "content": "PROVISÃO RENDA IMPOSTO DE",
                 "header": false
               },
               {
@@ -1022,7 +1022,7 @@
               {
                 "row_index": 19,
                 "column_index": 1,
-                "content": "",
+                "content": ":",
                 "header": false
               },
               {

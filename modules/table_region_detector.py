@@ -1,3 +1,5 @@
+import re
+
 from modules.column_detector import is_numeric, is_small_note_reference, cluster_positions
 
 
@@ -40,6 +42,120 @@ def _row_has_number(row):
 
 def _row_has_alpha(row):
     return any(any(ch.isalpha() for ch in w["text"]) for w in row.get("words", []))
+
+
+def _is_period_like(text):
+    """Detect generic reporting-period tokens without hardcoded years.
+
+    Supported examples include 2025, 31/12/2025, 12/2025, jan/2025,
+    janeiro 2025 and similar month/year or day/month/year variants.
+    """
+
+    value = (text or "").strip().lower()
+
+    if not value:
+        return False
+
+    if re.fullmatch(r"(?:19|20)\d{2}", value):
+        return True
+
+    if re.fullmatch(r"\d{1,2}[/-]\d{1,2}(?:[/-]\d{2,4})?", value):
+        return True
+
+    if re.fullmatch(r"\d{1,2}[/-](?:19|20)\d{2}", value):
+        return True
+
+    if re.fullmatch(r"[a-zçãáàâéêíóôõú]{3,12}[/-](?:19|20)\d{2}", value):
+        return True
+
+    if re.fullmatch(r"[a-zçãáàâéêíóôõú]{3,12}\s+(?:19|20)\d{2}", value):
+        return True
+
+    return False
+
+
+def _row_has_period_like_token(row):
+    return any(_is_period_like(w.get("text", "")) for w in row.get("words", []))
+
+
+def _row_value_count(row):
+    return sum(1 for word in row.get("words", []) if _is_value_word(word))
+
+
+def _looks_like_body_row(row):
+    return _row_has_alpha(row) and _row_value_count(row) >= 1
+
+
+def _looks_like_header_candidate(row):
+    words = row.get("words", [])
+
+    if not words:
+        return False
+
+    if _looks_like_end(row):
+        return False
+
+    # Header rows are usually label-only rows, period rows, or rows with
+    # sparse structure immediately above the first repeated value row. This is
+    # intentionally geometric/pattern-based, not vocabulary-based.
+    if _row_has_period_like_token(row):
+        return True
+
+    if _row_has_alpha(row) and _row_value_count(row) <= 1:
+        return True
+
+    return False
+
+
+def _recover_header_start_index(rows, first_body_index):
+    """Include visually adjacent header rows above the first body row.
+
+    The first body row is found by repeated table geometry. Rows above it are
+    included when they are close enough and look like column headers or period
+    rows. This handles multi-line headers such as a left column label split into
+    two OCR lines, while still excluding page titles and unit lines higher up.
+    """
+
+    if first_body_index <= 0:
+        return first_body_index
+
+    median_gap = _median_row_gap(rows) or 60
+    max_header_gap = max(90, median_gap * 1.8)
+    start_index = first_body_index
+    previous_y = rows[first_body_index].get("center_y", 0)
+
+    for idx in range(first_body_index - 1, -1, -1):
+        row = rows[idx]
+        row_y = row.get("center_y", 0)
+        gap = previous_y - row_y
+
+        if gap > max_header_gap:
+            break
+
+        if not _looks_like_header_candidate(row):
+            break
+
+        start_index = idx
+        previous_y = row_y
+
+    return start_index
+
+
+def _find_first_body_index(rows):
+    for idx, row in enumerate(rows):
+        text = _row_text_lower(row).strip()
+
+        if not text or _looks_like_end(row):
+            continue
+
+        if _looks_like_body_row(row):
+            return idx
+
+    for idx, row in enumerate(rows):
+        if _row_has_number(row):
+            return idx
+
+    return 0
 
 
 def _is_value_word(word):
@@ -109,22 +225,19 @@ def _looks_like_end(row):
 
 
 def crop_table_region_rows(rows):
-    """
-    Light Klippa-compatible crop.
+    """Light Klippa-compatible crop.
 
-    Keep table headers, section rows, subtotal rows and sparse rows. Remove only
-    pre-table material and obvious signature/footer narrative after the table.
+    Keep the visual table header block plus body rows. The table start is
+    determined by first finding the first body row and then walking upward to
+    recover adjacent header rows. This prevents multi-line headers from being
+    discarded just because they do not themselves contain amounts.
     """
 
     if not rows:
         return []
 
-    start_index = 0
-
-    for idx, row in enumerate(rows):
-        if _looks_like_start(row):
-            start_index = idx
-            break
+    first_body_index = _find_first_body_index(rows)
+    start_index = _recover_header_start_index(rows, first_body_index)
 
     cropped = []
     seen_table_number = False
@@ -144,7 +257,6 @@ def crop_table_region_rows(rows):
         cropped.append(row)
 
     return cropped
-
 
 def _region_has_table_content(rows):
     if len(rows) < 2:
@@ -292,54 +404,6 @@ def _find_best_split_x(rows):
     return best_split
 
 
-def _split_on_large_vertical_gaps(rows):
-    """Split independent stacked table blocks on large whitespace gaps.
-
-    A large vertical gap is a good signal that one table ended, but it must not
-    stop processing the rest of the page. Prefer returning an extra table block
-    over dropping a later one.
-    """
-
-    if len(rows) < 4:
-        return [rows]
-
-    median_gap = _median_row_gap(rows)
-    if not median_gap:
-        return [rows]
-
-    regions = []
-    current = [rows[0]]
-    previous = rows[0]
-
-    for row in rows[1:]:
-        gap = row.get("center_y", 0) - previous.get("center_y", 0)
-
-        if gap >= median_gap * 2.8 and _region_has_table_content(current):
-            regions.append(current)
-            current = [row]
-        else:
-            current.append(row)
-
-        previous = row
-
-    if current:
-        regions.append(current)
-
-    return regions or [rows]
-
-
-def _split_table_restarts(rows):
-    """Apply all vertical split heuristics while preserving later blocks."""
-
-    split_regions = []
-
-    for gap_region in _split_on_large_vertical_gaps(rows):
-        restart_regions = _split_after_final_total_restarts(gap_region)
-        split_regions.extend(restart_regions)
-
-    return [region for region in split_regions if _region_has_table_content(region)] or [rows]
-
-
 def split_side_by_side_regions(rows):
     """
     Return independent visual table regions. If no strong split is detected,
@@ -347,12 +411,12 @@ def split_side_by_side_regions(rows):
     """
 
     if not should_split_side_by_side(rows):
-        return _split_table_restarts(crop_table_region_rows(rows))
+        return _split_after_final_total_restarts(crop_table_region_rows(rows))
 
     split_x = _find_best_split_x(rows)
 
     if split_x is None:
-        return _split_table_restarts(crop_table_region_rows(rows))
+        return _split_after_final_total_restarts(crop_table_region_rows(rows))
 
     left_rows = []
     right_rows = []
@@ -381,7 +445,7 @@ def split_side_by_side_regions(rows):
         if _region_has_table_content(cropped):
             regions.append(cropped)
 
-    return regions or _split_table_restarts(crop_table_region_rows(rows))
+    return regions or _split_after_final_total_restarts(crop_table_region_rows(rows))
 
 
 def _normalize_text_for_matching(text):
