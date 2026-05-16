@@ -2,16 +2,17 @@ import base64
 import binascii
 import io
 import json
+import os
 import re
 from typing import Any
 
-from fastapi import FastAPI, File, Form, HTTPException, UploadFile
+from dotenv import load_dotenv
+from fastapi import Depends, FastAPI, File, Form, Header, HTTPException, UploadFile
 from fastapi.responses import StreamingResponse
-from pypdf import PdfReader, PdfWriter
 from pydantic import BaseModel, Field
+from pypdf import PdfReader, PdfWriter
 
 from main import build_klippa_result
-
 
 DATA_URI_RE = re.compile(r"^data:(?P<mime>[^;]+);base64,(?P<data>.*)$", re.DOTALL)
 
@@ -36,12 +37,28 @@ app = FastAPI(
     version="1.3.0",
 )
 
+load_dotenv()
+
+
+def validate_api_key(x_api_key: str | None = Header(default=None)) -> None:
+    api_key = os.getenv("API_KEY")
+
+    if not api_key:
+        raise HTTPException(
+            status_code=500,
+            detail="API_KEY environment variable is not configured",
+        )
+
+    if x_api_key != api_key:
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid API key",
+        )
+
 
 @app.get("/")
 def healthcheck() -> dict[str, str]:
     return {"status": "running"}
-
-
 
 
 @app.post("/pdf/extract-pages")
@@ -49,6 +66,7 @@ def healthcheck() -> dict[str, str]:
 async def extract_pdf_pages(
     inputFile: UploadFile = File(...),
     page_range: str = Form(...),
+    _: None = Depends(validate_api_key),
 ) -> StreamingResponse:
     """Return a new PDF containing only the requested 1-based page range.
 
@@ -109,6 +127,7 @@ async def extract_pdf_pages(
 async def extract(
     inputFile: UploadFile = File(...),
     organisation_document_id: int = Form(...),
+    _: None = Depends(validate_api_key),
 ) -> list[dict[str, Any]]:
     """Extract tables from an uploaded OCRParse JSON file.
 
@@ -118,12 +137,17 @@ async def extract(
     """
 
     raw_bytes = await inputFile.read()
-    ocrparse_json = _load_ocrparse_json_from_bytes(raw_bytes, inputFile.filename or "inputFile")
+    ocrparse_json = _load_ocrparse_json_from_bytes(
+        raw_bytes, inputFile.filename or "inputFile"
+    )
     return _build_api_response(organisation_document_id, [ocrparse_json])
 
 
 @app.post("/extract/json")
-def extract_json(payload: ExtractRequest) -> list[dict[str, Any]]:
+def extract_json(
+    payload: ExtractRequest,
+    _: None = Depends(validate_api_key),
+) -> list[dict[str, Any]]:
     """Extract tables from OCRParse JSON sent in a JSON body.
 
     Preferred JSON input mirrors /extract:
@@ -157,11 +181,13 @@ def extract_json(payload: ExtractRequest) -> list[dict[str, Any]]:
 
 
 @app.post("/extract/ocrparse")
-def extract_ocrparse(payload: dict[str, Any]) -> dict[str, Any]:
+def extract_ocrparse(
+    payload: dict[str, Any],
+    _: None = Depends(validate_api_key),
+) -> dict[str, Any]:
     """Developer helper endpoint for direct OCRParse JSON testing."""
 
     return build_klippa_result(payload)
-
 
 
 def _parse_page_range(page_range: str, total_pages: int) -> list[int]:
@@ -222,7 +248,9 @@ def _parse_page_range(page_range: str, total_pages: int) -> list[int]:
             detail="page_range did not select any pages",
         )
 
-    invalid_pages = [index + 1 for index in indexes if index < 0 or index >= total_pages]
+    invalid_pages = [
+        index + 1 for index in indexes if index < 0 or index >= total_pages
+    ]
     if invalid_pages:
         raise HTTPException(
             status_code=400,
@@ -396,12 +424,10 @@ def _validate_ocrparse_shape(value: Any) -> None:
     ):
         return
 
-    if (
-        isinstance(value, list)
-        and all(
-            isinstance(page, dict) and ("Overlay" in page or "TextOverlay" in page or "ParsedText" in page)
-            for page in value
-        )
+    if isinstance(value, list) and all(
+        isinstance(page, dict)
+        and ("Overlay" in page or "TextOverlay" in page or "ParsedText" in page)
+        for page in value
     ):
         return
 
