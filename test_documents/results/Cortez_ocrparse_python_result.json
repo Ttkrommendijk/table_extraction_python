@@ -29,20 +29,8 @@
               },
               {
                 "row_index": 0,
-                "column_index": 3,
-                "content": "",
-                "header": true
-              },
-              {
-                "row_index": 0,
                 "column_index": 4,
                 "content": "Consolidado",
-                "header": true
-              },
-              {
-                "row_index": 0,
-                "column_index": 5,
-                "content": "",
                 "header": true
               },
               {
@@ -648,20 +636,8 @@
               },
               {
                 "row_index": 0,
-                "column_index": 3,
-                "content": "",
-                "header": true
-              },
-              {
-                "row_index": 0,
                 "column_index": 4,
                 "content": "Consolidado",
-                "header": true
-              },
-              {
-                "row_index": 0,
-                "column_index": 5,
-                "content": "",
                 "header": true
               },
               {

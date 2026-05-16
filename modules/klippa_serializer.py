@@ -64,6 +64,59 @@ def _is_header_row(matrix, row_index):
     return sum(1 for cell in row if _is_year_cell(cell)) >= 2
 
 
+
+
+def _should_suppress_empty_header_cell(matrix, row_index, column_index, column_count):
+    """Return True for empty header placeholders inside a group span.
+
+    Klippa usually omits the blank cell above the second leaf period in a
+    grouped header, for example the empty cell above ``2022`` in::
+
+        Controladora |      | Consolidado |
+        2023         | 2022 | 2023        | 2022
+
+    Emitting those blanks prevents downstream header logic from carrying the
+    group label to the next period column, producing plain ``2022`` instead of
+    ``Controladora 2022``. Leading placeholders such as the blank above
+    ``Nota`` or the description column are intentionally kept.
+    """
+
+    content = (matrix[row_index][column_index] if column_index < len(matrix[row_index]) else "")
+    if str(content or "").strip():
+        return False
+
+    if row_index + 1 >= len(matrix):
+        return False
+
+    lower_row = matrix[row_index + 1]
+    lower_content = lower_row[column_index] if column_index < len(lower_row) else ""
+    if not _is_period_cell(lower_content):
+        return False
+
+    row = matrix[row_index]
+
+    # Only suppress blanks that are continuing a group header from the left.
+    # Limit the scan to this header block: stop when another period-like cell
+    # or a note-like cell is encountered, because those are leaf headers rather
+    # than group headers.
+    for left_index in range(column_index - 1, -1, -1):
+        left_content = (row[left_index] if left_index < len(row) else "").strip()
+
+        if not left_content:
+            continue
+
+        left_normalized = left_content.lower()
+        if left_normalized in {"nota", "notas", "nota explicativa", "notas explicativas"}:
+            return False
+
+        if _is_period_cell(left_content):
+            return False
+
+        return True
+
+    return False
+
+
 def serialize_matrix_to_klippa_table(
     matrix,
     document_index=0,
@@ -85,6 +138,14 @@ def serialize_matrix_to_klippa_table(
 
         for column_index in range(column_count):
             content = row[column_index] if column_index < len(row) else ""
+
+            if is_header and _should_suppress_empty_header_cell(
+                matrix,
+                row_index,
+                column_index,
+                column_count,
+            ):
+                continue
 
             cells.append(
                 {
