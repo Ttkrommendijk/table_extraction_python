@@ -263,8 +263,24 @@ def _is_value_word(word):
     return is_numeric(text)
 
 
+def _is_currency_marker_word(word):
+    text = word["text"].strip().upper().replace(" ", "")
+    return text in {"R", "$", "R$", "RS", "_R", "_R$"}
+
+
 def _is_alpha_word(word):
     return any(ch.isalpha() for ch in word["text"])
+
+
+def _is_split_label_word(word):
+    """Return True for alpha tokens that can indicate a right-side label band.
+
+    Side-by-side table detection looks for repeated alphabetic text between
+    value columns. Currency markers such as R, R$, and RS are alphabetic but
+    are part of money values, not labels. Treating them as labels can split a
+    normal table between Saldo Inicial and Saldo Final.
+    """
+    return _is_alpha_word(word) and not _is_currency_marker_word(word)
 
 
 def _clone_row_with_words(row, words):
@@ -398,7 +414,7 @@ def _count_rows_with_alpha_between_value_columns(rows, left_value_x, right_value
                     has_left_value = True
                 if abs(x - right_value_x) <= 220:
                     has_right_value = True
-            elif left_value_x + 60 < x < right_value_x - 60 and _is_alpha_word(word):
+            elif left_value_x + 60 < x < right_value_x - 60 and _is_split_label_word(word):
                 has_middle_alpha = True
 
         if has_middle_alpha and (has_left_value or has_right_value):
@@ -473,7 +489,7 @@ def _find_best_split_x(rows):
             for word in row.get("words", []):
                 x = word["center_x"]
 
-                if left_x + 60 < x < right_x - 60 and _is_alpha_word(word):
+                if left_x + 60 < x < right_x - 60 and _is_split_label_word(word):
                     middle_label_left_edges.append(word["x1"])
 
         if not middle_label_left_edges:
